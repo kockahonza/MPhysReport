@@ -1,4 +1,15 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[94] biber:340> INFO - === Fri Mar  8, 2024, 09:35:18
-[114] Biber.pm:419> INFO - Reading 'main.bcf'
+[123] biber:340> INFO - === Sat Mar  9, 2024, 16:03:53
+[140] Biber.pm:419> INFO - Reading 'main.bcf'
+[199] Biber.pm:979> INFO - Found 3 citekeys in bib section 0
+[215] Biber.pm:4419> INFO - Processing section 0
+[227] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 0
+[228] bibtex.pm:1713> INFO - LaTeX decoding ...
+[243] bibtex.pm:1519> INFO - Found BibTeX data source 'MPhys.bib'
+[308] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[308] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[308] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[308] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[310] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[312] bbl.pm:763> INFO - Output to main.bbl

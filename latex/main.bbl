@@ -1,0 +1,168 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{oswaldNematicCholestericLiquid2005}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3d761c6e2524695ae794603257efa976}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b54cc1b654783e276f7f569a7e6a5d37}{%
+           family={Pieranski},
+           familyi={P\bibinitperiod},
+           given={Pawel},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{fullhash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{bibnamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authorbibnamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authornamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authorfullhash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Liquid crystals allow us to perform experiments that provide insight into fundamental problems of modern physics, such as phase transitions, frustration, elasticity, hydrodynamics, defects, growth phenomena, and optics (linear and non linear). This excellent volume meets the need for an up-to-date text on liquid crystals.Nematic and Cholesteric Liq}
+      \field{day}{28}
+      \field{isbn}{978-0-429-21574-2}
+      \field{month}{2}
+      \field{pagetotal}{648}
+      \field{shorttitle}{Nematic and {{Cholesteric Liquid Crystals}}}
+      \field{title}{Nematic and {{Cholesteric Liquid Crystals}}: {{Concepts}} and {{Physical Properties Illustrated}} by {{Experiments}}}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1201/9780203023013
+      \endverb
+    \endentry
+    \entry{oswaldSmecticColumnarLiquid2005b}{book}{}
+      \name{author}{2}{}{%
+        {{hash=3d761c6e2524695ae794603257efa976}{%
+           family={Oswald},
+           familyi={O\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b54cc1b654783e276f7f569a7e6a5d37}{%
+           family={Pieranski},
+           familyi={P\bibinitperiod},
+           given={Pawel},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Boca Raton}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{fullhash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{bibnamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authorbibnamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authornamehash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \strng{authorfullhash}{d0446cd17d2d0c9df329c9a212cb8ebc}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Based on graduate lectures given by the authors, Smectic and Columnar Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments examines lamellar (smectic) and columnar liquid crystals, which, in addition to orientational order, possess 1D, 2D or 3D positional order. Topics include rheology and plasticity, ferroelectricity, analogies with superconductors, hexatic order and 2D-melting, equilibrium shapes, facetting, and the Mullins-Sekerka instability, as well as phase transitions in free films and membrane vibrations. Nematic and cholesteric liquid crystals are covered by the authors in a separate volume entitled Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments.}
+      \field{day}{9}
+      \field{isbn}{978-0-429-12555-3}
+      \field{month}{12}
+      \field{pagetotal}{712}
+      \field{shorttitle}{Smectic and {{Columnar Liquid Crystals}}}
+      \field{title}{Smectic and {{Columnar Liquid Crystals}}: {{Concepts}} and {{Physical Properties Illustrated}} by {{Experiments}}}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1201/9781420036343
+      \endverb
+    \endentry
+    \entry{gennesPhysicsLiquidCrystals1995}{book}{}
+      \name{author}{4}{}{%
+        {{useprefix=false,hash=f7f41a22b9c4e0a1f257b4c0f1d48974}{%
+           family={Gennes},
+           familyi={G\bibinitperiod},
+           given={P.\bibnamedelimi G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=ec25a1252970f8413805a131d1d67a02}{%
+           family={Prost},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{useprefix=false,hash=f7f41a22b9c4e0a1f257b4c0f1d48974}{%
+           family={Gennes},
+           familyi={G\bibinitperiod},
+           given={P.\bibnamedelimi G.},
+           giveni={P\bibinitperiod\bibinitdelim G\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+        {{hash=ec25a1252970f8413805a131d1d67a02}{%
+           family={Prost},
+           familyi={P\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{248937362b04be0f1637084b2bde3e15}
+      \strng{fullhash}{452f151e9fc1b9ee869eb9dcd1fb2a64}
+      \strng{bibnamehash}{452f151e9fc1b9ee869eb9dcd1fb2a64}
+      \strng{authorbibnamehash}{452f151e9fc1b9ee869eb9dcd1fb2a64}
+      \strng{authornamehash}{248937362b04be0f1637084b2bde3e15}
+      \strng{authorfullhash}{452f151e9fc1b9ee869eb9dcd1fb2a64}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The first edition of this book has been an acknowledged classic since its publication in 1974. Its success and the great advances that have taken place in the ensuing years have made this new edition both welcome and necessary.New chapters describe the main types and properties of liquid crystals in terms of the new phases discovered since the middle of the 1970s, and advances in the understanding of local order and the nature of isotropic to nematic transition. There is an extensive discussion of the symmetry, and macroscopic and dynamic properties of smectics and columnar phases, and their defects, illustrated with numerous descriptions of experimental arrangements. The final chapter is devoted to phase transitions in smectics, including the celebrated analogy between Smectic A and superconductors. Throughout the book there is an emphasis on order-of-magnitude considerations.Its topicality and breadth of coverage will ensure that The Physics of Liquid Crystals remains an indispensable guide for students and researchers alike. , The first edition of this book has been an acknowledged classic since its publication in 1974. Its success and the great advances that have taken place in the ensuing years have made this new edition both welcome and necessary.New chapters describe the main types and properties of liquid crystals in terms of the new phases discovered since the middle of the 1970s, and advances in the understanding of local order and the nature of isotropic to nematic transition. There is an extensive discussion of the symmetry, and macroscopic and dynamic properties of smectics and columnar phases, and their defects, illustrated with numerous descriptions of experimental arrangements. The final chapter is devoted to phase transitions in smectics, including the celebrated analogy between Smectic A and superconductors. Throughout the book there is an emphasis on order-of-magnitude considerations.Its topicality and breadth of coverage will ensure that The Physics of Liquid Crystals remains an indispensable guide for students and researchers alike.}
+      \field{day}{27}
+      \field{edition}{Second Edition, Second Edition}
+      \field{isbn}{978-0-19-851785-6}
+      \field{month}{4}
+      \field{pagetotal}{614}
+      \field{series}{International {{Series}} of {{Monographs}} on {{Physics}}}
+      \field{title}{The {{Physics}} of {{Liquid Crystals}}}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb /home/honza/Zotero/storage/S2SPUZ6A/the-physics-of-liquid-crystals-9780198517856.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
