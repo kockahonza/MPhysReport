@@ -62,7 +62,7 @@
       \verb 10.1201/9780203023013
       \endverb
     \endentry
-    \entry{oswaldSmecticColumnarLiquid2005b}{book}{}
+    \entry{oswaldSmecticColumnarLiquid2005}{book}{}
       \name{author}{2}{}{%
         {{hash=3d761c6e2524695ae794603257efa976}{%
            family={Oswald},
@@ -76,7 +76,7 @@
            giveni={P\bibinitperiod}}}%
       }
       \list{location}{1}{%
-        {Boca Raton}%
+        {Boca Raton, FL}%
       }
       \list{publisher}{1}{%
         {CRC Press}%
@@ -92,18 +92,17 @@
       \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{shorttitle}
-      \field{abstract}{Based on graduate lectures given by the authors, Smectic and Columnar Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments examines lamellar (smectic) and columnar liquid crystals, which, in addition to orientational order, possess 1D, 2D or 3D positional order. Topics include rheology and plasticity, ferroelectricity, analogies with superconductors, hexatic order and 2D-melting, equilibrium shapes, facetting, and the Mullins-Sekerka instability, as well as phase transitions in free films and membrane vibrations. Nematic and cholesteric liquid crystals are covered by the authors in a separate volume entitled Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments.}
+      \field{abstract}{Liquid crystals allow us to perform experiments that provide insight into fundamental problems of modern physics, such as phase transitions, frustration, elasticity, hydrodynamics, defects, growth phenomena, and optics. Smectic and Columnar Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments is a result of personal research and of the graduate lectures given by the authors at the École Normale Supérieure de Lyon and the University of Paris VII, respectively. The book examines lamellar (smectic) and columnar liquid crystals, which, in addition to orientational order, possess 1D, 2D or 3D positional order. This volume illustrates original physical concepts using methodically numerous experiments, theoretical developments, and diagrams. Topics include rheology and plasticity, ferroelectricity, analogies with superconductors, hexatic order and 2D-melting, equilibrium shapes, facetting, and the Mullins-Sekerka instability, as well as phase transitions in free films and membrane vibrations. Nematic and cholesteric liquid crystals are covered by the authors in a separate volume entitled Nematic and Cholesteric Liquid Crystals: Concepts and Physical Properties Illustrated by Experiments. Smectic and Columnar Liquid Crystals is an ideal introduction and a valuable source of reference for theoretical and experimental studies of advanced students and researchers in liquid crystals, condensed matter physics, and materials science.}
       \field{day}{9}
-      \field{isbn}{978-0-429-12555-3}
+      \field{edition}{1st edition}
+      \field{isbn}{978-0-8493-9840-7}
+      \field{langid}{english}
       \field{month}{12}
-      \field{pagetotal}{712}
+      \field{pagetotal}{710}
       \field{shorttitle}{Smectic and {{Columnar Liquid Crystals}}}
       \field{title}{Smectic and {{Columnar Liquid Crystals}}: {{Concepts}} and {{Physical Properties Illustrated}} by {{Experiments}}}
       \field{year}{2005}
       \field{dateera}{ce}
-      \verb{doi}
-      \verb 10.1201/9781420036343
-      \endverb
     \endentry
     \entry{gennesPhysicsLiquidCrystals1995}{book}{}
       \name{author}{4}{}{%
@@ -160,6 +159,377 @@
       \field{dateera}{ce}
       \verb{file}
       \verb /home/honza/Zotero/storage/S2SPUZ6A/the-physics-of-liquid-crystals-9780198517856.html
+      \endverb
+    \endentry
+    \entry{kardarStatisticalPhysicsFields2007}{book}{}
+      \name{author}{1}{}{%
+        {{hash=54a0490abeaf97b6e5c1253d9063c158}{%
+           family={Kardar},
+           familyi={K\bibinitperiod},
+           given={Mehran},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{54a0490abeaf97b6e5c1253d9063c158}
+      \strng{fullhash}{54a0490abeaf97b6e5c1253d9063c158}
+      \strng{bibnamehash}{54a0490abeaf97b6e5c1253d9063c158}
+      \strng{authorbibnamehash}{54a0490abeaf97b6e5c1253d9063c158}
+      \strng{authornamehash}{54a0490abeaf97b6e5c1253d9063c158}
+      \strng{authorfullhash}{54a0490abeaf97b6e5c1253d9063c158}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{While many scientists are familiar with fractals, fewer are familiar with scale-invariance and universality which underlie the ubiquity of their shapes. These properties may emerge from the collective behaviour of simple fundamental constituents, and are studied using statistical field theories. Initial chapters connect the particulate perspective developed in the companion volume, to the coarse grained statistical fields studied here. Based on lectures taught by Professor Kardar at MIT, this textbook demonstrates how such theories are formulated and studied. Perturbation theory, exact solutions, renormalization groups, and other tools are employed to demonstrate the emergence of scale invariance and universality, and the non-equilibrium dynamics of interfaces and directed paths in random media are discussed. Ideal for advanced graduate courses in statistical physics, it contains an integrated set of problems, with solutions to selected problems at the end of the book and a complete set available to lecturers at www.cambridge.org/9780521873413.}
+      \field{isbn}{978-0-521-87341-3}
+      \field{title}{Statistical {{Physics}} of {{Fields}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.1017/CBO9780511815881
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/ECKD45B9/06F49D11030FB3108683F413269DE945.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/statistical-physics-of-fields/06F49D11030FB3108683F413269DE945
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/statistical-physics-of-fields/06F49D11030FB3108683F413269DE945
+      \endverb
+    \endentry
+    \entry{reichlModernCourseStatistical2016}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a52c912c289ad10d340c3c860a9c821f}{%
+           family={Reichl},
+           familyi={R\bibinitperiod},
+           given={Linda\bibnamedelima E.},
+           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Weinheim}%
+      }
+      \list{publisher}{1}{%
+        {Wiley-VCH}%
+      }
+      \strng{namehash}{a52c912c289ad10d340c3c860a9c821f}
+      \strng{fullhash}{a52c912c289ad10d340c3c860a9c821f}
+      \strng{bibnamehash}{a52c912c289ad10d340c3c860a9c821f}
+      \strng{authorbibnamehash}{a52c912c289ad10d340c3c860a9c821f}
+      \strng{authornamehash}{a52c912c289ad10d340c3c860a9c821f}
+      \strng{authorfullhash}{a52c912c289ad10d340c3c860a9c821f}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A Modern Course in Statistical Physics is a textbook that illustrates the foundations of equilibrium and non-equilibrium statistical physics, and the universal nature of thermodynamic processes, from the point of view of contemporary research problems. The book treats such diverse topics as the microscopic theory of critical phenomena, superfluid dynamics, quantum conductance, light scattering, transport processes, and dissipative structures, all in the framework of the foundations of statistical physics and thermodynamics. It shows the quantum origins of problems in classical statistical physics. One focus of the book is fluctuations that occur due to the discrete nature of matter, a topic of growing importance for nanometer scale physics and biophysics. Another focus concerns classical and quantum phase transitions, in both monatomic and mixed particle systems.This fourth edition extends the range of topics considered to include, for example, entropic forces, electrochemical processes in biological systems and batteries, adsorption processes in biological systems, diamagnetism, the theory of Bose-Einstein condensation, memory effects in Brownian motion, the hydrodynamics of binary mixtures.A set of exercises and problems is to be found at the end of each chapter and, in addition, solutions to a subset of the problems is provided. The appendices cover Exact Differentials, Ergodicity, Number Representation, Scattering Theory, and also a short course on Probability.}
+      \field{day}{5}
+      \field{edition}{4th edition}
+      \field{isbn}{978-3-527-41349-2}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{pagetotal}{486}
+      \field{title}{A {{Modern Course}} in {{Statistical Physics}}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
+    \entry{brayTheoryPhaseOrdering1993}{article}{}
+      \name{author}{1}{}{%
+        {{hash=996f95a5250ad32778c2cd87ea54e16e}{%
+           family={Bray},
+           familyi={B\bibinitperiod},
+           given={A.\bibnamedelimi J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{996f95a5250ad32778c2cd87ea54e16e}
+      \strng{fullhash}{996f95a5250ad32778c2cd87ea54e16e}
+      \strng{bibnamehash}{996f95a5250ad32778c2cd87ea54e16e}
+      \strng{authorbibnamehash}{996f95a5250ad32778c2cd87ea54e16e}
+      \strng{authornamehash}{996f95a5250ad32778c2cd87ea54e16e}
+      \strng{authorfullhash}{996f95a5250ad32778c2cd87ea54e16e}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The theory of phase ordering kinetics is reviewed, and new results for systems with continuous symmetry presented. A generalisation of “Porod's law” for the tail of the structure factor, of the form S(k, t) ∼ k−(d+n)L(t)−n for kL(t) ≫ 1, where L(t) is the characteristic length scale at time t after the quench, is derived where, for a vector order parameter, n is simply the number of components of the vector. The power-law tail is shown to be associated with topological defects in the field, and its amplitude is calculated exactly in terms of the defect density. For a conserved vector order parameter the multiscaling form obtained for n = ∞ is argued to be special to this limit. Using an approximate theory due to Mazenko, it is shown that conventional scaling is recovered, for any finite n, when t→∞, with L(t)∼ (tln n)14 for n large.}
+      \field{day}{15}
+      \field{issn}{0378-4371}
+      \field{journaltitle}{Physica A: Statistical Mechanics and its Applications}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Physica A: Statistical Mechanics and its Applications}
+      \field{title}{Theory of Phase Ordering Kinetics}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{194}
+      \field{year}{1993}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{41\bibrangedash 52}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/0378-4371(93)90338-5
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/6BALPYNL/Bray - 1993 - Theory of phase ordering kinetics.pdf;/home/honza/Zotero/storage/9TARSF7D/0378437193903385.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0378437193903385
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0378437193903385
+      \endverb
+    \endentry
+    \entry{luckhurstBiaxialNematicLiquid2015}{book}{}
+      \name{editor}{2}{}{%
+        {{hash=a832eabe9ebc6cbbeeb59b6b86202ba6}{%
+           family={Luckhurst},
+           familyi={L\bibinitperiod},
+           given={Geoffrey\bibnamedelima R.},
+           giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=9d9a742c5e7c873c2907922f1704cc50}{%
+           family={Sluckin},
+           familyi={S\bibinitperiod},
+           given={Timothy\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{498b5a4801597f0c41e18060bbce5539}
+      \strng{fullhash}{498b5a4801597f0c41e18060bbce5539}
+      \strng{bibnamehash}{498b5a4801597f0c41e18060bbce5539}
+      \strng{editorbibnamehash}{498b5a4801597f0c41e18060bbce5539}
+      \strng{editornamehash}{498b5a4801597f0c41e18060bbce5539}
+      \strng{editorfullhash}{498b5a4801597f0c41e18060bbce5539}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{editor}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In the nematic liquid crystal phase, rod-shaped molecules move randomly but remain essentially parallel to one another. Biaxial nematics, which were first predicted in 1970 by Marvin Freiser, have their molecules differentially oriented along two axes. They have the potential to create displays with fast switching times and may have applications in thin-film displays and other liquid crystal technologies.~This book is the first to be concerned solely with biaxial nematic liquid crystals, both lyotropic and thermotropic, formed by low molar mass as well as polymeric systems. It opens with a general introduction to the biaxial nematic phase and covers:~• Order parameters and distribution functions~• Molecular field theory~• Theories for hard biaxial particles~• Computer simulation of biaxial nematics~• Alignment of the phase~• Display applications~• Characterisation and identification~• Lyotropic, thermotropic and colloidal systems together with material design~With a consistent, coherent and pedagogical approach, this book brings together theory, simulations and experimental studies; it includes contributions from some of the leading figures in the field. It is relevant to students and researchers as well as to industry professionals working in soft matter, liquid crystals, liquid crystal devices and their applications throughout materials science, chemistry, physics, mathematics and display engineering.}
+      \field{day}{27}
+      \field{edition}{1st edition}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{pagetotal}{380}
+      \field{shorttitle}{Biaxial {{Nematic Liquid Crystals}}}
+      \field{title}{Biaxial {{Nematic Liquid Crystals}}: {{Theory}}, {{Simulation}} and {{Experiment}}}
+      \field{year}{2015}
+      \field{dateera}{ce}
+    \endentry
+    \entry{frankLiquidCrystalsTheory1958}{article}{}
+      \name{author}{1}{}{%
+        {{hash=9e0b61bf0ebaf5c7f9cc889daaf6c16b}{%
+           family={Frank},
+           familyi={F\bibinitperiod},
+           given={F.\bibnamedelimi C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \strng{fullhash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \strng{bibnamehash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \strng{authorbibnamehash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \strng{authornamehash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \strng{authorfullhash}{9e0b61bf0ebaf5c7f9cc889daaf6c16b}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{No abstract available}
+      \field{day}{1}
+      \field{issn}{0366-9033}
+      \field{journaltitle}{Discussions of the Faraday Society}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{0}
+      \field{shortjournal}{Discuss. Faraday Soc.}
+      \field{title}{I. {{Liquid}} Crystals. {{On}} the Theory of Liquid Crystals}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{25}
+      \field{year}{1958}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{19\bibrangedash 28}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1039/DF9582500019
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/LB3MULVZ/Frank - 1958 - I. Liquid crystals. On the theory of liquid crysta.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://pubs.rsc.org/en/content/articlelanding/1958/df/df9582500019
+      \endverb
+      \verb{url}
+      \verb https://pubs.rsc.org/en/content/articlelanding/1958/df/df9582500019
+      \endverb
+    \endentry
+    \entry{lubenskyMolecularDescriptionNematic1970}{article}{}
+      \name{author}{1}{}{%
+        {{hash=af64a1afb0350ae5ee73eb0a8ec299dc}{%
+           family={Lubensky},
+           familyi={L\bibinitperiod},
+           given={T.\bibnamedelimi C.},
+           giveni={T\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \strng{fullhash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \strng{bibnamehash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \strng{authorbibnamehash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \strng{authornamehash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \strng{authorfullhash}{af64a1afb0350ae5ee73eb0a8ec299dc}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Liquid crystals are considered as gases of long barlike molecules. Variables describing the position and orientation of individual molecules are introduced. These are used to arrive at a microscopic definition of the order in liquid crystals in terms of a symmetric traceless tensor. The Frank and Leslie-Ericksen directors are shown to be equivalent to the unit eigenvector associated with the largest eigenvalue of this symmetric traceless tensor. Attention is then restricted to nematics. It is shown that the Frank free energy gives a valid description of equilibrium properties of nematics to order χaH2ρκTm−1, where χa is the anisotropic magnetic susceptibility, H the external magnetic field, ρ the mass density, T the temperature, k the Boltzmann constant, and m the molecular mass. Microscopic justification is given for the linearized Leslie-Ericksen hydrodynamic theory for nematics. A microscopic response-function description of nematics is then presented, and contact is made between the general frequency- and wave-number-dependent response functions and those calculated from the phenomenological hydrodynamic theory. Applications to light scattering and nuclear magnetic resonance are considered. 1T1 calculated here differs from that calculated from the Pincus theory by a factor of S2, where S is the parameter measuring the degree of nematic order.}
+      \field{day}{1}
+      \field{journaltitle}{Physical Review A}
+      \field{month}{12}
+      \field{number}{6}
+      \field{shortjournal}{Phys. Rev. A}
+      \field{title}{Molecular {{Description}} of {{Nematic Liquid Crystals}}}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{1970}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2497\bibrangedash 2514}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.2.2497
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/9XIEJREB/Lubensky - 1970 - Molecular Description of Nematic Liquid Crystals.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.2.2497
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.2.2497
+      \endverb
+    \endentry
+    \entry{longaExtensionLandauGinzburgdeGennes1987}{article}{}
+      \name{author}{3}{}{%
+        {{hash=922c85b35d4b7794f951983d3f053be2}{%
+           family={Longa},
+           familyi={L\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod}}}%
+        {{hash=6f63f397b5213771930fcb642c3f9129}{%
+           family={Monselesan},
+           familyi={M\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod}}}%
+        {{hash=cc52365eec207675a1a417f8c04e4bd5}{%
+           family={Trebin},
+           familyi={T\bibinitperiod},
+           given={H.-R.},
+           giveni={H\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{7e834f80729e4d906a39eb435e2c95e4}
+      \strng{fullhash}{0094ed0b619910d654493c602b8eb9bb}
+      \strng{bibnamehash}{0094ed0b619910d654493c602b8eb9bb}
+      \strng{authorbibnamehash}{0094ed0b619910d654493c602b8eb9bb}
+      \strng{authornamehash}{7e834f80729e4d906a39eb435e2c95e4}
+      \strng{authorfullhash}{0094ed0b619910d654493c602b8eb9bb}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Using angular momentum representation a method is proposed that allows the systematic construction of a generalized Landau-de Gennes elastic free energy of liquid crystals, in powers of a symmetric and traceless tensor order parameter, polarization field, of external fields and all respective derivatives. By this method all linearly independent elastic invariants and surface terms are constructed for nematics and cholesterics up to fourth order terms. In particular it is shown that up to fourth order in the tensor order parameter there are nineteen bulk elastic constants and four surface terms in the free energy of a general, biaxial nematic. In addition, the stability of this expansion is studied in detail. Some special cases of the elastic free energy of liquid crystals, already discussed in the literature, are reexamined and discrepancies with our results are emphasized. Finally, a thermo-dynamically correct way of establishing contact between the generalized de Gennes elastic free energy and other theories, like those of Oseen-Frank or Meyer, is proposed by applying fluctuation theory. Thus, the degeneracy of splay and bend elastic constants is removed even when these are calculated from the standard de Gennes free energy. Restrictions on higher order elastic constants are also obtained by comparing mean field relations and stability conditions with available experimental data.}
+      \field{day}{1}
+      \field{issn}{0267-8292}
+      \field{journaltitle}{Liquid Crystals}
+      \field{month}{11}
+      \field{number}{6}
+      \field{title}{An Extension of the {{Landau-Ginzburg-de Gennes}} Theory for Liquid Crystals}
+      \field{urlday}{12}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{2}
+      \field{year}{1987}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{769\bibrangedash 796}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1080/02678298708086335
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/VEDVDXQ2/Longa et al. - 1987 - An extension of the Landau-Ginzburg-de Gennes theo.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/02678298708086335
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/02678298708086335
+      \endverb
+    \endentry
+    \entry{suryantariImageFeatureExtraction2019}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b43565f1ec79f738b1eb419e642e9140}{%
+           family={Suryantari},
+           familyi={S\bibinitperiod},
+           given={Risti},
+           giveni={R\bibinitperiod}}}%
+        {{hash=23d261201d8ae51d8dfa3f974005d9f8}{%
+           family={Yusuf},
+           familyi={Y\bibinitperiod},
+           given={Yusril},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=8988e50aa51f471dd5229da78559b83b}{%
+           family={Flaviana},
+           familyi={F\bibinitperiod},
+           given={Flaviana},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9ef4d503e34a91c82dcb6131e1edfe3}
+      \strng{fullhash}{d6ef5c897157359abc242423ca7fc911}
+      \strng{bibnamehash}{d6ef5c897157359abc242423ca7fc911}
+      \strng{authorbibnamehash}{d6ef5c897157359abc242423ca7fc911}
+      \strng{authornamehash}{e9ef4d503e34a91c82dcb6131e1edfe3}
+      \strng{authorfullhash}{d6ef5c897157359abc242423ca7fc911}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An electroconvective pattern called soft-mode turbulence (SMT) of homeotropic alignment in MBBA (4’-Methoxy-benzylidene-4-butyl-aniline) nematic liquid crystal appears when an external electric field with a certain frequency applied on the nematic liquid crystal sample at a threshold voltage ( V SMT ). The threshold voltage will increase with increasing of frequency. SMT fluctuation occurs when V SMT continues to increase at the same frequency. This phenomenon can be analized by applying an image processing tecnique. Based on image feature extraction method, inhomogeneity of SMT patterns can be observed through contrast, correlation, energy, homogeneity, and entropy parameters. Those parameters represent a result in accordance with the image visualization. Significant changes in the value of contrast, energy, homogeneity, and entropy parameters occur at V {$>$} V SMT which fluctuation begin. In this experiment the fluctuation begin at V = 27.3 V.}
+      \field{day}{1}
+      \field{journaltitle}{Journal of Physics: Conference Series}
+      \field{month}{8}
+      \field{shortjournal}{Journal of Physics: Conference Series}
+      \field{title}{Image {{Feature Extraction Method}} to {{Analyze Soft-Mode Turbulence Fluctuation}} in {{Nematic Liquid Crystal}}}
+      \field{volume}{1298}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{012014}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1742-6596/1298/1/012014
       \endverb
     \endentry
   \enddatalist

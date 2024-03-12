@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1709916038 "main.bcf" "main.bbl" "main" 1710090322 0
-  "./MPhys.bib" 1709913651 12432 8ebcfa85736fc140437d62119269bd18 ""
-  "main.bcf" 1710090322 107846 47ee869c5492a84c1e9ac766caa4b6e5 "pdflatex"
+["biber main"] 1710262985 "main.bcf" "main.bbl" "main" 1710269491 0
+  "./MPhys.bib" 1710262904 29703 42fdd96f9c3509e0998352fcc21e2075 ""
+  "main.bcf" 1710269490 108992 eca22eea24b9b784c6ea92f9cb2bcbb3 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1710090320 "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/latex/main.tex" "main.pdf" "main" 1710090322 2
-  "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/latex/main.tex" 1710090320 18897 2e270920e20aee4334b4419543beea46 ""
+["pdflatex"] 1710269488 "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/latex/main.tex" "main.pdf" "main" 1710269491 2
+  "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/latex/main.tex" 1710269488 24435 986ab43599dfc9c9189b84461192f799 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1704400182 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1704400182 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -196,13 +196,14 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1706519247 6768050 c0c439fa621108522d81c4fe2ff9f2ba ""
   "PandA_black.pdf" 1532183727 94097 9e47adc33becd646b925fd49d80c50d4 ""
   "biblatex.cfg" 1709891210 71 034320eb11075ddc3bb4fc982853936e ""
+  "figures/nematic_deformations.jpg" 1710249267 22555 a61775276bd0d1eaeb6f9127ce80a185 ""
   "figures/phases.pdf" 1707821655 769962 d445d6138398c25e967f1ff5fd8ad077 ""
-  "main.aux" 1710090322 9036 b9dd3c3e05bbee1cdfa1ed1aed7fe23c "pdflatex"
-  "main.bbl" 1709996634 9190 4c37a92ee69e5272ccdc7befb4b8841c "biber main"
-  "main.out" 1710090322 5736 234beecd5d57b788c1e10573d96b5621 "pdflatex"
-  "main.run.xml" 1710090322 2425 2e3df41aa2cc1b45bdb928475ce72a97 "pdflatex"
-  "main.tex" 1710090320 18897 2e270920e20aee4334b4419543beea46 ""
-  "main.toc" 1710090322 3205 fecc373d8cba26b557063a8253fde6ba "pdflatex"
+  "main.aux" 1710269490 13513 4c7b0d509123af69881f100d66dba15d "pdflatex"
+  "main.bbl" 1710262986 32759 de0c1210051e2dd4c2d5ac517a14179b "biber main"
+  "main.out" 1710269490 6364 26a5d380e8ff53edf3598c116ee673e7 "pdflatex"
+  "main.run.xml" 1710269490 2425 2e3df41aa2cc1b45bdb928475ce72a97 "pdflatex"
+  "main.tex" 1710269488 24435 986ab43599dfc9c9189b84461192f799 ""
+  "main.toc" 1710269490 3505 258ffeb33bb0f15245c1a1970f40963e "pdflatex"
   "mphysproject.sty" 1708520616 3501 2d583a6579e3abfb98665173f0cd1008 ""
   (generated)
   "main.aux"

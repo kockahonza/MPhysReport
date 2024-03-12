@@ -27,21 +27,23 @@
 \newcommand{\shortnote}[1]{\textit{\footnotesize (#1)}}
 
 \newcommand{\pp}{\partial}
-\newcommand{\mgrad}{\su{\nabla}}
+\newcommand{\mgrad}{\suf{\nabla}{K}}
 
 % We often use underlines here
 \stackMath
-\newcommand\barbelow[1]{\stackunder[1pt]{#1}{\rule{\widthof{#1}*\real{1.1}}{.1ex}}}
-\newcommand\twobarsbelow[1]{\stackunder[1pt]{\barbelow{#1}}{\rule{\widthof{#1}*\real{1.1}}{.1ex}}}
-\newcommand{\su}[1]{\barbelow{#1}}
-\newcommand{\du}[1]{\twobarsbelow{#1}}
-\newcommand{\ssu}[1]{\scriptsize\barbelow{#1}\normalsize}
-\newcommand{\sdu}[1]{\scriptsize\twobarsbelow{#1}\normalsize}
+\newcommand{\suf}[2]{\stackunder[1pt]{#1}{\rule{\widthof{#2}*\real{1.1}}{.1ex}}}
+\newcommand{\duf}[2]{\stackunder[1pt]{\suf{#1}{#2}}{\rule{\widthof{#2}*\real{1.1}}{.1ex}}}
+\newcommand{\su}[1]{\suf{#1}{#1}}
+\newcommand{\du}[1]{\duf{#1}{#1}}
+\newcommand{\ssu}[1]{\scriptsize\su{#1}\normalsize}
+\newcommand{\sdu}[1]{\scriptsize\du{#1}\normalsize}
+
 
 \newcommand{\QQ}{$\du{Q}$}
 \newcommand{\NN}{$\su{N}$}
 \newcommand{\EE}{$\du{E}$}
-\newcommand{\PP}{$\du{\Pi}$}
+\newcommand{\PP}{$\duf{\Pi}{L}$}
+\newcommand{\dudelta}{\duf{\delta}{a}}
 \newcommand{\ddelta}[4]{\delta_{#1#3}\delta_{#2#4} + \delta_{#1#4}\delta_{#2#3}}
 
 \newcommand{\onedot}{$\mathsurround0pt\ldotp$}
@@ -80,7 +82,7 @@
         In order from (a) to (e) they are a fully crystalized phase, a smectic A, smectic C, nematic and an isotropic liquid.
     }\label{fig:phases}
 \end{figure}
-All physicists will be well familiar with the ordered crystalline phase, in which the relative positions and possibly orientation of molecules is ordered, predictable and often repeating.
+All, physicists will be well familiar with the ordered crystalline phase, in which the relative positions and possibly orientation of molecules is ordered, predictable and often repeating.
 Liquid crystals (LC) lay between this state and a typical liquid, some aspects of the phase are ordered, but others are not.
 This is best illustrated as a transition from an unordered (isotropic) liquid state as in \cref{fig:phases}.
 
@@ -88,7 +90,7 @@ In an isotropic liquid the molecules have random, uncorrelated positions and ori
 Note that we talk about orientations, these are naturally only present if the molecules themselves are not spherical/symmetric.
 Depending on just how asymmetric they are they can have one or two orientation directions (in 3D), here we mainly look at rod-like molecules which have one, the axis of symmetry.
 The first step in ordering is usually a transition to a nematic liquid crystal in which the orientations of nearby molecules align, see \cref{fig:phases}.
-An important detail of nematic liquid crystals is that often the constituent molecules are symmetric along their length as well (the is no head and tail) as this changes the physics, a nematic phase which does not have this symmetry is called a polar nematic.
+An important detail of nematic liquid crystals is that the constituent molecules are symmetric along their length as well (the is no head and tail) as this changes the physics, a nematic phase which does not have this symmetry is called a polar nematic.
 
 Next can come partial positional order, while different classification exist, in essence there are two ways this can happen in 3D.
 Either the symmetry is broken along one axis, these are the smectic phases, or along two in the columnar phases\cite{oswaldNematicCholestericLiquid2005}.
@@ -104,7 +106,7 @@ Besides these there is a class of hexatic smectic phases, in which the molecules
 However, while the lattice itself is only maintained for short distances, these local hexatic lattices have an orientation to them as well and this is aligned over large distances.
 Thus these feature yet more order than the smectic A and C phases, they include the B$_\text{hex}$ phase which has the nematic director perpendicular to the layering, along with the F and I phases which have an angle between the two.
 There are also smectic-like crystals which feature fully ordered often hexatic layers, among these are the B and E phases.
-For more details on these structures see \cite{oswaldNematicCholestericLiquid2005,oswaldSmecticColumnarLiquid2005b,gennesPhysicsLiquidCrystals1995}.
+For more details on these structures see \cite{oswaldNematicCholestericLiquid2005,oswaldSmecticColumnarLiquid2005,gennesPhysicsLiquidCrystals1995}.
 
 \todo[inline,size=\footnotesize]{This could be extended pretty much indefinitely, given the twist data we have perhaps the TGB would be the next thing worth mentioning}
 \todo[inline,size=\footnotesize]{Paragraph on why are they important/useful etc, the usual are soap, displays and hopefully something new? Bacteria! that might need a citation}
@@ -118,6 +120,7 @@ There is a way to add that and it is perhaps the next step in developing this th
 Ginzburg-Landau theory is a powerful recipe to build phase transition theories, the work in this thesis being one of them.
 As such we start by introducing these on the example of an isotropic liquid to nematic LC transition as there are many similarities to our smectic model.
 
+\subsubsection{The order parameter}
 The central concept of Ginzburg-Landau theory is the order parameter, this is usually some mathematical object such as a scalar, vector or tensor that has known values for each of the phases and varies in between them in mostly a smooth manner.
 If a single order parameter is used to describe the entire system in question as a whole, it is a Landau theory, one can extract useful information using this alone.
 However, Ginzburg-Landau theory goes a step further and promotes the order parameter to a field.
@@ -126,40 +129,98 @@ This way one may have a part of the system be in one phase and a different part 
 Going back to our example of a nematic LC, this order parameter needs to capture how aligned the molecules are at each point, accounting for the nematic symmetry.
 The way to do this is using the \QQ\ tensor which can be obtained from a system of discrete molecules via
 \begin{equation}
-    \du{Q}_\text{mol} = \su{N}_\text{mol}\su{N}_\text{mol} - \frac{\du{\delta}}{d}
+    \du{Q}_\text{mol} = \su{N}_\text{mol}\su{N}_\text{mol} - \frac{\dudelta}{d}
 \end{equation}
-where $\su{N}_\text{mol}$ is a unit vector denoting the orientation of a molecule, $\du{\delta}$ the identity and $d$ the dimensionality of the system (2 or 3).
+where $\su{N}_\text{mol}$ is a unit vector denoting the orientation of a molecule, $\dudelta$ the identity and $d$ the dimensionality of the system (2 or 3).
 Throughout this thesis, if two tensors appear side by side then it means a dyadic/tensor product and any contractions are denoted by dots \nolinebreak $\cdot$ (their order usually does not matter).
 Note that $\du{Q}_\text{mol}$ immediately satisfies the nematic symmetry of to $\su{N}_\text{mol}$ being the same as $-\su{N}_\text{mol}$.
 So each molecule has a $\du{Q}_\text{mol}$ and we take a local average of these to arrive at the tensor field \QQ\ (taking these local minima numerically can be quite tricky).
 Given the form of \QQ\ we can then reexpress it as the following
-\begin{equation}
-    \du{Q} = S\qty(\su{N} \su{N} - \frac{\du{\delta}}{d}) \color{gray} + \text{possibly more terms, ignore for simplicity here} \normalcolor
+\begin{equation}\label{eq:Qua}
+    \du{Q} = S\qty(\su{N} \su{N} - \frac{\dudelta}{d}) \color{gray} + \text{possibly more terms, ignore for simplicity here} \normalcolor
 \end{equation}
-where $S$ is a number between 0 and 1 and $\su{N}$ is a unit vector.
+where $S$ is a number between 0 and 1, $\su{N}$ is a unit vector and both are fields along with \QQ.
 From there it is easy to see that an isotropic liquid would have $\du{Q} = S = 0$ and a fully nematic one would have $S = 1$ and \NN\ be the orientation of the phase.
 From this it is clear that $\du{Q}$ is a valid order parameter to describe the isotropic to nematic transition, it is in fact the most widely used such parameter due to it respecting the orientational symmetry.
 
-Now that we have an order parameter, the next step in forming a Ginzburg-Landau theory is to find a suitable free energy functional.
-This will be a volume integral of a free energy density $f(\su{r})$ over the system and potentially surface contributions, though often these are dealt with separately.
-$f(\su{r})$ should only depend on the order parameter \QQ\ and elastic constants and crucially it must maintain any symmetries of the system.
-This is where the power of Ginzburg-Landau theories lays as one does not have to derive these from microscopic interactions but may instead start taking all the possible terms of the order parameter that satisfy the system symmetries in increasing powers and stop when all the physics is captured.
+\subsubsection{The free energy density and deformations}
+Now that we have an order parameter, the next step in forming a Ginzburg-Landau theory is to find a suitable free energy, physics then follow through minimization of it.
+This will be a volume integral of a free energy density $f(\su{r})$ over the system and potentially surface contributions
+\begin{equation}
+    F = \int f(\su{r}) dV + \int \mathcal{F}(\su{r}) dS
+\end{equation}
+though the surface is often dealt with separately.
+$f(\su{r})$ should only depend on the order parameter \QQ\ and elastic constants, it must be local, and crucially it must maintain any symmetries of the system\cite{kardarStatisticalPhysicsFields2007,reichlModernCourseStatistical2016}.
+This can be done in two ways, if one know the underlying microscopic interactions then these can be coarse-grained to obtain $f(\su{r})$.
+However, this can be very difficult or not possible at all, and one might not know all the microscopic interactions.
+This is where the power of Ginzburg-Landau theories lays as one may instead start taking all possible symmetry-allowed terms of $f(\su{r})$ increasing in power of the order parameter and stop once all the physics is captured\todo{could use a citation, got this from StatPhys notes}.
+% This approach will only be valid near the critical point and under 
 
-% To do that one may look at the microscopic forces between individual molecules and coarse-grain these to a resulting 
+In the example of \QQ, that already contains the $\su{N} \leftrightarrow -\su{N}$ symmetry and the bulk free energy (which does not account for gradients) should only depend on $S$ as it should be the same regardless of the orientation direction.
+As such we have $f_\text{bulk}(\su{r})$ being a power series of $S$ and given \cref{eq:Qua} that translates to a series of suitably contracted terms of \QQ.
+Generally, the following form is used
+\begin{equation}\label{eq:Qfbulk}
+    f_\text{bulk}(\su{r}) = \frac{a}{2} \Tr(\du{Q}^2) - \frac{b}{3} \Tr(\du{Q}^3) + \frac{c}{4} \Tr(\du{Q}^2)^2 = \frac{a}{2} Q_{ij}Q_{ij} - \frac{b}{3} Q_{ij}Q_{jk}Q_{ki} + \frac{c}{4} Q_{ij}Q_{ij}Q_{kl}Q_{kl}
+\end{equation}
+where $b$ and $c$ are positive constants and $a$ can have either sign, the terms correspond to $S^2, S^3$ and $S^4$ terms\cite{brayTheoryPhaseOrdering1993,luckhurstBiaxialNematicLiquid2015}.
+The repeated indices in the second form of \cref{eq:Qfbulk} being Einstein summation indices which are assumed throughout this thesis unless otherwise specified.
+This form can have one or two minima for $S\geq0$ and the coefficients are often chosen relative to a critical temperature or concentration.
+Without going through the details, generally one takes enough terms to allow for a suitable number of minima (each of which corresponds to a stable or metastable phase), then one extra term with a positive coefficient is added to make sure that $f_\text{bulk}(\su{r})$ grows at very large order parameter.
 
-\subsection{Biaxiality of \QQ}
+However, $f_\text{bulk}(\su{r})$ does not account for any deformation energy costs, which is naturally a key ingredient to describing a system.
+To add these we introduce terms to $f(\su{r})$ which depend on the gradients of the order parameter.
+This gets more complex, though the same rule still applies, take as many allowed terms in increasing powers of the order parameter and \mgrad\ as is needed.
+However, here finding the correct form can get tricky and one generally starts considering specific geometries of the system and what their deformation terms should be like.
+If one is to work analytically or on a constrained system, it might also be that certain terms are negligible and others are not, as such, which terms are used varies in literature.
+
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{figures/nematic_deformations.jpg}
+    \end{center}
+    \caption{
+        Diagrams of the splay, twist and bend nematic deformation types respectively.
+        Image taken from \cite{suryantariImageFeatureExtraction2019}.
+    }\label{fig:nem_deform}
+\end{figure}
+
+For the nematic case, in the simplest case of constant $S$ but varying \NN\ we get the Frank-Oseen deformation energy terms\cite{brayTheoryPhaseOrdering1993,frankLiquidCrystalsTheory1958,gennesPhysicsLiquidCrystals1995}
+\begin{align}
+    K_1 (\mgrad \cdot \su{N})^2 && K_2 (\su{N} \cdot \mgrad \times \su{N})^2 && K_3 (\su{N} \times \mgrad \times \su{N})^2
+\end{align}
+where the $K$s\todo{is this okay?} are positive elastic constants.
+These three terms correspond to three type of deformation of the director \NN: splay, twist and bend respectively, as shown in \cref{fig:nem_deform}.
+Adapting these to be in terms of \QQ\ has proven difficult, first attempted by de Gennes\cite{gennesPhysicsLiquidCrystals1995} using the terms
+\begin{align}
+    L_1Q_{ij,k}Q_{ij,k} && L_2Q_{ij,j}Q_{ik,k} && L_4\epsilon_{ijk}Q_{il}Q_{jl,k}
+\end{align}
+with $L$s being elastic constants and $\epsilon$ the Levi-Civita tensor.
+However, these have later been shown to imply $K_1 = K_3$\cite{lubenskyMolecularDescriptionNematic1970}, which is contradicted by experiment.
+Since then additional terms have been added to account for this\cite{longaExtensionLandauGinzburgdeGennes1987} though that is going beyond the scope of this summary.
+What is worth noting however is the one constant approximation, where all the $K$ elastic constants are taken to be equal which leads to all the terms collapsing to
+\begin{equation}
+    L_1 Q_{ij,k}Q_{ij,k}
+\end{equation}
+While this is the simplest possible approximation, it has been used widely for both numerical and analytical studies, and historically it has been the starting point before the different terms have all been discovered.\todo{Not sure the second part is true...}
+In many ways it highlights the idea of Ginzburg-Landau theory in that it is the simplest possible term one can construct using \QQ\ and \mgrad\ and it captures all the possible deformation terms.
+In the work on smectics presented in this thesis we start from a similar approximation, still using it but also trying to go a step beyond and develop more specific terms which collapse to the approximation.
+
+
+\subsubsection{Biaxiality of \QQ}
 There is one additional bit of complexity worth introducing and that is biaxiality of nematics.
 We have been talking about the orientation of molecules as being a single direction, which is correct for rod-like molecules.
 However, if the molecules are completely asymmetric then there can be order in two perpendicular directions.
 Say we have long cuboid molecules, they can first order by aligning their longest axes and then also rotate around those axes so that the next longest axes also align.
 The same applies to any asymmetrical shaped molecules in 3D.
-It demonstrates the power of \QQ\ that we can still use it to decribe this dual order, we can still calculate it exactly the same way through $\du{Q}_\text{mol}$ and \QQ\ will still be symmetric and traceless, however it will now take the more general form
+
+It demonstrates the power of \QQ\ that we can still use it to decribe this dual order, we can still calculate it exactly the same way through $\du{Q}_\text{mol}$ and \QQ\ will still be symmetric and traceless, however we now allow it to take the more general form
 \begin{equation}
-    \du{Q} = S_1\qty(\su{N} \su{N} - \frac{\du{\delta}}{d}) + S_2\qty(\su{M} \su{M} - \frac{\du{\delta}}{d})
+    \du{Q} = S_1\qty(\su{N} \su{N} - \frac{\dudelta}{d}) + S_2\qty(\su{M} \su{M} - \frac{\dudelta}{d})
 \end{equation}
 where $\su{N}$ and $\su{M}$ are mutually orthogonal unit vectors which describe the directions of the two orders, with $S_1$ and $S_2$ acting as their corresponding order parameters.
 
-\subsection{Describing/modelling smectics\cite{oswaldSmecticColumnarLiquid2005b}}
+\todo[inline,size=\footnotesize]{This needs more, cite/use\cite{luckhurstBiaxialNematicLiquid2015} mention how final states for uniaxial nematics have a uniaxial Q even when using eq above, aka S2 = 0, though I need a thing to cite for that}
+
+\subsection{Describing/modelling smectics\cite{oswaldSmecticColumnarLiquid2005}}
 Fundamentally, the layered positional order corresponds to a wave-like density fluctuation.
 If we only consider a single wave throughout the system we have
 \begin{equation}
@@ -188,7 +249,7 @@ Both $\su{N}$ and $\phi$ influence the phase, as before a constant gradient in $
 \subsection{Biaxiality}
 \subsection{Properties of biaxial \EE}
 \begin{align}
-    \du{E} &= \psi_1 (\su{N}\su{N} - \frac{\du{\delta}}{d}) + \psi_2 (\su{M}\su{M} - \frac{\du{\delta}}{d}) \\
+    \du{E} &= \psi_1 (\su{N}\su{N} - \frac{\dudelta}{d}) + \psi_2 (\su{M}\su{M} - \frac{\dudelta}{d}) \\
     |\du{E}|^2 &= \du{E} \cddot \du{E}^* = (|\psi_1|^2 + |\psi_2|^2) (1 - 2 \frac{1}{d} + \frac{d}{d^2}) + (\psi_1\psi_2^* + \psi_1^*\psi_2) (-2\frac{1}{d} + \frac{d}{d^2}) \\
     &= \frac{d-1}{d} (|\psi_1|^2 + |\psi_2|^2) - \frac{1}{d} (\psi_1\psi_2^* + \psi_1^*\psi_2) \\
     &= (|\psi_1|^2 + |\psi_2|^2) - \frac{1}{d} (|\psi_1|^2 + |\psi_2|^2 + \psi_1\psi_2^* + \psi_1^*\psi_2) \\
@@ -199,14 +260,12 @@ Both $\su{N}$ and $\phi$ influence the phase, as before a constant gradient in $
 \section{Dynamics of \EE}
 \subsection{Ginzburg-Landau}
 \subsection{Free Energy}
-
 \begin{align}
     f_\text{bulk} = A |\du{E}|^2 - \frac{C}{2}|\du{E}|^4 \rightarrow |\du{E_{eq}}|^2 = \frac{A}{C}
 \end{align}
-
 \subsection{Projection operators}
-
 \subsection{Taking the functional derivatives}
+\subsection{Lagrange multipliers}
 
 \section{Numerical considerations}
 \subsection{Approximating \PP\todo{mention the sqrt thing! And the small E thing}}

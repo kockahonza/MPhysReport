@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.29)  10 MAR 2024 18:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.1.29)  12 MAR 2024 19:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -973,28 +973,28 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \@quotelevel=\count468
 \@quotereset=\count469
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 52.
+h' as default language. on input line 54.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1070,8 +1070,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 52.
-Package biblatex Info: Reference segment=0 on input line 52.
+Package biblatex Info: Reference section=0 on input line 54.
+Package biblatex Info: Reference segment=0 on input line 54.
 
 
 Package siunitx Warning: Detected the "physics" package:
@@ -1091,8 +1091,8 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 52.
-Package hyperref Info: Link coloring OFF on input line 52.
+or `english'. on input line 54.
+Package hyperref Info: Link coloring OFF on input line 54.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -1102,7 +1102,7 @@ Package hyperref Info: Link coloring OFF on input line 52.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 52.
+loading the todonotes package. on input line 54.
 
 
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
@@ -1140,10 +1140,10 @@ Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<PandA_black.pdf, id=103, 372.39125pt x 89.33376pt>
+<PandA_black.pdf, id=115, 372.39125pt x 89.33376pt>
 File: PandA_black.pdf Graphic file (type pdf)
 <use PandA_black.pdf>
-Package pdftex.def Info: PandA_black.pdf  used on input line 64.
+Package pdftex.def Info: PandA_black.pdf  used on input line 66.
 (pdftex.def)             Requested size: 355.838pt x 85.35826pt.
 [1
 
@@ -1153,180 +1153,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 \maintext
+l.73 \maintext
                [1
 
 ] (./main.toc
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 5.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.18 ...g! And the small E thing}}{5}{section*.11}
-                                                  %
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+ine 7.
 
 
 LaTeX Warning: Marginpar on page ii moved.
@@ -1341,943 +1173,110 @@ LaTeX Warning: Marginpar on page ii moved.
 
 pdfTeX warning: pdflatex (file ./figures/phases.pdf): PDF inclusion: found PDF 
 version <1.7>, but at most version <1.5> allowed
-<figures/phases.pdf, id=159, 408.0846pt x 155.1396pt>
+<figures/phases.pdf, id=175, 408.0846pt x 155.1396pt>
 File: figures/phases.pdf Graphic file (type pdf)
 <use figures/phases.pdf>
-Package pdftex.def Info: figures/phases.pdf  used on input line 76.
+Package pdftex.def Info: figures/phases.pdf  used on input line 78.
 (pdftex.def)             Requested size: 446.26582pt x 169.6622pt.
 [1
 
  <./figures/phases.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 117.
+(hyperref)                removing `math shift' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 117.
+(hyperref)                removing `\stackunder' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 117.
+(hyperref)                removing `\stackunder' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 117.
+(hyperref)                removing `\@ifnextchar' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 117.
+(hyperref)                removing `\widthof' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 117.
+(hyperref)                removing `\real' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 117.
+(hyperref)                removing `\@ifnextchar' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 117.
+(hyperref)                removing `\widthof' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 117.
+(hyperref)                removing `\real' on input line 119.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 117.
+(hyperref)                removing `math shift' on input line 119.
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+[2] [3]
+<figures/nematic_deformations.jpg, id=237, 346.29375pt x 91.34125pt>
+File: figures/nematic_deformations.jpg Graphic file (type jpg)
+<use figures/nematic_deformations.jpg>
+Package pdftex.def Info: figures/nematic_deformations.jpg  used on input line 1
+78.
+(pdftex.def)             Requested size: 281.85587pt x 74.34697pt.
+ [4 <./figures/nematic_deformations.jpg>]
 
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.129 ...\su{N}_\text{mol} - \frac{\du{\delta}}{d}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.131 ...e orientation of a molecule, $\du{\delta}
-                                                  $ the identity and $d$ the...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[2]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.137 ...N} \su{N} - \frac{\du{\delta}}{d}) \color
-                                                  {gray} + \text{possibly mo...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `\stackunder' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 150.
+(hyperref)                removing `\stackunder' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 150.
+(hyperref)                removing `\@ifnextchar' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 150.
+(hyperref)                removing `\widthof' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 150.
+(hyperref)                removing `\real' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 150.
+(hyperref)                removing `\@ifnextchar' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 150.
+(hyperref)                removing `\widthof' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 150.
+(hyperref)                removing `\real' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 150.
+(hyperref)                removing `math shift' on input line 208.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 150.
+(hyperref)                removing `\cite' on input line 223.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.158 ...(\su{N} \su{N} - \frac{\du{\delta}}{d}) +
-                                                   S_2\qty(\su{M} \su{M} - \...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.159 \end
-          {equation}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.159 \end
-          {equation}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.159 \end
-          {equation}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.159 \end
-          {equation}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.159 \end
-          {equation}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.159 \end
-          {equation}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.159 \end
-          {equation}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.159 \end
-          {equation}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.159 \end
-          {equation}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.159 \end
-          {equation}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.159 \end
-          {equation}
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\cite' on input line 162.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2285,7 +1284,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2296,7 +1295,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2307,7 +1306,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2316,7 +1315,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2328,7 +1327,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2339,7 +1338,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2350,7 +1349,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.166 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
+l.227 ... + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi)
                                                    = \rho_0 + \Re(\rho_1 e^{...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2359,13 +1358,13 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 166.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 227.
 
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2373,7 +1372,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2384,7 +1383,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2395,7 +1394,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2404,7 +1403,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2416,18 +1415,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
-                                                   \cdot \ssu{r} + \phi)})
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2438,7 +1426,18 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.166 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
+                                                   \cdot \ssu{r} + \phi)})
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.227 ...phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0}
                                                    \cdot \ssu{r} + \phi)})
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2447,22 +1446,21 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 166.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 227.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 166.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 227.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 166.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 227.
 
 
-[3]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2470,7 +1468,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2481,7 +1479,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2492,7 +1490,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2501,7 +1499,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2513,18 +1511,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
-                                                  $ its wavevector containin...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2535,7 +1522,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.168 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
                                                   $ its wavevector containin...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2543,2038 +1530,149 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\todo' on input line 170.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 173.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 173.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 176.
-
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
 ! Missing } inserted.
 <inserted text> 
                 }
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
+l.229 ...$\rho_1$ is the wave amplitude, $\su{q_0}
+                                                  $ its wavevector containin...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.176 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
-                                                   \cdot \ssu{r}})
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 176.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 176.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 176.
-
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.178 ...lex $\psi$ and the direction of $\su{q_0}
-                                                  $ both to be vary as field...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 180.
-
-
-
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 180.
-
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 189.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 189.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.197 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.197 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.197 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[4]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.205 \end{align}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.205 \end{align}
-                 
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.205 \end{align}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
-                                                 }\dimen@ii =\z@ \@tf@r \res...
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
-                                                  \dimen@ii =\z@ \@tf@r \res...
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \widthof 
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \widthof 
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.212 ...n the sqrt thing! And the small E thing}}
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Pi' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Pi' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Pi' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 212.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\todo' on input line 212.
-
-
-LaTeX Warning: Marginpar on page 5 moved.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\todo' on input line 213.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\theta' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\Delta' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\theta' on input line 217.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 217.
 
 [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `\todo' on input line 231.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 232.
+(hyperref)                removing `math shift' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\stackunder' on input line 232.
+(hyperref)                removing `\stackunder' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 232.
+(hyperref)                removing `\stackunder' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 232.
+(hyperref)                removing `\@ifnextchar' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 232.
+(hyperref)                removing `\widthof' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 232.
+(hyperref)                removing `\real' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\widthof' on input line 232.
+(hyperref)                removing `\@ifnextchar' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\real' on input line 232.
+(hyperref)                removing `\widthof' on input line 234.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 232.
+(hyperref)                removing `\real' on input line 234.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 234.
 
 
 LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 237.
 
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.237 ... \simeq \rho_0 + 2\Re(\psi e^{i \ssu{q_0}
+                                                   \cdot \ssu{r}})
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 
 LaTeX Font Warning: Command \normalsize invalid in math mode on input line 237.
@@ -4588,14 +1686,1067 @@ LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 237.
 LaTeX Font Warning: Command \normalsize invalid in math mode on input line 237.
 
 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 253.
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.239 ...lex $\psi$ and the direction of $\su{q_0}
+                                                  $ both to be vary as field...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 241.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 241.
+
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 247.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 250.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 250.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.258 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.258 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.258 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 260.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 260.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
+                                                 }\dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
+                                                  \dimen@ii =\z@ \@tf@r \res...
+l.265 \end{align}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   \widthof 
+l.265 \end{align}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.265 \end{align}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+[6]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Pi' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 271.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\todo' on input line 271.
+
+
+LaTeX Warning: Marginpar on page 7 moved.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\todo' on input line 272.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\Delta' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\theta' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 276.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\stackunder' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\widthof' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\real' on input line 291.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 291.
+
+[7]
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 296.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 296.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 296.
+
+
+
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 296.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 312.
 
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4603,7 +2754,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4614,7 +2765,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4625,7 +2776,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4634,7 +2785,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4646,7 +2797,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4657,7 +2808,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4668,7 +2819,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.253 ...ng from a wave resembling $e^{i(\ssu{q_0}
+l.312 ...ng from a wave resembling $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})}$ of which w...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4677,25 +2828,25 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 253.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 312.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 253.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 312.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 253.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 312.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 313.
 
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4703,7 +2854,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4714,7 +2865,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4725,7 +2876,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4734,7 +2885,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4746,7 +2897,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4757,7 +2908,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4768,7 +2919,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.254 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
+l.313 ... \cref{eq:lim_den2} using $e^{i(\ssu{q_0}
                                                   \cdot\ssu{r})(1+s(\ssu{r})...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4777,33 +2928,33 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 313.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 313.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 313.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 313.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 254.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 313.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4811,7 +2962,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}
                                                  }\dimen@ii =\z@ \@tf@r \res...
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4822,7 +2973,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 \@settodim #1#2#3->\setbox \@tempboxa \hbox {{#3}}
                                                   \dimen@ii =\z@ \@tf@r \res...
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4833,7 +2984,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing number, treated as zero.
 <to be read again> 
                    \widthof 
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -4842,7 +2993,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    \widthof 
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -4854,7 +3005,7 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4865,7 +3016,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4876,7 +3027,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.257     e^{i(\ssu{q_0}
+l.316     e^{i(\ssu{q_0}
                         \cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4885,80 +3036,74 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 316.
 
 
 
-LaTeX Font Warning: Command \normalsize invalid in math mode on input line 257.
+LaTeX Font Warning: Command \normalsize invalid in math mode on input line 316.
 
 
-[6] [7] [8] (./main.aux)
+[8] [9] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 3324D57FE9ABB37A26A2DD14311632F7;5698
-(rerunfilecheck)             After:  234BEECD5D57B788C1E10573D96B5621;5736.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 26A5D380E8FF53EDF3598C116EE673E7;6364.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -4969,16 +3114,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36190 strings out of 477985
- 736238 string characters out of 5840058
- 1884388 words of memory out of 5000000
- 55853 multiletter control sequences out of 15000+600000
+ 36286 strings out of 477985
+ 739469 string characters out of 5840058
+ 1888388 words of memory out of 5000000
+ 55925 multiletter control sequences out of 15000+600000
  520600 words of font info for 61 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,17n,94p,2283b,1240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,94p,2283b,1927s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{equation.7.20} has been referenced but does not exi
+st, replaced by a fixed one
 
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts
@@ -4989,10 +3134,10 @@ are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/
 cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (11 pages, 1044697 bytes).
+Output written on main.pdf (12 pages, 1087088 bytes).
 PDF statistics:
- 328 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
- 215 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 397 PDF objects out of 1000 (max. 8388607)
+ 344 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 244 words of extra memory for PDF output out of 10000 (max. 10000000)
 
