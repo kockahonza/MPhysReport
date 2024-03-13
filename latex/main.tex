@@ -26,24 +26,23 @@
     }
 \newcommand{\shortnote}[1]{\textit{\footnotesize (#1)}}
 
-\newcommand{\pp}{\partial}
-\newcommand{\mgrad}{\suf{\nabla}{K}}
-
 % We often use underlines here
 \stackMath
-\newcommand{\suf}[2]{\stackunder[1pt]{#1}{\rule{\widthof{#2}*\real{1.1}}{.1ex}}}
-\newcommand{\duf}[2]{\stackunder[1pt]{\suf{#1}{#2}}{\rule{\widthof{#2}*\real{1.1}}{.1ex}}}
+\newcommand{\suf}[2]{\stackunder[1pt]{\ensuremath{#1}}{\rule{\widthof{\ensuremath{#2}}*\real{0.9}}{.1ex}}}
+\newcommand{\duf}[2]{\stackunder[1pt]{\suf{\ensuremath{#1}}{#2}}{\rule{\widthof{\ensuremath{#2}}*\real{0.9}}{.1ex}}}
 \newcommand{\su}[1]{\suf{#1}{#1}}
 \newcommand{\du}[1]{\duf{#1}{#1}}
 \newcommand{\ssu}[1]{\scriptsize\su{#1}\normalsize}
 \newcommand{\sdu}[1]{\scriptsize\du{#1}\normalsize}
 
 
-\newcommand{\QQ}{$\du{Q}$}
-\newcommand{\NN}{$\su{N}$}
-\newcommand{\EE}{$\du{E}$}
-\newcommand{\PP}{$\duf{\Pi}{L}$}
-\newcommand{\dudelta}{\duf{\delta}{a}}
+\newcommand{\pp}{\partial}
+\newcommand{\mgrad}{\suf{\nabla}{K}}
+\newcommand{\QQ}{\du{Q}}
+\newcommand{\NN}{\su{N}}
+\newcommand{\EE}{\du{E}}
+\newcommand{\PP}{\du{\Pi}}
+\newcommand{\dudelta}{\du{\delta}}
 \newcommand{\ddelta}[4]{\delta_{#1#3}\delta_{#2#4} + \delta_{#1#4}\delta_{#2#3}}
 
 \newcommand{\onedot}{$\mathsurround0pt\ldotp$}
@@ -220,16 +219,87 @@ where $\su{N}$ and $\su{M}$ are mutually orthogonal unit vectors which describe 
 
 \todo[inline,size=\footnotesize]{This needs more, cite/use\cite{luckhurstBiaxialNematicLiquid2015} mention how final states for uniaxial nematics have a uniaxial Q even when using eq above, aka S2 = 0, though I need a thing to cite for that}
 
-\subsection{Describing/modelling smectics\cite{oswaldSmecticColumnarLiquid2005}}
+\subsection{Describing smectics\cite{oswaldSmecticColumnarLiquid2005}}\label{sec:degennes}
 Fundamentally, the layered positional order corresponds to a wave-like density fluctuation.
-If we only consider a single wave throughout the system we have
-\begin{equation}
+Following \cite{oswaldSmecticColumnarLiquid2005} in the approach suggested by de Gennes, if we first only consider a single wave throughout the entire system, then the density field is
+\begin{equation}\label{eq:density_base}
     \rho(\su{r}) = \rho_0 + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi) = \rho_0 + \Re(\rho_1 e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
 \end{equation}
 where $\rho_0$ is the average density, $\rho_1$ is the wave amplitude, $\su{q_0}$ its wavevector containing both the wave direction and spacing and $\phi$ an arbitrary phase (determined by boundary conditions).
+This is a very simple start, however already one can take $\rho_1$ as an order parameter (not a field here, making this a Landau theory) with 0 corresponding to no wave and so an isotropic liquid.
+To then build a bulk free energy in terms of $\rho_1$ we need to identify any symmetries.
+The only relevant symmetry here is that of $\rho_1 \leftrightarrow -\rho_1$ as such a change only leads to a change in the phase $\phi$ which is not physically interesting.
+On a more intuitive level it is clear that this change would keep the same wave amplitude and spacing and as such the smectic phase is unchanged and so should be its free energy.
+The implication of this is that the free energy may only have even power terms of $\rho_1$ becoming
+\begin{equation}
+    F_\text{bulk} = \frac{A}{2}\rho_1^2 + \frac{B}{4}\rho_1^4 + \frac{C}{6}\rho_1^6 + \cots
+\end{equation}
+with $A, B, C$ being constants which determine the order of the isotropic-smectic phase transition\cite{oswaldSmecticColumnarLiquid2005}.
 
-\subsection{The Problems\todo{also discuss Pevniy}}
+\todo[inline,size=large]{Ask Tyler about the isotropic to smectic transition of our model, whether it is valid to set C in terms of A and so essentially force a 2nd order transition (or more, aka directly from min at 0 to min a +1), or whether some other approach would be more physical}
+
+The natural next step is to promote $\rho_1$ to a field and the free energy to a free energy density, this leads to equivalent bulk terms but also deformation terms.
+In that case the layering direction and spacing is uniform throughout the system, however the ordering can be perfectly smectic or perfectly isotropic in different areas.
+To account for local changes to layering direction and spacing one must allow some part of the phase of \cref{eq:density_base} to change in space.
+
+Different choices can be made in that regard, the first and most commonly used being to keep $\su{q_0}$ constant but make $\phi$ a field.
+This allows the layers to locally contract, dilate and tilt in small magnitudes.
+This is a particularly good approach to study near equilibrium phases, their stability and energetics as it contains enough information yet is simple enough for analytical work.
+In a similar approach, instead of having a constant $\su{q_0}$ a fixed but spatially varying $\su{q_0}$ field may be used.
+This way more interesting geometries can be studied through an imposed $\su{q_0}$ and solving for $\rho_1$ and $\phi$.
+
+In these approaches a complex order parameter $\psi=\rho_1e^{i\phi}$ is used to simplify \cref{eq:density_base} to $\rho(\su{r}) = \rho_0 + \Re(\psi(\su{r}) e^{i\ssu{q_0}\cdot\ssu{r}})$, this is known as the de Gennes order parameter.
+In essence, it replaces the degrees of freedom of two real parameters by a single complex one, also accounting for the symmetry of $\phi \leftrightarrow \phi \pm 2\pi$.
+It is using this theory that de Gennes has demonstrated an analogy between smectic liquid crystals and superconductors\cite{degennesAnalogySuperconductorsSmectics1972}, a particularly fruitful contribution leading to better understanding of the twist-grain boundary phase\cite{lubenskyTwistgrainboundaryPhasesNematic1990} among others.
+
+\subsection{Smectic (and nematic) defects}
+% \lipsum[10]
+
+\subsection{Limitations of the de Gennes order parameter}
+The theoretical framework described in \cref{sec:degennes} has been very successfully used since the second half of the 20th to understand many of the smectic and other liquid crystalline phases\todo{needs citations...}.
+However, it also comes with some significant shortcomings, two of which have been highlighted by Pevnyi, Selinger and Sluckin in 2014\cite{pevnyiModelingSmecticLayers2014} and which have sparked renewed interest in smectic studies.
+As a response a new order parameter \EE\ has been developed along with a corresponding free energy form by Paget et al\cite{pagetSmecticLayeringLandau2022,pagetComplextensorTheorySimple2023} and this thesis continues that work.
+
+The main issue arises when studying the dynamics of more complex systems as when studying a how different domains may form during the isotropic to smectic transition and how they then merge and defects annihilate\cite{ambrozicAnnihilationEdgeDislocations2004}.
+In these cases the mentioned approach of keeping $\su{q_0}$ fixed and only working with $\rho_1$ and $\phi$ from \cref{eq:density_base} cannot work.
+Though it is worth mentioning that in theoretical studies this can often be circumvented by separating the system into domains manually, however this is not feasible for numerical studies.
+If one is to model such a complex system using a single set of fields, a slightly different complex order parameter is used which replaces all the degrees of freedom from \cref{eq:density_base}.
+Mathematically this is equivalent to setting $\su{q_0} = 0$ with us now having
+\begin{equation}\label{eq:density_pevnyi}
+    \rho(\su{r}) = \rho_0 + \Re(\psi(\su{r}))
+\end{equation}
+and $\phi$ carrying all of the phase information including the layering direction and spacing.
+
+This is the parameter that Pevnyi et al discuss and the main problem they bring up is that $\psi$ is fundamentally double-valued, or in other words ill-defined.
+Why this is perhaps best shown on the example of a smectic system with a $+\frac{1}{2}$ defect, as in \cref{fig:pevnyi}.
+In order to obtain such layering in the model of \cref{eq:density_pevnyi} there must be an increasing or decreasing $\phi$ perpendicular to the layering.
+In fact, the layer normal is often retrieved via $\su{N} = \mgrad \phi$.
+Now consider it is increasing downwards in the bottom half of \cref{fig:pevnyi}, then as $\phi$ ought to be smooth in the defect free region to its right and around the defect, we end up with an upwards increasing $\phi$ in the upper region of \cref{fig:pevnyi}.
+This then gives a line of a discontinuous change in $\su{N} = \mgrad \phi$ in the middle left, along the highlighted line, which is also defect free and so any fields should be changing smoothly.
+While it may not be clear from just this example alone, this double-valuedness is ultimately a result of the smectic $\su{N} \leftrightarrow -\su{N}$ symmetry as layering upwards it downwards is physically the same.
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[width=0.4\textwidth]{figures/pevnyi.pdf}
+    \end{center}
+    \caption{
+        Diagram of a $+\frac{1}{2}$ defect in the smectic phase to demonstrate the double-valuedness of the de Gennes complex order parameter, taken from \cite{pevnyiModelingSmecticLayers2014}.
+        Black lines correspond to smectic layers, red arrows point in the direction of increasing (or decreasing, this is a choice) $\phi$.
+        Dotted red line is where the gradient of $\phi$ discontinuously changes (this can be chosen to be elsewhere) even though the layering there is uniform.
+    }\label{fig:pevnyi}
+\end{figure}
+
+
 \subsection{Other approaches and recent smecic results}
+\begin{itemize}
+    \item Monderkampf and their sims of actual rods, tetratic order parameter
+    \item Density based approaches -- the seemingly dominant approach
+    \begin{itemize}
+        \item phase field approaches -- to me it still seems that they kinda locally approximate everything as a single wave (unlike what Jack wrote), though it's different
+        \item DFT? Not actually too sure how that fits into the picture, does it work with PFM or is it a separate thing?
+        \item Jack mentions Swift-Hohenberg, that seems like DFT to me but idk
+        \item What Tayor is doing in Uttrecht -- Cahn-Hilliard with a fancy energy
+    \end{itemize}
+\end{itemize}
 
 \section{Introduction to the \EE\ tensor}
 We start by considering the density fluctuation as we have before
@@ -244,7 +314,7 @@ with $q_0$ corresponding to the natural spacing of the wave.
 Both $\su{N}$ and $\phi$ influence the phase, as before a constant gradient in $\phi$ corresponding to a constant contraction/dilation.
 
 
-\section{New perspectives on \EE\ (in 3D)}
+\section{New perspectives on \EE\ in 3D}
 \subsection{Constraints}
 \subsection{Biaxiality}
 \subsection{Properties of biaxial \EE}
