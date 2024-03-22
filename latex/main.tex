@@ -2,7 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{mphysproject} % This includes graphicx, caption and geometry
 \usepackage[block=space,bibencoding=utf8,style=phys,maxbibnames=6,giveninits=true]{biblatex}
+\usepackage[toc,page]{appendix}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \usepackage{physics}
 \usepackage{siunitx}
 
@@ -18,7 +20,7 @@
 
 \addbibresource{MPhys.bib}
 
-\allowdisplaybreaks
+\AtBeginEnvironment{appendices}{\crefalias{section}{appendix}}
 
 % We often use underlines here
 \stackMath
@@ -34,6 +36,7 @@
 \newcommand{\mgrad}{\ensuremath{\suf{\nabla}{K}\,}}
 \newcommand{\QQ}{\ensuremath{\du{Q}}}
 \newcommand{\NN}{\ensuremath{\su{N}}}
+\newcommand{\MM}{\ensuremath{\su{M}}}
 \newcommand{\EE}{\ensuremath{\du{E}}}
 \newcommand{\PP}{\ensuremath{\du{\Pi}}}
 \newcommand{\dudelta}{\ensuremath{\du{\delta}}}
@@ -69,7 +72,7 @@
 
 \maintext
 
-\section{Smectic Liquid Crystals}
+\section{Smectic Liquid Crystals}\label{sec:intro}
     \begin{figure}[t]
         \begin{center}
             \includegraphics[width=0.95\textwidth]{figures/phases.pdf}
@@ -131,7 +134,7 @@
             \du{Q}_\text{mol} = \su{N}_\text{mol}\su{N}_\text{mol} - \frac{\dudelta}{d}
         \end{equation}
         where $\su{N}_\text{mol}$ is a unit vector denoting the orientation of a molecule, $\dudelta$ the identity and $d$ the dimensionality of the system (2 or 3).
-        Throughout this thesis, if two tensors appear side by side then it means a dyadic/tensor product and any contractions are denoted by dots \nolinebreak $\cdot$ (their order usually does not matter).
+        Throughout this thesis we use underlines to denote tensors, the number of underlines being their rank, further if two tensors appear side by side then it means a dyadic/tensor product and any contractions are denoted by dots \nolinebreak $\cdot$ (the contraction order usually does not matter).
         Note that $\du{Q}_\text{mol}$ immediately satisfies the nematic symmetry of to $\su{N}_\text{mol}$ being the same as $-\su{N}_\text{mol}$.
         So each molecule has a $\du{Q}_\text{mol}$ and we take a local average of these to arrive at the tensor field \QQ\ (taking these local minima numerically can be quite tricky).
         Given the form of \QQ\ we can then reexpress it as the following
@@ -204,20 +207,23 @@
         In the work on smectics presented in this thesis we start from a similar approximation, still using it but also trying to go a step beyond and develop more specific terms which collapse to the approximation.
 
 
-        \subsubsection{Biaxiality of \QQ}\label{sec:Q_biax}
+        \subsubsection{Biaxial nematics and \QQ}\label{sec:Q_biax}
         There is one additional bit of complexity worth introducing and that is biaxiality of nematics.
         We have been talking about the orientation of molecules as being a single direction, which is correct for rod-like molecules.
         However, if the molecules are completely asymmetric then there can be order in two perpendicular directions.
         Say we have long cuboid molecules, they can first order by aligning their longest axes and then also rotate around those axes so that the next longest axes also align.
-        The same applies to any asymmetrical shaped molecules in 3D.
+        The same applies to any asymmetrical shaped molecules in 3D (this cannot happen in 2D as there are less orientational degrees of freedom).
 
-        It demonstrates the power of \QQ\ that we can still use it to decribe this dual order, we can still calculate it exactly the same way through $\du{Q}_\text{mol}$ and \QQ\ will still be symmetric and traceless, however we now allow it to take the more general form
-        \begin{equation}
+        It demonstrates the power of \QQ\ that we can still use it to describe this dual order, we can still calculate it exactly the same way through $\du{Q}_\text{mol}$ and \QQ\ will still be symmetric and traceless, however we now allow it to take the more general form
+        \begin{equation}\label{eq:Qbiax}
             \du{Q} = S_1\qty(\su{N} \su{N} - \frac{\dudelta}{d}) + S_2\qty(\su{M} \su{M} - \frac{\dudelta}{d})
         \end{equation}
         where $\su{N}$ and $\su{M}$ are mutually orthogonal unit vectors which describe the directions of the two orders, with $S_1$ and $S_2$ acting as their corresponding order parameters.
 
-        \todo[inline,size=\footnotesize]{This needs more, cite/use\cite{luckhurstBiaxialNematicLiquid2015} mention how final states for uniaxial nematics have a uniaxial Q even when using eq above, aka S2 = 0, though I need a thing to cite for that}
+        This more general type of nematic order comes with many complications especially when it comes to the free energy forms as it is difficult to separate the two orders contained in \QQ.
+        However, it has been extensively studied during the last decades with fascinating phases being used including those of banana shaped molecules\cite{luckhurstBiaxialNematicLiquid2015,kumarBiaxialityNematicSmectic2017,kimCurvaturesSmecticLiquid2018}.
+
+        % \todo[inline,size=\footnotesize]{This needs more, cite/use\cite{luckhurstBiaxialNematicLiquid2015} mention how final states for uniaxial nematics have a uniaxial Q even when using eq above, aka S2 = 0, though I need a thing to cite for that}
 
     \subsection{Describing smectics\cite{oswaldSmecticColumnarLiquid2005}}\label{sec:degennes}
         Fundamentally, the layered positional order corresponds to a wave-like density fluctuation.
@@ -232,7 +238,7 @@
         Such a change would keep the same wave amplitude and spacing and as such the smectic phase is unchanged and so should be its free energy.
         The implication of this is that the free energy may only have even power terms of $\rho_1$ becoming
         \begin{equation}
-            F_\text{bulk} = \frac{A}{2}\rho_1^2 + \frac{B}{4}\rho_1^4 + \frac{C}{6}\rho_1^6 + \cots
+            F_\text{bulk} = \frac{A}{2}\rho_1^2 + \frac{B}{4}\rho_1^4 + \frac{C}{6}\rho_1^6 + \cdots
         \end{equation}
         with $A, B, C$ being constants which determine the order of the isotropic-smectic phase transition\cite{oswaldSmecticColumnarLiquid2005}.
 
@@ -401,7 +407,7 @@
     \end{align*}
     where we show both the $\cdot$ contraction and Einstein summation notations along with the Frobenius complex matrix norm squared, whenever the form $|\chi|^2$ is used through this thesis it means that one should take $\chi$ and contract over all indices with $\chi^*$ (in order, but it usually does not matter), for scalars this gives the usual $|\psi|^2=\psi\psi^*$.
     From the forms above we can fully recover $|\psi|$ and to some degree also $\phi$ though this requires taking the complex square root and so to choose a branch cut.
-    Once we have those, it tis easy to use \cref{eq:Eua_def} to reconstruct $\su{N}\su{N}$ and so \NN\ as well.
+    Once we have those, it is easy to use \cref{eq:Eua_def} to reconstruct $\su{N}\su{N}$ and so \NN\ as well.
 
     \subsection{Free energy in the one constant approximation}\label{sec:EF}
         Now that we have our new order parameter, we need to find a form for the free energy density in terms of it.
@@ -424,13 +430,13 @@
         Moving on to the deformation energy costs, as Paget et al discuss\cite{pagetComplexTensorsSimple2023} smectics have two deformation modes.
         First is that of the mentioned layer compressions and dilations, these are jointly referred to as compressions and we associate a free energy cost \FC\ to them.
         These will depend on gradients on \EE\ and as a first approximation we take these to only depend on the first gradients of \EE.
-        The simplest term that can be constructed from $\mgrad \EE$ and is guaranteed to be real is $E_{ij,k}E_{ij,k}^* = |\mgrad \EE|^2$ (any indices after a $,$ denote derivatives) and so in the simplest one constant approximation we use
+        The simplest term that can be constructed from $\mgrad \EE$ and is guaranteed to be real is $E_{ij,k}E_{ij,k}^* = |\mgrad \EE|^2$ (any indices after a $,$ denote derivatives, so $\gamma_{,k}=\pdv{x_k}\gamma$) and so in the simplest one constant approximation we use
         \begin{equation}
             \FC = b_1 |\mgrad \EE|^2
         \end{equation}
         with $b_1$ being the compressive elastic constant with units of energy per length.
 
-        The second deformation mode that we wish to consider is the curvature of the layers and as mathematically curvature is captured by second order gradients we expect \FU\ must depend on terms of $\mgrad\mgrad\EE$ (and higher gradients).
+        The second deformation mode that we wish to consider is the curvature of the layers and as mathematically curvature is captured by second order gradients we expect \FU\ must depend on terms of $\mgrad\mgrad\EE$ (and possibly higher gradients).
         In this thesis we continue from the one constant version of \FU\ suggested by Paget et al which takes the form
         \begin{equation}
             \FU = b_2 |\mgrad^2 \EE|^2
@@ -461,10 +467,10 @@
             \fdv{F[\gamma]}{\gamma(\su{r})} = \lim_{\epsilon \rightarrow 0} \frac{F[\gamma(\su{r'}) + \epsilon\delta(\su{r'} - \su{r})]}{\epsilon}
         \end{equation}
         where $\delta$ is the Dirac delta function and $\su{r'}$ a dummy variable, say the one that is integrated over in the form for $F$.
-        In essence the functional nature of $F$ and the use of the functional derivative in \cref{eq:modA} corresponds to having an infinite number of degrees of freedom, one at each point in space, and \cref{eq:modA} tunes each of them independently in order to minimize $F$, while accounting for how they affect each other (through gradient terms in $F$).
+        In essence the functional nature of $F$ and the use of the functional derivative in \cref{eq:modA} corresponds to having an infinite number of degrees of freedom, one at each point in space, and \cref{eq:modA} tunes each of them separately in order to minimize $F$, while accounting for how they affect each other (through gradient terms in $F$).
 
         There is, a couple of ways of practically calculating these functional derivatives and a substantial part of this project has been working them out.
-        Perhaps the more instructive is to propagate the functional derivative $\fdv{\gamma(\ssu{r})}$ into the integral, use the identity $\fdv{\gamma(\ssu{r})}{\gamma(\ssu{r'})} = \delta(\su{r} - \su{r'})$ wherever possible and when we get terms of the form $\fdv{\gamma(\ssu{r})} \mgrad \gamma$ and similar we integrate by parts.
+        Perhaps the more instructive is to propagate the functional derivative operator $\fdv{\gamma(\ssu{r})}$ into the integral, use the identity $\fdv{\gamma(\ssu{r})}{\gamma(\ssu{r'})} = \delta(\su{r} - \su{r'})$ wherever possible, and when we get terms of the form $\fdv{\gamma(\ssu{r})} \mgrad \gamma$ and similar we integrate by parts.
         This will give an expression for $\fdv{F}{\gamma(\ssu{r})}$ that is a function of $\su{r}$ along with surface integrals coming from the integrations by part.
         These integrals are then ignored for the purposes of \cref{eq:modA} as that is only used for the bulk volume of the system (no surfaces) and the surface terms will contain Dirac deltas that restrict them to only affecting the surface.
 
@@ -486,7 +492,7 @@
         \end{equation}
         where $F$ would be a nematic free energy, and we drop both explicit field notation and denoting the functional nature of $F$ with square brackets.
 
-        Accounting for the complex nature of \EE\ is however a little more complicated and it is worth briefly mentioning the Wirtinger derivatives\cite{haslingerComplexAnalysisFunctional2017}.
+        Accounting for the complex nature of \EE\ is however a little more complicated and it is worth briefly introducing the Wirtinger derivatives\cite{haslingerComplexAnalysisFunctional2017}.
         These are differential operators operating on any real differentiable complex function.
         This means that if we have $f(z) = u(z) + i v(z)$ with $z \in \mathbb{C}$ and $u(z), v(z) \in \mathbb{R}$, then we can use the Wirtinger derivatives as long as $u$ and $v$ are partially differentiable with respect to the real an imaginary parts of $z$.
         This is a much lower bar than a complex function being complex differentiable or even analytical, which is important as neither the complex conjugate $z^*$ nor $z z^* = |z|^2$ are complex differentiable, but they are real differentiable and we have similar terms in our free energy (\cref{eq:Foca}).
@@ -519,10 +525,10 @@
         \end{equation}
         with $z' = x' + y'$.
         Besides just reducing the number of equations we need to track of, the major benefit of using Wirtinger derivatives here is their ease of use.
-        When applying these operators to complicated expressions, we can express that expression in terms of $z$ and $z^*$ instead of $x$ and $y$ and then treat them as if they were independent real variables when taking the Wirtinger derivatives.
-        Best explained by examples we have $\pdv{z} z = 1, \pdv{z} z^* = 0, \pdv{z} z z^* = z^*$ and similarly for $\pdv{z^*}$, this method holds for more complex mathematical functions like the exponential as well.
+        When applying these operators to complicated function, we can express that function in terms of $z$ and $z^*$ instead of $x$ and $y$ (using $x = \frac{z+z^*}{2}$ and $y = \frac{z-z^*}{2i}$) and then treat them as if they were independent real variables when taking the Wirtinger derivatives.
+        This is best explained by examples, we have $\pdv{z} z = 1, \pdv{z} z^* = 0, \pdv{z} z z^* = z^*$ and similarly for $\pdv{z^*}$, this method holds for more complex mathematical functions like the exponential as well\cite{haslingerComplexAnalysisFunctional2017}.
 
-        Now finally all the ideas are in place to adapt the model A real scalar dynamics of \cref{eq:modA} to a complex tensor one.
+        Now finally all the ideas are in place to adapt the model A real scalar dynamics of \cref{eq:modA} to a complex tensor order parameter.
         We treat all components independently and use a Wirtinger-like functional derivative to obtain the free energy minimization.
         The final equation is
         \begin{equation}
@@ -537,34 +543,180 @@
     \begin{equation}
         \du{E} = \psi \qty(\su{N}\su{N} - \frac{\du{\delta}}{d}) \tag{\ref{eq:Eua_def} revisited}
     \end{equation}
-    however, if we are to treat \EE\ as our order parameter instead of its constituent fields (and only used them for interpretations) we must start treating it as a general complex tensor field, subject to set out constraints.
+    however, if we are to treat \EE\ as our order parameter instead of its constituent fields (and only use them for interpretations) we must start treating it as a general complex tensor field, subject to set out constraints.
     This is something that has been rethought as a part of this thesis, in particular when it comes to \EE\ in three dimensions.
 
-    In earlier work\cite{pagetComplexTensorsSimple2023} \EE\ is identified as symmetric and traceless following the example of \QQ\ and clearly necessary for \cref{eq:Eua_def} to hold.
-    The motivation for adopting a traceless tensor and so adding the $-\frac{\sdu{\delta}}{d}$ to the necessary $\su{N}\su{N}$ term in \cref{eq:Eua_def} comes down to simplifying the bulk free energy density form (as has been noted in \cref{sec:EF}) which could otherwise have terms of $E_{ii}=\Tr(\du{E})$.
+    In earlier work\cite{pagetSmecticLayeringLandau2022,pagetComplextensorTheorySimple2023,pagetComplexTensorsSimple2023} \EE\ is identified as symmetric and traceless following the example of \QQ\ and these constraints are clearly necessary for \cref{eq:Eua_def} to hold.
+    Symmetry inherently comes from the $\NN\NN$ term that we wish to have.
+    And the motivation for adopting a traceless tensor and (so adding the $-\frac{\sdu{\delta}}{d}$ to the necessary $\su{N}\su{N}$) in \cref{eq:Eua_def} comes down to simplifying the bulk free energy density form (as has been noted in \cref{sec:EF}) which could otherwise have terms of $E_{ii}=\Tr(\du{E})$.
     However, as $\Tr(\su{N}\su{N}) = 1$ due to \NN\ being a unit vector, these terms would only add a constant value to the free energy which may by its nature be subtracted.
     As such making \EE\ (and \QQ) traceless captures the same physics while simplifying the algebra.
 
-    Paget et al also cite two more constraints that are put on \EE, the mentioned normality which we prove below is in fact a key constraint on \EE, and what is called the uniaxial constraint.
+    Paget et al cite two more constraints that are put on \EE, the mentioned normality which we show below is in fact a key constraint on \EE, and what is called the uniaxial constraint.
     The term uniaxial is taken in analogy to \QQ\ as in \cref{sec:GL_nem} (in particular \cref{sec:Q_biax}) to mean the exact form of \cref{eq:Eua_def} as opposed to a biaxial form which would look like
     \begin{equation}
         \du{E} = \psi \qty(\su{N}\su{N} - \frac{\du{\delta}}{d}) + \psi' \qty(\su{N'}\su{N'} - \frac{\du{\delta}}{d})
     \end{equation}
-    with $\psi'$ and $\su{N}'$ being some different complex scalar and unit vector fields.
+    with $\psi'$ and $\su{N}'$ being different complex scalar and unit vector fields.
     The claim is made that the uniaxial form of \cref{eq:Eua_def} will be implied if all components of \EE\ have the same complex phase, in order words if we can write
     \begin{equation}
         \EE = e^{i\alpha} \du{R}
     \end{equation}
     with $\alpha$ a real number $\du{R}$ a real matrix.
     Further, this is stated that this is satisfied if $\det([\EE,\EE^*]) = 0$ via an argument parametrizing \EE\ through angles which we do not repeat here.
+    In contradiction to that, we claim here that the uniaxial form of \cref{eq:Eua_def} is not guaranteed even if all components of \EE\ have the same complex phase and question whether requiring $\det([\EE,\EE^*])=0$ has any effect once we have already required the stronger constraint of normality, $[\EE,\EE^*]=0$.
+    However, it should be noted that Paget et al only worked in two dimensions where as they correctly state the constraints $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*^])=0$ are fully equivalent (\cref{app:noruaeq}), and they practically only enforce the so called uniaxiality constraint which enforces normality, and as we shall show, in 2D that is enough to guarantee uniaxiality.
 
-    In contradiction to that, we claim here that the uniaxial form of \cref{eq:Eua_def} is not guaranteed even if all components of \EE\ have the same complex phase and question whether requiring $\det([\EE,\EE^*])=0$ has any effect once we have already required the stronger constraint of normality $[\EE,\EE^*]=0$.
-    However, it should be noted that Paget et al only worked in two dimensions where as they correctly state the constraints $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*^])=0$ are fully equivalent, and they practically only enforce the so called uniaxiality constraint which enforces normality.
+    \subsection{Requiring \EE\ to be symmetric, traceless and normal}
+        It is now time to determine what form can we restrict \EE\ to, using which constraints and how.
+        We will work in three dimensions in the derivation below though it generalizes and we hope the make any points that change clear.
+        We expect symmetry and tracelessness to be upheld and with the benefit of hindsight claim normality to be the key additional constraint.
+        This is as besides the statement $[\EE,\EE^*]=0$ which has the convenient form of a holonomic constraint, normality of a complex matrix is also equivalent to it being diagonalizable by a unitary matrix.
+        Thus, in 3D we can write a normal \EE\ as
+        \begin{align}
+            \du{E} &= \du{U} \cdot \begin{pmatrix}
+                \lambda_1 & 0 & 0 \\
+                0 & \lambda_2 & 0 \\
+                0 & 0 & \lambda_3 \\
+            \end{pmatrix} \cdot \du{U}^\dagger \label{eq:Ederstart} \\
+            \intertext{
+            where $\du{U}$ is a unitary matrix (so $\du{U}^{-1} = \du{U}^\dagger$) the columns of which are the eigenvectors of \EE\ and $\lambda_1,\lambda_2$ and $\lambda_3$ are their corresponding eigenvalues.
+            Firstly, we can remove one degree of freedom from the inner matrix by using the identity matrix with
+            }
+            % \du{E} &= \du{U} \cdot \qty(\begin{pmatrix}
+            %     \lambda_1 - \lambda_3 & 0 & 0 \\
+            %     0 & \lambda_1 - \lambda_3 & 0 \\
+            %     0 & 0 & 0
+            % \end{pmatrix} +\lambda_3\du{\delta}) \cdot \du{U}^\dagger \\
+            \du{E} &= \du{U} \cdot \begin{pmatrix}
+                \lambda_1 - \lambda_3 & 0 & 0 \\
+                0 & \lambda_2 - \lambda_3 & 0 \\
+                0 & 0 & 0
+            \end{pmatrix} \cdot \du{U}^\dagger + \lambda_3\dudelta
+        \end{align}
+        as $\du{U} \cdot \dudelta \cdot \du{U}^\dagger = \dudelta$.
 
-    \subsection{Constraints}
-    Now it is time to rigorously determine what the constraints of normality, symmetry and tracelessness imply for a general $d$ dimensional complex tensor.
-    \subsection{Biaxiality}
-    \subsection{Properties of biaxial \EE}
+        Now, when doing the matrix multiplication each of the diagonal components will only interact with one of the eigenvectors in $\du{U}$, in index notation we have
+        \begin{equation}\label{eq:Edermid}
+            E_{ij} = U_{i1}(\lambda_1 - \lambda_3)U_{1j}^\dagger + U_{i2}(\lambda_2 - \lambda_3)U_{2j}^\dagger + \lambda_3 \delta_{ij}
+        \end{equation}
+        and using the definition of the hermitian conjugate and denoting the eigenvectors of \EE\ and columns of $\du{U}$ as $\su{U_k}$ this gives
+        \begin{align}
+            \du{E} &= (\lambda_1 - \lambda_3) \su{U_1}\su{U_1^*} + (\lambda_2 - \lambda_3) \su{U_2}\su{U_2^*} + \lambda_3 \du{\delta} \\
+            \intertext{
+            which starts featuring dyadic products of vectors, as does \EE.
+            If we now impose tracelessness through requiring that $\lambda_3 = -\lambda_1-\lambda_2$ (trace is invariant to unitary transformations and so $\Tr(\du{E})$ is given by the sum of its eigenvalues) we arrive at
+            }
+            \du{E} &= (\lambda_1 - \lambda_3) \su{U_1}\su{U_1^*} + (\lambda_2 - \lambda_3) \su{U_2}\su{U_2^*} + \frac{-(\lambda_1 - \lambda_3)-(\lambda_2 - \lambda_3)}{3} \du{\delta} \\
+            \du{E} &= \psi_1 \qty(\su{U_1}\su{U_1^*} - \frac{\dudelta}{3}) + \psi_2 \qty(\su{U_2}\su{U_2^*} - \frac{\dudelta}{3})\label{eq:Edernearlythere}
+        \end{align}
+        with $\psi_i = \lambda_i - \lambda_3$ for $i < d$ and which now nearly matches the biaxial form for \EE, though with complex vectors present.
+
+        For the final step, recall that the columns (and rows) of a unitary matrix are normalized and mutually orthogonal, this means we can parametrize any of the columns as
+        \begin{equation}
+            \su{U_k} = \begin{pmatrix} R_1 e^{i\phi_1} \\ R_2 e^{i\phi_2} \\ R_3 e^{i\phi_3} \end{pmatrix}
+        \end{equation}
+        with $R_1, R_2, R_3 \geq 0$, $R_1^2+R_2^2+R_3^2 = 1$ and $\phi_1,\phi_2,\phi_3$ being complex phases (no relation to $\phi$ from before).
+        Then we impose symmetry on \EE\ through requiring $\EE=\EE^\text{T}$ on \cref{eq:Edermid} which leads to
+        \begin{equation}
+            \su{U_k}\su{U_k^*} = \su{U_k^*}\su{U_k} \qq{no Einstein summation over $k$}
+        \end{equation}
+        holding for each $k < d$.
+        Solving this matrix equation in terms of the parametrization gives no further restriction on the $R_i$ but we get that for any $i, j$
+        \begin{equation}
+            e^{i(\phi_i - \phi_j)} = e^{i(\phi_j - \phi_i)}
+        \end{equation}
+        or in other words the phases of the components of $\su{U_k}$ must differ by a multiple of $\pi$.
+        While this does not necessarily imply $\su{U_k}$ must be real (after all eigenvectors are only unique up to multiplication which can include complex phases) it does have implications for the dyadic products appearing in \cref{eq:Edernearlythere} which take the form
+        \begin{equation}
+            \su{U_k}\su{U_k^*} \leftrightarrow \begin{pmatrix}
+                R_1^2 & R_1 R_2 e^{i(\phi_1-\phi_2)} & R_1 R_3 e^{i(\phi_1-\phi_3)} \\
+                R_1 R_2 e^{-i(\phi_1-\phi_2)} & R_2^2 & R_2 R_3 e^{i(\phi_2-\phi_3)} \\
+                R_1 R_3 e^{-i(\phi_1-\phi_3)} & R_2 R_3 e^{-i(\phi_2-\phi_3)} & R_3^2
+            \end{pmatrix}
+        \end{equation}
+        and so the dyadic products are fully real with the signs of the components being determined by whether their corresponding phase difference is an odd or even multiple of $\pi$.
+        Thus, any such term can be replaced by the dyadic product of a real vector with itself which may even be restricted to the upper half space ($z \geq 0$) highlighting the inherent symmetry of \EE\ with respect to its inbuilt directionality.
+
+        Coming back to \EE\ in 3D and following up from \cref{eq:Edernearlythere}, the argument above applies to both $\su{U_1}$ and $\su{U_2}$ along with the unitarity of $\du{U}$ also making sure they are mutually orthogonal.
+        As such we may replace them in notation by real, mutually orthogonal unit eigenvectors of \EE, \NN\ and \MM\ which each correspond to one eigenvalue.
+        This gives exactly the biaxial form of
+        \begin{equation}\label{eq:Ebiax}
+            \du{E} = \psi_1 \qty(\NN\NN - \frac{\dudelta}{3}) + \psi_2 \qty(\MM\MM - \frac{\dudelta}{3})
+        \end{equation}
+        which is a general form that any symmetric, traceless and normal complex matrix can be put in.
+        This accounts for all the degrees of freedom with \NN\ and \MM\ capturing those of two its eigenvectors (the third is fully determined through their mutual orthogonality and symmetry of \EE) and the $\psi_i$ capturing those of their corresponding eigenvalues (the third being determined by tracelessness of \EE).
+        Recall that we have $\psi_i = \lambda_i - \lambda_3$, so we have an invertible transformation
+        \begin{equation}
+            \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} \lambda_1 \\ \lambda_2 \end{pmatrix}
+            \quad\Leftrightarrow\quad
+            \begin{pmatrix} \lambda_1 \\ \lambda_2 \end{pmatrix} = \frac{1}{3}\begin{pmatrix} 2 & -1 \\ -1 & 2 \end{pmatrix} \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix}
+        \end{equation}
+
+        Finally, it is worth pointing out exactly how this generalizes to different dimensionalities.
+        For a $d$ dimensional system a general \EE\ would have $d$ eigenvalues along the diagonal in \cref{eq:Ederstart}, one of which we are able to remove from the matrix product and form the $\dudelta$ term.
+        So we would then arrive at $d-1$ terms involving eigenvalue differences and dyadic products of eigenvectors.
+        The only other difference is that the number $3$ present in the denominator once we use the tracelessness property would become a general $d$, so in a $d$ dimensional system \EE\ would take the form of
+        \begin{equation}\label{eq:Emultiax}
+            \du{E} &= \psi_1 \qty(\su{N_1}\su{N_1} - \frac{\dudelta}{d}) + \psi_2 \qty(\su{N_2}\su{N_2} - \frac{\dudelta}{d}) + \cdots + \psi_{d-1} \qty(\su{N_{d-1}}\su{N_{d-1}} - \frac{\dudelta}{d})
+        \end{equation}
+        which may be called a multiaxial form to be general, though we do not see a reason to consider systems with $d>3$.
+
+    \subsection{Interpreting biaxiality in 3D}
+        First thing to note about the results from the previous section is that as was mentioned, in 2D we do not need any further constraints on \EE\ besides symmetry, tracelessness and normality to guarantee a uniaxial \EE.
+        This clearly follows from \cref{eq:Emultiax}.
+        However in 3D things get more difficult, firstly to address the suggested constraint of all components of \EE\ having the same complex phase.
+        It is worth noting that this really means up to a factor of $\pi$ as we clearly want to allow components to differ by a sign.
+        Even if we have an \EE\ of form \cref{eq:Ebiax} with $\psi_1$ and $\psi_2$ having the same phase and so satisfying the constraint, given that \NN\ and \MM\ are mutually orthogonal there is no way to combine the two terms into one.
+        As such, we drop the single complex phase constraint and examine whether it is possible to constrain \EE\ to be uniaxial.
+
+        One way to approach this problem is to notice that the biaxial form of \cref{eq:Ebiax} becomes the uniaxial form if one of the $\psi_i$ is 0.
+        This leads to the problem of constraining uniaxiality, as recall that the $\psi_i$ are differences of their corresponding eigenvalues $\lambda_i$ and the one we chose to take out during the derivation, say $\lambda_3$.
+        As such requiring a $\psi_i$ to be 0 is the same as requiring some two eigenvalues to be equal.
+        This is a very problematic type of constraint as it fundamentally requires us to directly constrain the eigenvalues of the matrix which are not analytically accessible.
+        What is meant by this is that there is no usable analytic form for the eigenvalues of a general matrix, that they do not come in a clear order and can be degenerate.
+        These features make constraining \EE\ to have two equal eigenvalues unworkable for us, especially as we will be using Lagrange multipliers to enforce the constraints and for that to be possible they must take the form a holonomic constraint $f(\du{E}) = 0$.
+
+        As such, we in this thesis allow \EE\ to be biaxial in 3D.
+        Initially this decision was also guided by the example of \QQ\ which in 3D also gains a biaxial term that is difficult to remove (see \cref{sec:Q_biax}).
+        However, in simulations of \QQ, in the final, static states the biaxiality is only present in or near defects.
+        We expected \EE\ to behave in the same way and for the final states of our simulations to have regions of uniaxial \EE\ with biaxiality only near defects and largely negligible, however this did not turn out to be the case.
+
+        Given that, we attempt to interpret the biaxiality of \EE.
+        Firstly, recall that the biaxiality of \QQ\ in nematics corresponds to asymmetric constituent molecules and so us having two directions of orientational order.
+        Thus the biaxiality of \QQ\ corresponds to the biaxiality of the molecules.
+        In \cref{sec:intro} we have explained how a typical smectic phase forms through layers developing in a uniaxial nematic phase.
+        There is also a class of layered biaxial nematic phases, where both orientational directions of asymmetric molecules are aligned and there is also layering.
+        These are called biaxial smectics\cite{k.sadashivaBiaxialSmecticPhase2002,semmlerBiaxialSmecticPhases1998} and it is very important to stress that we do not believe these to be in any way related to the biaxiality of \EE\ that we see here.
+        The biaxiality in biaxial smectics corresponds to the nematic biaxiality and smectic layering is defined positional symmetry breaking only in one direction.
+
+        However, we are getting a biaxial \EE\ and we suggest that just as an additional term in \QQ\ corresponds to an additional orientational order, any additional terms in \EE\ correspond to additional layering order.
+        Recall that we interpret the uniaxial form of $\EE = \psi (\NN\NN - \frac{\sdu{\delta}}{d})$ as layering in the direction of \NN, represented by a density wave with amplitude proportional to $|\psi|$ and any compressions captured by $\arg(\psi)$.
+        As such for
+        \begin{equation}
+            \du{E} = \psi_1 \qty(\NN\NN - \frac{\dudelta}{3}) + \psi_2 \qty(\MM\MM - \frac{\dudelta}{3}) \tag{\ref{eq:Ebiax} revisited}
+        \end{equation}
+        we may have density waves in two perpendicular directions \NN\ and \MM.
+        This would now go beyond a smectic as there is symmetry breaking in two directions.
+        In particular this may correspond to the columnar phases briefly introduced in \cref{sec:intro} as the interference of the two waves form a grid in the \NN--\MM\ plane and there is no order along their mutually orthogonal direction.
+        This suggests that \EE\ is in fact not a model of smectics per se but a model of their layering structure.
+
+        This very well corresponds to another aspect of \EE\ which is that it does not capture the nematic order present in smectics.
+        Even for the smectic A phase where we may simply use \NN\ from \EE\ for the nematic director it is still missing an additional scalar order parameter for the nematic order parameter.
+        This is known aspect of \EE\ and there are plans to use both \QQ\ and \EE\ together to simulate a realistic smectic in latter phases of the project.
+        Since \EE\ lacks this sense of orientation it makes perfect sense that layering in different directions may appear, if anything it is slightly surprising that we do not have a possibility of layering in the third direction, this is a consequence of \EE\ being traceless.
+
+        In fact this suggests a practical way in which the problematic biaxiality might be resolved once \QQ\ is added through the coupling of \EE\ and \QQ.
+        Say for a smectic A, the free energy has to be constructed in a way that layering is only energetically favourable when it is normal to the nematic director.
+        This then naturally restricts the layering to a single direction at any place and so while a biaxial \EE\ would still be possible it would not be energetically favoured.
+
+        % \vspace{3em}
+        %
+        % First thing to note about the form of \cref{eq:Ebiax} is that as it does not matter in the derivation which of the three eigenvalues we use as our $\lambda_1$ and $\lambda_2$ (besides it changing which eigenvectors we end up having for \NN\ and \MM), or the other way around, which eigenvalue we choose to leave out as $\lambda_3$.
+        % This means that the form of \cref{eq:Ebiax,eq:Emultiax} is not unique, in fact assuming no degeneracies, in $d$ dimensions there would be $d$ equivalent such forms.
+
+    \subsection{Working with a biaxial \EE}
+    First thing we wish
     \begin{align}
         \du{E} &= \psi_1 (\su{N}\su{N} - \frac{\dudelta}{d}) + \psi_2 (\su{M}\su{M} - \frac{\dudelta}{d}) \\
         |\du{E}|^2 &= \du{E} \cddot \du{E}^* = (|\psi_1|^2 + |\psi_2|^2) (1 - 2 \frac{1}{d} + \frac{d}{d^2}) + (\psi_1\psi_2^* + \psi_1^*\psi_2) (-2\frac{1}{d} + \frac{d}{d^2}) \\
@@ -573,6 +725,8 @@
         &= |\psi_1|^2 + |\psi_2|^2 - \frac{|\psi_1 + \psi_2|^2}{d} \\
         |\du{E_{eq}}|^2 &= \frac{d-1}{d}
     \end{align}
+
+    \subsection{Enforcing constraints using Lagrange multipliers}
 
 \section{Projection Operators for The Free Energy}
     There were two main goals set out for this MPhys project, to extend the theory and numerics to 3D and to implement a more complex free energy form using projection operators.
@@ -648,5 +802,54 @@
 
 \newpage
 \printbibliography
+
+\begin{appendices}
+    \section{Equivalency of $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*])=0$ in 2D}\label{app:noruaeq}
+        Consider \EE\ to be a 2D, symmetric, traceless and otherwise unrestricted complex matrix given by
+        \begin{equation}
+            \EE = \begin{pmatrix}
+                a & b \\
+                b & -a \\
+            \end{pmatrix}
+        \end{equation}
+        with $a, b \in \mathbb{C}$.
+        The commutator $[\EE,\EE^*]$ will be given by
+        \begin{equation}
+            [\EE,\EE^*] = \du{K} - \du{K}^* \qq{with} \du{K} = \begin{pmatrix}
+                a & b \\
+                b & -a \\
+            \end{pmatrix} \cdot \begin{pmatrix}
+                a^* & b^* \\
+                b^* & -a^* \\
+            \end{pmatrix} = \begin{pmatrix}
+                |a|^2 + |b|^2 & ab^* - a^*b \\
+                ba^* - ab^* & |a|^2 + |b|^2 \\
+            \end{pmatrix}
+        \end{equation}
+        so that
+        \begin{equation}
+            [\EE,\EE^*] = \begin{pmatrix}
+                0 & d - d^* \\
+                d^* - d & 0 \\
+            \end{pmatrix} = (d-d^*) \begin{pmatrix}
+                0 & 1 \\
+                -1 & 0 \\
+            \end{pmatrix}
+        \end{equation}
+        where
+        \begin{equation}
+            d = ab^* - a^*b \qq{and} d^* = a^*b - ab^* = -d
+        \end{equation}
+        so we finally arrive at
+        \begin{align}
+            [\EE,\EE^*] &= 2 (ab^* - a^*b) \begin{pmatrix}
+                0 & 1 \\
+                -1 & 0 \\
+            \end{pmatrix} \\
+            \det([\EE,\EE^*]) &= 2 (ab^* - a^*b)
+        \end{align}
+        So clearly requiring either of the two is equivalent to requiring $ab^*-a^*b = 0$ and so they are equivalent to each other.
+\end{appendices}
+
 
 \end{document}

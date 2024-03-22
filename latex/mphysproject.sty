@@ -111,21 +111,6 @@ The length of this report exceeds the maximum \@maxpagelength\ pages.}}\vfill%
 \PackageWarning{mphysproject}{This report exceeds the maximum \@maxpagelength pages.}}
 \fi%
 \fi}
-%
-% Switch to Appendix phase
-%
-\renewcommand{\appendix}{%
-\@performlengthcheck
-\clearpage
-\setcounter{section}{0}\renewcommand{\thesection}{\Alph{section}}%
-\section*{Appendices}\addcontentsline{toc}{section}{Appendices}
-
-\textit{Note} --- Appendices are provided for completeness only and any content included in them will be
-disregarded for the purposes of assessment.
-}
-%
-% Make sure the page length check is performed at least once
-%
 \AtEndDocument{\@performlengthcheck}
 %
 \endinput
