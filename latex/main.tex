@@ -268,7 +268,7 @@
                 \includegraphics{figures/misc/wave_phi_example.pdf}
             \end{center}
             \caption{
-                Diagrams of how \cref{eq:density_base} behaves for a 2D, spherically symmetric system with a non-uniform but fixed $\su{q_0} = \frac{2\pi}{2\si{L}}\hat{\su{r}}$, constant $\rho_1 = \rho_0$ (so a fully smectic phase) and $\phi$ given by \cref{eq:gradphi_phi} with $s=\frac{\pi}{\sii{L}}$.
+                Diagrams of how \cref{eq:density_base} behaves for a 2D, spherically symmetric system with a non-uniform but fixed $\su{q_0} = \frac{2\pi}{2\si{L}}\hat{\su{r}}$, constant $\rho_1 = \rho_0$ (so a fully smectic phase) and $\phi$ given by \cref{eq:gradphi_phi} with $s=\frac{\pi}{\si{L}}$.
                 \si{L} here is an arbitrary unit of length.
                 (a) shows the layer normal direction \NN\ and highlights the two zones for $\phi$.
                 (b) shows the resulting density having constant wavelengths of $2\si{L}$ and $\frac{2\pi}{\frac{2\pi}{2\si{L}}+\frac{\pi}{\si{L}}} = 1\si{L}$ in each of the zones from (a).
@@ -567,7 +567,7 @@
     with $\alpha$ a real number $\du{R}$ a real matrix.
     Further, this is stated that this is satisfied if $\det([\EE,\EE^*]) = 0$ via an argument parametrizing \EE\ through angles which we do not repeat here.
     In contradiction to that, we claim here that the uniaxial form of \cref{eq:Eua_def} is not guaranteed even if all components of \EE\ have the same complex phase and question whether requiring $\det([\EE,\EE^*])=0$ has any effect once we have already required the stronger constraint of normality, $[\EE,\EE^*]=0$.
-    However, it should be noted that Paget et al only worked in two dimensions where as they correctly state the constraints $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*^])=0$ are fully equivalent (\cref{app:noruaeq}), and they practically only enforce the so called uniaxiality constraint which enforces normality, and as we shall show, in 2D that is enough to guarantee uniaxiality.
+    However, it should be noted that Paget et al only worked in two dimensions where as they correctly state the constraints $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*])=0$ are fully equivalent (\cref{app:noruaeq}), and they practically only enforce the so called uniaxiality constraint which enforces normality, and as we shall show, in 2D that is enough to guarantee uniaxiality.
 
     \subsection{Requiring \EE\ to be symmetric, traceless and normal}\label{sec:npE_cnst}
         It is now time to determine what form can we restrict \EE\ to, using which constraints and how.
@@ -660,7 +660,7 @@
         So we would then arrive at $d-1$ terms involving eigenvalue differences and dyadic products of eigenvectors.
         The only other difference is that the number $3$ present in the denominator once we use the tracelessness property would become a general $d$, so in a $d$ dimensional system \EE\ would take the form of
         \begin{equation}\label{eq:Emultiax}
-            \du{E} &= \psi_1 \qty(\su{N_1}\su{N_1} - \frac{\dudelta}{d}) + \psi_2 \qty(\su{N_2}\su{N_2} - \frac{\dudelta}{d}) + \cdots + \psi_{d-1} \qty(\su{N_{d-1}}\su{N_{d-1}} - \frac{\dudelta}{d})
+            \du{E} = \psi_1 \qty(\su{N_1}\su{N_1} - \frac{\dudelta}{d}) + \psi_2 \qty(\su{N_2}\su{N_2} - \frac{\dudelta}{d}) + \cdots + \psi_{d-1} \qty(\su{N_{d-1}}\su{N_{d-1}} - \frac{\dudelta}{d})
         \end{equation}
         which may be called a multiaxial form to be general, though we do not see a reason to consider systems with $d>3$.
 
@@ -935,7 +935,6 @@
 
     \subsection{Dealing with the complex square root for \PP}
         Earlier we alluded to the complex square root in \cref{eq:piex1} being a problem and we can see that the exact same problematic term gets propagated into the forms \cref{eq:pig0,eq:pig1,eq:pig2}.
-
 
 \section{Numerical Considerations}
     \subsection{Approximating \PP\todo{mention the sqrt thing! And the small E thing}}
