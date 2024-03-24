@@ -320,7 +320,7 @@
         This problem is not a purely formal one either, unless accounted for it leads to unphysical line defects appearing between point defects\cite{pevnyiModelingSmecticLayers2014} and associated unphysical energy costs.
         This is the key problem that \EE\ theory aims to solve.
 
-    \subsection{Other approaches and recent smectic results}\label{sec:intro_sm_other}
+    \subsection{Other recent approaches to simulating smectics}\label{sec:intro_sm_other}
         Naturally, other approaches to these problems have been developed as well.
         Pevnyi et al themselves suggest working with the density directly instead of using a coarse-grained mesoscopic order parameter\cite{pevnyiModelingSmecticLayers2014,xiaStructuralLandscapesGeometrically2021,farrellFiniteelementDiscretizationSmectic2023,xiaSimpleTensorialTheory2024}.
         There $\delta\rho(\su{r}) = \rho(\su{r}) - \rho_0 = \Re(\psi(\su{r}))$ is used as the order parameter and a free energy constructed in terms of it.
@@ -550,7 +550,7 @@
 
     In earlier work\cite{pagetSmecticLayeringLandau2022,pagetComplextensorTheorySimple2023,pagetComplexTensorsSimple2023} \EE\ is identified as symmetric and traceless following the example of \QQ\ and these constraints are clearly necessary for \cref{eq:Eua_def} to hold.
     Symmetry inherently comes from the $\NN\NN$ term that we wish to have.
-    And the motivation for adopting a traceless tensor and (so adding the $-\frac{\sdu{\delta}}{d}$ to the necessary $\su{N}\su{N}$) in \cref{eq:Eua_def} comes down to simplifying the bulk free energy density form (as has been noted in \cref{sec:Ei_F}) which could otherwise have terms of $E_{ii}=\Tr(\du{E})$.
+    And the motivation for adopting a traceless tensor and (so adding the $-\frac{\sdu{\delta}}{d}$ to the necessary $\su{N}\su{N}$) comes down to simplifying the bulk free energy density form (as has been noted in \cref{sec:Ei_F}) which could otherwise have terms of $E_{ii}=\Tr(\du{E})$.
     However, as $\Tr(\su{N}\su{N}) = 1$ due to \NN\ being a unit vector, these terms would only add a constant value to the free energy which may by its nature be subtracted.
     As such making \EE\ (and \QQ) traceless captures the same physics while simplifying the algebra.
 
@@ -723,7 +723,7 @@
 
         In order to fix this issue we define a clear way of choosing which eigenvalue to remove.
         Note again that our layering order parameters are really eigenvalue differences, and a uniaxial \EE\ would have two eigenvalues be equal.
-        With such a uniaxial \EE\ we want to make sure we remove either of the two equal ones as only that will lead to the uniaxial form of \EE\ as in \cref{eq:Eua_def}, if we were to instead remove the one different eigenvalue we would have a biaxial form with $\psi_1=\psi_2$.
+        So for a uniaxial \EE\ we want to make sure we remove either of the two equal ones as only that will lead to the uniaxial form of \cref{eq:Eua_def}, if we were to instead remove the one different eigenvalue we would have a biaxial form with $\psi_1=\psi_2$.
         This suggests that we want to make sure to keep the most different eigenvalues and remove the one that is the least different from the others.
 
         Our method is then as follows, for each eigenvalue we compute the sum of squared magnitudes of its difference to all the other eigenvalues, for eigenvalue $n$ we have $\text{SSD}_n = \sum_{i \neq n} |\psi_i-\psi_n|^2$.
@@ -764,9 +764,9 @@
     \begin{equation}
         \pdv{E_{ij}}{t} = -\mu \fdv{F}{E_{ij}^*} \tag{\ref{eq:Ei_dyneq} revisited}
     \end{equation}
-    which however does not in any way account for the constraints on \EE.
+    which however does not in any way account for the constraints of symmetry, tracelessness and normality we impose on \EE\ in 3D as we discussed in \cref{sec:npE}.
     Issues can arise in two ways, either directly in the theory if the integral $\EE(t)=\EE(t=0)+\int^t \pdv{\sdu{E}}{t}$ is not guaranteed to maintain the constraints.
-    Or in numerical simulations, which are the goal for us in this thesis, where we approximate the integral by discrete steps and there are various sources of small numerical errors.
+    Or in numerical simulations, which are the goal for us in this thesis, where we approximate the integral by discrete steps and there are various sources of small numerical errors that can add up over time.
 
     In theory it is easy to tell if symmetry and tracelessness will be maintained as for both of these constraints we have that if some $\du{A}$ and $\du{B}$ satisfy them then so do $\du{A}+\du{B}$.
     So as long as the functional derivative $\fdv{F}{\sdu{E}^*}$ is itself symmetric and traceless so will \EE\ at any time.
@@ -820,7 +820,7 @@
     \end{equation}
     once we compute the partial derivatives of the $g_i$, where as before $\du{A}=[\EE,\EE^*]$.
 
-    Finally, instead of analytically solving for the Lagrange multipliers $\lambda_i$ like Paget et al and Mihajlovic, we employ a soft constraint\cite{sadatiHardVsSoft2011,meseguerChapterSoftConstraints2006}.
+    Finally, instead of analytically solving for the Lagrange multipliers $\lambda_i$ like Paget et al and Mihajlovic, we employ a soft constraint\cite{sadatiHardVsSoft2011,bhattacharyaKineticsPhaseOrdering1996}.
     This means that the constraints terms of \cref{eq:Gfunc} act as an additional contribution to the free energy that is tuned so that it steeply increases when \EE\ does not satisfy the constraints.
     This is done by setting the Lagrange multipliers proportional to the constraints they represent as $\lambda_i = c_i g_i$ with the $c_i$ being constant across time and space (and we mostly set all to 1, we did not find these to have a significant effect).
     This means that if the constraints are satisfied then the dynamics only minimize the physical free energy $F$ as the $\lambda_i$ becomes 0 and $G \rightarrow F$.
@@ -884,7 +884,7 @@
             \PP &= \frac{d-1}{d-2}\qty(\frac{\du{E} \cdot \du{E}^*}{\du{E} \cddot \du{E}^*} - \frac{\du{\delta}}{d(d-1)}) \label{eq:piex2}
         \end{align}
         The first is more straight forward with it relying simply on rearranging the uniaxial form of \EE\ (\cref{eq:Eua_def}) and replacing $\psi$ via the uniaxial contraction of $\EE\cddot\EE = \psi^2\frac{d-1}{d}$.
-        Now, there is a major catch here of having to take the complex square root which is not a uniquely defined function, however we shall show later that this can be resolved.
+        Now, there is a catch here of having to take the complex square root which is not a uniquely defined function, however we shall show in \cref{sec:fepo_sqrt} that this can be resolved.
         Besides that \cref{eq:piex1} is a very nice and simple expression that crucially only contains \EE\ and not its complex conjugate $\EE^*$.
         Recall that for our dynamics we take a functional derivative with respect to $\EE^*$, this results in us doing partial derivatives of $F$ with respect to $\EE^*$ and so having $\pdv{\sdu{\Pi}}{\sdu{E}^*}=0$ (due any $z$ and $z^*$ being treated as independent variables, see \cref{sec:Ei_dyn}) majorly simplifies the process and result.
 
@@ -909,7 +909,7 @@
         written in index notation to avoid any ambiguities.
         For clarity we restate that we treat all the $E_{ij}$, $E_{ij}^*$ and all their gradients as separate degrees of freedom.
         This is a combined effect of how functional derivatives are calculated, Wirtinger derivatives and the fact that the constraints (like symmetry) are enforced later through Lagrange multipliers.
-        So while it may seem counterintuitive when calculating this functional derivative we have $\pdv{E_{12}}{E_{21}}=0$ despite \EE\ being symmetric.
+        So even though it may seem counterintuitive, when calculating this functional derivative we have $\pdv{E_{12}}{E_{21}}=0$, despite \EE\ being symmetric.
 
         Following through with the derivative rules and using \cref{eq:piex1} as our form for \PP\ we arrive at
         \begin{align}
@@ -924,7 +924,6 @@
         where we split the free energy into its constituent parts.
         With the gradients of \PP\ in terms of \EE\ as
         \begin{align}
-            \Pi_{kl} =&\enspace \sqrt{\frac{d-1}{dE_{ab}E_{ab}}} E_{kl} + \frac{\delta_{kl}}{d} \label{eq:pig0} \\
             \Pi_{kl,m} =&\enspace \sqrt{\frac{d-1}{dE_{ab}E_{ab}}} \biggl(E_{kl,m} - \frac{E_{kl}E_{cd}E_{cd,m}}{E_{ab}E_{ab}}\biggr) \label{eq:pig1} \\
             \Pi_{kl,mn} =&\enspace \sqrt{\frac{d-1}{dE_{ab}E_{ab}}} \biggl(E_{kl,mn} - \frac{E_{kl,n}E_{cd}E_{cd,m} + E_{kl,m}E_{cd}E_{cd,n} + E_{kl}(E_{cd,n}E_{cd,m} + E_{cd}E_{cd,mn})}{E_{ab}E_{ab}} \label{eq:pig2} \\
             &\phantom{\sqrt{\frac{d-1}{dE_{ab}E_{ab}}} \Biggl(} + 3\frac{E_{kl}E_{cd}E_{cd,m}E_{ef}E_{ef,n}}{(E_{ab}E_{ab})^2} \biggr) \nonumber
@@ -933,11 +932,66 @@
         The main things to note here are firstly that in the one constant approximations where all the elastic constants collapse to $b_1$ and $b_2$ as before, we get $\fdv{F_\text{comp}}{E_{ij}^*} = -b_1 E_{ij,kk}$ and $\fdv{F_\text{curv}}{E_{ij}^*} = b_2 E_{ij,kkll}$ which can easily be checked to agree with the functional derivatives of the one constant approximation free energy from \cref{sec:Ei_F}.
         Secondly, from a practical standpoint we see terms of $E_{ij,lkpo}$ in \cref{eq:fdv_u} which means that in our numerical solver we will need to compute a fully general fourth order gradient of \EE.
 
-    \subsection{Dealing with the complex square root for \PP}
-        Earlier we alluded to the complex square root in \cref{eq:piex1} being a problem and we can see that the exact same problematic term gets propagated into the forms \cref{eq:pig0,eq:pig1,eq:pig2}.
+    \subsection{Dealing with the complex square root for \PP}\label{sec:fepo_sqrt}
+        Earlier we alluded to the complex square root in \cref{eq:piex1} being a problem and we can see that the exact same problematic term gets propagated into the forms \cref{eq:pig1,eq:pig2}.
+        The core of the problem is that when reconstructing $\PP=\NN\NN$ directly from the uniaxial \EE\ of \cref{eq:Eua_def}, we have to divide by $\psi$.
+        As such, this section is useful not only for calculating \PP\ but also for reconstructing $\psi$ from a uniaxial \EE\ without needing to numerically find its eigenvalues.
 
-\section{Numerical Considerations}
-    \subsection{Approximating \PP\todo{mention the sqrt thing! And the small E thing}}
+        The problem with the complex square root is that it is a double-valued function, in simpler words there are always two solutions for $\sqrt{z^2}$, $z$ and $-z$.
+        So when we calculate $\chi = \sqrt{\frac{d\sdu{E}\cddot\sdu{E}}{d-1}}$ with any particular branch cut we will have $\chi$ be one of $\pm\psi$.
+        So when we attempt to calculate \PP\ via \cref{eq:piex1}, then after simplifications we get one of two options
+        \begin{equation}
+            \du{\Gamma} = \frac{\du{E}}{\chi} + \frac{\du{\delta}}{d} = \begin{cases}
+            \NN\NN & \qq{if} \chi = \psi \\ 
+            -\NN\NN + \frac{2}{d}\dudelta & \qq{if} \chi = -\psi
+            \end{cases}
+        \end{equation}
+        designating this quantity $\du{\Gamma}$ to avoid confusion as it may not be \PP.
+        However, given that the desired result of this operation should have the very specific form of a projection operator
+        \begin{equation}
+            \PP = \NN\NN = \begin{pmatrix}
+                n_1^2 & n_1n_2 & \cdots \\
+                n_1n_2 & n_2^2 & \cdots \\
+                \vdots & \vdots & \ddots \\
+            \end{pmatrix} \qq{for} \NN = (n_1, n_2, \ldots)
+        \end{equation}
+        we can tell the two cases apart and so resolve the double-value nature of the complex root.
+
+        There are plethora of ways this may be done, what has worked the best for us is to consider the matrix multiplication of the result of $\du{\Gamma}$ with itself and then subtract $\du{\Gamma}$.
+        This leads to
+        \begin{equation}
+            \du{\Gamma}\cdot\du{\Gamma} - \du{\Gamma} = \begin{cases}
+            \NN\NN\cdot\NN\NN - \NN = 0 & \qq{if} \chi = \psi \\ 
+                2\frac{d-2}{d}(\NN\NN-\frac{\sdu{\delta}}{d}) & \qq{if} \chi = -\psi
+            \end{cases}
+        \end{equation}
+        which besides having a surprisingly familiar form is guaranteed to be non-zero as \NN\ is a unit vector.
+        Thus we can simply check whether at least one of the components of this quantity is sufficiently far from 0, if not we know that $\du{\Gamma} = \PP$ and if so then we simply change the sign of $\chi$ and recalculate accordingly.
+        We use this somewhat convoluted procedure instead of simply comparing some of the components of $\du{\Gamma}$ to account for the fact that in our simulations \EE\ will not be uniaxial and so we wish to rely as little as possible on exact forms and components.
+
+\section{Numerical Simulator}
+    We have now covered all of \EE\ theory as it stands, including its foundations as laid out by Paget et al, all the necessary background and motivations and all new contributions from the work conducted as a part of this project.
+    In this section we lay out a quick outline of the numerical simulator that has been developed for this work and which we use to obtain the numerical results in the following section.
+
+    The simulator is written in the C language and based on a Cartesian discretization of a space with equally spaced grid points with their separation being $\delta x$.
+    It solves the partial differential equation of \EE\ dynamics as given by \cref{eq:Edyn_LGM_pre} (with us predominantly using the soft constraint version of \cref{eq:Edyn_LGM}) as an initial value problem with a known field $\EE(t=0)$.
+    This is done by discrete time steps of $\delta t$, we use the two-step Adams–Bashforth method given by
+    \begin{equation}
+        \EE(t+\delta t) = \EE(t) + \delta t \qty(\frac{3}{2}\pdv{\EE}{t}\eval_t - \frac{1}{2}\pdv{\EE}{t}\eval_{t-\delta t})
+    \end{equation}
+    except the first step.
+    The code implements the full projection operator free energy using the functional derivatives \cref{eq:fdv_b,eq:fdv_c,eq:fdv_u} and \PP\ and its gradients evaluated using \EE\ through \cref{eq:piex1,eq:pig1,eq:pig2} via the procedure covered in \cref{sec:fepo_sqrt}.
+
+    The gradients of \EE\ are numerically estimated, for which the code has multiple different options implemented as they have proven to cause issues.
+    The method that has been behaving best and is used in all the presented numerical results estimates all gradients via a first order central difference approximation, so that
+    \begin{equation}
+        \pp_x \EE(x, y, z, t) = \frac{\EE(x+\delta x, y, z, t) - \EE(x-\delta x, y, z, t)}{2\delta x}
+    \end{equation}
+    and similarly for $y$ and $z$.
+    The higher order gradients are then recursively calculated using the same central difference method.
+    % However, this method naturally cannot work at boundaries, this will be discusse
+
+
     \subsection{System boundaries \todo{mix of Dirichlet and von Neumann}}
 
 \section{Numerical Results}
@@ -998,6 +1052,7 @@
 \newpage
 \printbibliography
 
+\newpage
 \begin{appendices}
     \section{Equivalency of $[\EE,\EE^*]=0$ and $\det([\EE,\EE^*])=0$ in 2D}\label{app:noruaeq}
         Consider \EE\ to be a 2D, symmetric, traceless and otherwise unrestricted complex matrix given by
