@@ -3,11 +3,11 @@
 \usepackage{mphysproject} % This includes graphicx, caption and geometry
 \usepackage[block=space,bibencoding=utf8,style=phys,maxbibnames=6,giveninits=true]{biblatex}
 \usepackage[toc,page]{appendix}
+\usepackage[perpage]{footmisc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{physics}
 \usepackage{siunitx}
-
 \usepackage{hyperref}
 \usepackage{cleveref}
 \usepackage{float}
@@ -21,6 +21,8 @@
 \addbibresource{MPhys.bib}
 
 \AtBeginEnvironment{appendices}{\crefalias{section}{appendix}}
+\widowpenalty10000
+\clubpenalty10000
 
 % We often use underlines here
 \stackMath
@@ -35,6 +37,7 @@
 \newcommand{\pp}{\ensuremath{\partial}}
 \newcommand{\mgrad}{\ensuremath{\suf{\nabla}{K}\,}}
 \newcommand{\QQ}{\ensuremath{\du{Q}}}
+\newcommand{\nn}{\ensuremath{\su{n}}}
 \newcommand{\NN}{\ensuremath{\su{N}}}
 \newcommand{\MM}{\ensuremath{\su{M}}}
 \newcommand{\EE}{\ensuremath{\du{E}}}
@@ -42,6 +45,12 @@
 \newcommand{\TT}{\ensuremath{\du{T}}}
 \newcommand{\dudelta}{\ensuremath{\du{\delta}}}
 \newcommand{\ddelta}[4]{\ensuremath{\delta_{#1#3}\delta_{#2#4} + \delta_{#1#4}\delta_{#2#3}}}
+\newcommand{\PE}{\ensuremath{|\psi|_\text{eq}}}
+
+\newcommand{\sL}{\ensuremath{\psi_\text{inplane}}}
+\newcommand{\aL}{\ensuremath{\du{L}}}
+\newcommand{\sP}{\ensuremath{\psi_\text{polar}}}
+\newcommand{\aP}{\ensuremath{\du{P}}}
 
 \newcommand{\FB}{\ensuremath{f_\text{bulk}}}
 \newcommand{\FC}{\ensuremath{f_\text{comp}}}
@@ -54,22 +63,55 @@
 
 \begin{document}
 
-\title{Normal Complex Tensor Order Parameter for Smectics in 3D}
+\title{Complex Tensor Order Parameter for Smectic Liquid Crystals in 3D}
 \author{Jan Kocka}
 \supervisor{Tyler N Shendruk}
 %\date{1st January 2018}
 
 \begin{abstract}
-    \lipsum[10]
+    In this thesis we present a fully comprehensive summary of \EE\ theory, a mesoscopic theory intended for large scale numerical simulations of smectic liquid crystals, which is based around a complex tensor order parameter.
+    We extend the theory into three dimensions and as we do so we reconsider the constraints we must put on \EE\ in order to be able to use it.
+    We determine that those must be symmetry, tracelessness an normality.
+    We then further develop a more complex free energy form in order to capture more realistic and complex smectic systems.
+    Finally, we develop a numerical simulator for the theory, from which we interpret a selection of results where we in particular highlight the theoretical problem of \EE\ becoming biaxial in three dimensions.
 \end{abstract}
 
 \maketitle
 
-% This command introduces the Personal Statement: DO NOT REMOVE IT
-\personalstatement
-% Write PS here
 \acknowledgments
-% Write Acknowledgements here
+    I would like to sincerely thank my supervisor Dr Tyler N Shendruk who has been uncommonly welcoming and acted not only as an MPhys project supervisor but as a much more general academic mentor.
+    I truly appreciate how open minded they were when I kept bringing in new ideas and potential problems of the theory, and all the time they have spent discussing them with me.
+    I would also like to thank all of their academic group with whom we have been meeting on a weekly basis, these meetings have truly helped me get a much wider view of the science of active soft matter.
+    % This project has exposed me to a completely new branch of physics and after it I am determined to pursue theoretical soft/biogical physics in the future.
+    % I have started this project not knowing what branch of physics I will be going down the path for, I am leaving 
+    % Before this project I was not sure which branch of physics or perhaps science in general I wanted to pursue, I am leaving conviced to pursue soft matter
+    % This project has exposed me to a completely new branch of physics and I have since grow to love and decide to purse in my future career.
+
+\newpage
+
+\personalstatement
+    This project started as a follow-up to Dr Jack Paget's PhD thesis work on \EE, with there being two seemingly clear problems set out.
+    The first was extending the theory to 3D, the plan here was to develop new Lagrange multipliers for 3D as the established ones were known not to be valid in 3D and to adapt an existing simulation code to work in 3D.
+    The second was to implement the projection operator free energy, this was perhaps expected to be dominant part of the thesis as there are many ways in which one can vary the constants.
+
+    This turned out not to be the case as early in the project when I was trying to understand everything about \EE\ and how does a general complex tensor adopt the desired form for \EE.
+    This lead to me examining the contraints that need to be imposed on \EE\ as they are discussed in \cref{sec:npE} and I have spent a lot of time over the year trying to truly understand what \EE\ is mathematically and how do we make sure it captures what \EE\ should be physically.
+
+    A related thing that was simply stated in the thesis but took a very significant amount time to figure out and convince myself of is how does take the functional derivative with respect to a constrainted field.
+    This was also a part of working out the functional derivatives for the projection operators from \cref{sec:fepo} which are difficult to understand and check on their own, even without these additional complications.
+    For example, it felt very wrong to take the derivatives of diagonally oposite components of a symmetric \EE\ with respect to each other to be 0.
+    An additional complication in deriving the functional derivations was the form of \PP\ as a function of \EE.
+    At first, I preferred the use of \PP\ in the form of \cref{eq:piex2} as it avoided a complex square root which I was worried about.
+    However, due to its asymmetry and reliance on normality it lead to asymmetric functional derivatives with respect to \EE\ which was thought to be concerning, in addition these did not agree with the functional derivatives when we used the other expression for \PP.
+    All of these issues were eventually resolved and we arrived at the results as presented without any real doubts of their correctness, however understanding how constraints come into play has proven to be very difficult.
+
+    All of the mentioned core theoretical work has been conducted in the first semester with me moving into the coding part of the project over the winter break.
+    While originally we expected to simply reuse the same code varying a couple of bits here and there, we ended up with a near complete rewrite that only kept the base structure.
+    This has naturally taken some time and I have also invested a bit of additional time into adding some simple parallelization to help with the hit the numerics were bound to take by adding another dimension.
+    % This has naturally taken some time and as a part of this I have also implemented some simple parallelization in order to help the hit the numerics would take by the addition of another dimension.
+    The code base mostly was complete and ready by mid January, however we have then been encountering numerical issues from the gradients near boundaries leading to strong unphysical effects.
+    It took nearly a month to identify the problem and find a suitable solution so we started running real, usable simulations by only about mid February.
+    As such, we have only managed to run a relativeliy limited amount of simulations, in particular we did not really fully explore the newly implemented projection operator free energies, however a small test of them was done.
 
 \maintext
 
@@ -81,7 +123,8 @@
         \caption{
             Illustrative structures of a substance made up from rod-like molecules.
             In order from (a) to (e) they are a fully crystalized phase, a smectic A, smectic C, nematic and an isotropic liquid.
-            Image edited from\todo{cite jack's thesis}
+            $\vb{n}$ highlights the nematic orientation.
+            Image edited from\cite{pagetComplexTensorsSimple2023}
         }\label{fig:phases}
     \end{figure}
     All, physicists will be well familiar with the ordered crystalline phase, in which the relative positions and possibly orientation of molecules is ordered, predictable and often repeating.
@@ -115,7 +158,7 @@
 
     The model presented in this thesis is in its early stages and so we mainly aim to capture the physics of the A and perhaps C phases.
     Though as we have extended the model into 3D it further highlighted that it captures the general concept of layers, and it does not currently have any concept of the underlying nematic order of smectics.
-    There is a way to add that and it is perhaps the next step in developing this theory, however it also shows that the model might be used in other fields which require a mesoscopic model for layering.
+    There is a way to add that and it is perhaps the next step in developing this theory, however it also shows that the model might also be of use in other fields which require a mesoscopic model for layering.
     \todo{I don't like this paragraph but want to mention some of it somehow}
 
     \subsection{Ginzburg-Landau theory and the nematic \QQ\ tensor}\label{sec:intro_GL_nem}
@@ -132,21 +175,21 @@
         Going back to our example of a nematic LC, this order parameter needs to capture how aligned the molecules are at each point, accounting for the nematic symmetry.
         The way to do this is using the \QQ\ tensor which can be obtained from a system of discrete molecules via
         \begin{equation}
-            \du{Q}_\text{mol} = \su{N}_\text{mol}\su{N}_\text{mol} - \frac{\dudelta}{d}
+            \du{Q}_\text{mol} = \su{n}_\text{mol}\su{n}_\text{mol} - \frac{\dudelta}{d}
         \end{equation}
-        where $\su{N}_\text{mol}$ is a unit vector denoting the orientation of a molecule, $\dudelta$ the identity and $d$ the dimensionality of the system (2 or 3).
+        where $\su{n}_\text{mol}$ is a unit vector denoting the orientation of a molecule, $\dudelta$ the identity and $d$ the dimensionality of the system (2 or 3).
         Throughout this thesis we use underlines to denote tensors, the number of underlines being their rank, further if two tensors appear side by side then it means a dyadic/tensor product and any contractions are denoted by dots \nolinebreak $\cdot$ (the contraction order usually does not matter).
-        Note that $\du{Q}_\text{mol}$ immediately satisfies the nematic symmetry of to $\su{N}_\text{mol}$ being the same as $-\su{N}_\text{mol}$.
+        Note that $\du{Q}_\text{mol}$ immediately satisfies the nematic symmetry of to $\su{n}_\text{mol}$ being the same as $-\su{n}_\text{mol}$.
         So each molecule has a $\du{Q}_\text{mol}$ and we take a local average of these to arrive at the tensor field \QQ\ (taking these local minima numerically can be quite tricky).
-        Given the form of \QQ\ we can then reexpress it as the following
+        Given the form of \QQ\ we can then express it as the following\footnote{This is not quite true in 3D nematics as we discuss later in \cref{sec:intro_Q_biax}.}
         \begin{equation}\label{eq:Qua}
-            \du{Q} = S\qty(\su{N} \su{N} - \frac{\dudelta}{d}) \color{gray} + \text{possibly more terms, ignore for simplicity here} \normalcolor
+            \du{Q} = S\qty(\su{n} \su{n} - \frac{\dudelta}{d})
         \end{equation}
-        where $S$ is a number between 0 and 1, $\su{N}$ is a unit vector and both are fields along with \QQ.
-        From there it is easy to see that an isotropic liquid would have $\du{Q} = S = 0$ and a fully nematic one would have $S = 1$ and \NN\ be the orientation of the phase.
+        where $S$ is a number between 0 and 1, $\su{n}$ is a unit vector and both are fields along with \QQ.
+        From there it is easy to see that an isotropic liquid would have $\du{Q} = S = 0$ and a fully nematic one would have $S = 1$ and \nn\ be the orientation of the phase.
         From this it is clear that $\du{Q}$ is a valid order parameter to describe the isotropic to nematic transition, it is in fact the most widely used such parameter due to it respecting the orientational symmetry.
 
-        \subsubsection{The free energy density and deformations}
+        \subsubsection{The free energy density and deformations}\label{sec:intro_Q_F}
         Now that we have an order parameter, the next step in forming a Ginzburg-Landau theory is to find a suitable free energy, physics then follow through minimization of it.
         This will be a volume integral of a free energy density $f(\su{r})$ over the system and potentially surface contributions $\mathcal{F}(\su{r})$
         \begin{equation}
@@ -159,7 +202,7 @@
         This is where the power of Ginzburg-Landau theories lays as one may instead start taking all possible symmetry-allowed terms of $f(\su{r})$ increasing in power of the order parameter and stop once all the physics is captured\todo{could use a citation, got this from StatPhys notes}.
         % This approach will only be valid near the critical point and under 
 
-        In the example of \QQ, that already contains the $\su{N} \leftrightarrow -\su{N}$ symmetry and the bulk free energy density (which does not account for gradients) should only depend on $S$ as it should be the same regardless of the orientation direction.
+        In the example of \QQ, that already contains the $\su{n} \leftrightarrow -\su{n}$ symmetry and the bulk free energy density (which does not account for gradients) should only depend on $S$ as it should be the same regardless of the orientation direction.
         As such we have $f_\text{bulk}(\su{r})$ being a power series of $S$ and given \cref{eq:Qua} that translates to a series of suitably contracted terms of \QQ.
         Generally, the following form is used
         \begin{equation}\label{eq:Qfbulk}
@@ -186,12 +229,12 @@
             }\label{fig:nem_deform}
         \end{figure}
 
-        For the nematic case, in the simplest case of constant $S$ but varying \NN\ we get the Frank-Oseen deformation energy terms\cite{brayTheoryPhaseOrdering1993,frankLiquidCrystalsTheory1958,gennesPhysicsLiquidCrystals1995}
+        For the nematic case, in the simplest case of constant $S$ but varying \nn\ we get the Frank-Oseen deformation energy terms\cite{brayTheoryPhaseOrdering1993,frankLiquidCrystalsTheory1958,gennesPhysicsLiquidCrystals1995}
         \begin{align}
-            K_1 (\mgrad \cdot \su{N})^2 && K_2 (\su{N} \cdot \mgrad \times \su{N})^2 && K_3 (\su{N} \times \mgrad \times \su{N})^2
+            K_1 (\mgrad \cdot \su{n})^2 && K_2 (\su{n} \cdot \mgrad \times \su{n})^2 && K_3 (\su{n} \times \mgrad \times \su{n})^2
         \end{align}
-        where the $K$s\todo{is this okay?} are positive elastic constants.
-        These three terms correspond to three type of deformation of the director \NN: splay, twist and bend respectively, as shown in \cref{fig:nem_deform}.
+        where the $K_?$\todo{is this okay?} are positive elastic constants.
+        These three terms correspond to three type of deformation of the director \nn: splay, twist and bend respectively, as shown in \cref{fig:nem_deform}.
         Adapting these to be in terms of \QQ\ has proven difficult, first attempted by de Gennes\cite{gennesPhysicsLiquidCrystals1995} using the terms
         \begin{align}
             L_1Q_{ij,k}Q_{ij,k} && L_2Q_{ij,j}Q_{ik,k} && L_4\epsilon_{ijk}Q_{il}Q_{jl,k}
@@ -217,14 +260,12 @@
 
         It demonstrates the power of \QQ\ that we can still use it to describe this dual order, we can still calculate it exactly the same way through $\du{Q}_\text{mol}$ and \QQ\ will still be symmetric and traceless, however we now allow it to take the more general form
         \begin{equation}\label{eq:Qbiax}
-            \du{Q} = S_1\qty(\su{N} \su{N} - \frac{\dudelta}{d}) + S_2\qty(\su{M} \su{M} - \frac{\dudelta}{d})
+            \du{Q} = S_1\qty(\su{n} \su{n} - \frac{\dudelta}{d}) + S_2\qty(\su{m} \su{m} - \frac{\dudelta}{d})
         \end{equation}
-        where $\su{N}$ and $\su{M}$ are mutually orthogonal unit vectors which describe the directions of the two orders, with $S_1$ and $S_2$ acting as their corresponding order parameters.
+        where $\su{n}$ and $\su{m}$ are mutually orthogonal unit vectors which describe the directions of the two orders, with $S_1$ and $S_2$ acting as their corresponding order parameters.
 
         This more general type of nematic order comes with many complications especially when it comes to the free energy forms as it is difficult to separate the two orders contained in \QQ.
         However, it has been extensively studied during the last decades with fascinating phases being used including those of banana shaped molecules\cite{luckhurstBiaxialNematicLiquid2015,kumarBiaxialityNematicSmectic2017,kimCurvaturesSmecticLiquid2018}.
-
-        % \todo[inline,size=\footnotesize]{This needs more, cite/use\cite{luckhurstBiaxialNematicLiquid2015} mention how final states for uniaxial nematics have a uniaxial Q even when using eq above, aka S2 = 0, though I need a thing to cite for that}
 
     \subsection{Describing smectics\cite{oswaldSmecticColumnarLiquid2005}}\label{sec:intro_degen}
         Fundamentally, the layered positional order corresponds to a wave-like density fluctuation.
@@ -280,6 +321,35 @@
         It is using this theory that de Gennes has demonstrated an analogy between smectic liquid crystals and superconductors\cite{degennesAnalogySuperconductorsSmectics1972}, a particularly fruitful contribution leading to better understanding of the twist-grain boundary phase\cite{lubenskyTwistgrainboundaryPhasesNematic1990} among others.
 
     \subsection{Smectic (and nematic) defects}
+    There is one more prevalent topic of liquid crystals worth introducing before we start discussing issues of the de Gennes complex order parameter and that is defects.
+    In general those are some type of localized irregularities in the structure of a liquid crystalline phase.
+    For smectics there two main types, disclinations which are defects of the director \NN\ field and dislocations which are additional layers which are not matched and abruptly end.
+    In this section we provide a brief introduction to disclination defects, which are common to both smectics and nematics, as the model we work on for smectics is a mesoscopic one and we do not expect it to be able to resolve dislocations.
+
+    Disclinations are points, lines or planes where some underlying orientation field is discontinuous.
+    Simplest examples are the 2D point defects shown in \cref{fig:defects} for a vector-like field.
+    We say vector like as this field may be more symmetric than a vector, like say the orientation of our rod-like molecules.
+
+    An important concept that comes with disclination defects is topoligical charge.
+    In 2D one can calculate the topological charge of a point disclination by encircling it counterclockwise with a closed contour and summing the total orientational change that takes place along it.
+    This is then divided by $2\pi$ to obtain the topological charge, perhaps the simplest disclination to try this on is the vortex seen in \cref{fig:defects}(b).
+    Topological charge is important because the symmetries of the underlying field determine what charge disclinations a system can have.
+    This is as the point defects are precisely that, points, we must have the orientation continuous everywhere else and so for a $+\frac{1}{2}$ disclination to not result in a discontinuety somewhere around it we much have parity symmetry of the underlying vector field.
+
+    Given this in nematic and smectic liquid crystals we mainly consider half integer defects due to their respective symmetries.
+    However, other approaches and ideas exist, in fact recently Monderkamp et al\cite{monderkampTopologyOrientationalDefects2021,a.monderkampTopologicalFineStructure2022} have suggested a tetratic symmetry for smectics as they have observed point-like $\pm\frac{1}{4}$ charge defects and lines corresponding to half integer defects.
+    It is worth noting that generalizing topological charges to 3D is not as straight forward as one might hope, but we do not discuss that here as we will not be needing it.
+
+    \begin{figure}[t]
+        \begin{center}
+            \includegraphics[width=0.95\textwidth]{figures/nematic_defects.png}
+        \end{center}
+        \caption{
+            Diagrams of the simplest point disclinations in 2D.
+            The blue ovals depict the orientation field with the black dots being the disclination points where the orientation is discontinuous.
+            (a-b) are the aster and vortex (both topological charge +1), and (c-d) are the comet (charge $+\frac{1}{2}$) and triradius (charge $-\frac{1}{2}$). Figure edited from \cite{foffanoDynamicsColloidalIntrusions2014}.
+        }\label{fig:defects}
+    \end{figure}
 
     \subsection{Limitations of $\psi$ and the $\su{N} \leftrightarrow -\su{N}$ symmetry}\label{sec:intro_pevnyi}
         The theoretical framework described in \cref{sec:intro_degen} has been very successfully used since the second half of the 20th to understand many of the smectic and other liquid crystalline phases\todo{needs citations...}.
@@ -328,7 +398,7 @@
         Of course the free energy must be carefully crafted so that layering does appear, one way to do this is to relate $\delta\rho$ to $\psi$ and use the same free energies that have been developed for $\psi$\cite{pevnyiModelingSmecticLayers2014}.
 
         Another benefit of this microscopic treatment is that individual layers in the smectic are resolved, unlike in the approaches using $\psi$ where the focus is on the degree of ordering and layer normal direction.
-        This is a notable feature as precise layer positioning plays a role in dislocation defects \todo{cref to figure of defect} and it also allows to obtain the preferred layer spacing $q_0$ through simulations instead of considering it as an outside parameter like in most $\psi$ based approaches.
+        This is a notable feature as precise layer positioning plays a role in dislocation defects \todo{maybe cref to figure of defect} and it also allows to obtain the preferred layer spacing $q_0$ through simulations instead of considering it as an outside parameter like in most $\psi$ based approaches.
         % The same also applies to $\rho_1$ which can be obtained from simulaltions as opposed to when using $\psi$
         % and the same applies to $\rho_1$ where often $|\psi|$ is taken in the range 0 to 1 (for a fully isotropic and smectic systems respectively) and then scaled by $\rho_1$ (or in fact $\rho_0$) as a physical parameter.
 
@@ -341,7 +411,7 @@
         This is a rather complex approach which starts at the individual particles, their positions, orientations and interactions and coarse-grains these.
         As such these at a fundamental level describe a more general liquid crystal system of non-spherical (mainly rod-like) particles which may have both nematic and smectic order.
         In the methods of \cite{lowenPhasefieldcrystalModelLiquid2010} one ends up with three fields: the particle density field $\psi_1$, a nematic order parameter $\psi_2$ and the nematic director field $\su{u_0}$.
-        The nematic order fields $\psi_2$ and $\su{u_0}$ vaguely corresponding to the $S$ and \NN\ parameters from \cref{sec:intro_Q}.
+        The nematic order fields $\psi_2$ and $\su{u_0}$ vaguely corresponding to the $S$ and \nn\ parameters from \cref{sec:intro_Q}.
 
         This is a promising method, in particular when considering its generality when it comes to different types of order, physical insight and mathematical rigour.
         However, for simulating large mesoscopic systems it shares the same limitations of the density based methods using $\delta\rho$.
@@ -413,7 +483,7 @@
     \subsection{Free energy in the one constant approximation}\label{sec:Ei_F}
         Now that we have our new order parameter, we need to find a form for the free energy density in terms of it.
         Here we present the simplest possible form that it may take as used by Paget et al\cite{pagetComplexTensorsSimple2023,pagetSmecticLayeringLandau2022,pagetComplextensorTheorySimple2023}.
-        This is also heavily inspired by the \QQ\ tensor free energy forms (though I do not make that connection here) with the main difference being that we need to make sure the free energy $F$ is real and not complex.
+        This is also heavily inspired by the \QQ\ tensor free energy forms (though we do not make that connection here) with the main difference being that we need to make sure the free energy $F$ is real and not complex.
         Throughout this thesis we only focus on the free energy of the system volume and ignore any surface energies.
         While these are very interesting to study and Paget et al do use them in 2D simulations, we only use fixed or periodic boundary conditions in this thesis and so they do not come into play.
 
@@ -716,7 +786,7 @@
         Say for a smectic A, the free energy has to be constructed in a way that layering is only energetically favourable when it is normal to the nematic director.
         This then naturally restricts the layering to a single direction at any place and so while a biaxial \EE\ would still be possible it would not be energetically favoured.
 
-    \subsection{Working with a biaxial \EE}
+    \subsection{Working with a biaxial \EE}\label{sec:npE_wwbE}
         If we are to work with a biaxial \EE\ in 3D we must be able to put any symmetric, traceless and normal matrix into the form of \cref{eq:Ebiax} so that we can recover the interpretable fields.
         However, there is a practical problem when following the steps in \cref{sec:npE_cnst}, early in the process we are required to choose an eigenvalue that we remove from the matrix product in \cref{eq:Ederstart}.
         The problem is that we are free to choose any of them and so the biaxial form of \EE\ is not unique, in $d$ dimensions there may be up to $d$ different such forms for any given \EE.
@@ -822,7 +892,7 @@
 
     Finally, instead of analytically solving for the Lagrange multipliers $\lambda_i$ like Paget et al and Mihajlovic, we employ a soft constraint\cite{sadatiHardVsSoft2011,bhattacharyaKineticsPhaseOrdering1996}.
     This means that the constraints terms of \cref{eq:Gfunc} act as an additional contribution to the free energy that is tuned so that it steeply increases when \EE\ does not satisfy the constraints.
-    This is done by setting the Lagrange multipliers proportional to the constraints they represent as $\lambda_i = c_i g_i$ with the $c_i$ being constant across time and space (and we mostly set all to 1, we did not find these to have a significant effect).
+    This is done by setting the Lagrange multipliers proportional to the constraints they represent as $\lambda_i = c_i g_i$ with the $c_i$ being constant across time and space\footnote{We mostly set all to 1, we did not find these to have a significant effect.}.
     This means that if the constraints are satisfied then the dynamics only minimize the physical free energy $F$ as the $\lambda_i$ becomes 0 and $G \rightarrow F$.
     But if a constraint is substantially violated then its corresponding $\lambda_i$ grows large and the minimization will be more likely to quickly reduce $g_i$ back to 0.
 
@@ -841,7 +911,7 @@
     Perhaps most importantly for us however, when using the soft constraint method we always have $g_n$ converging to 0 at large times, whereas when using the Mihajlovic multipliers we often saw $g_n$ getting stuck at a small but non-zero value with no changes to it.
     As such, for the numerical simulations presented later in the thesis we mainly used the soft constraint method, occasionally also running a simulation with the Mihajlovic multipliers for verification.
 
-\section{Free Energy and Projection Operators}
+\section{Free Energy and Projection Operators}\label{sec:fepo}
     Now that we have thoroughly re-examined what \EE\ should be in 3D and how to enforce the constraints of symmetry, tracelessness and normality on it, we move to the second major goal of this project, to introduce a more complex free energy form.
     The free energy form that we pursue here builds on top of the double one constant approximation free energy density presented in \cref{sec:Ei_F}, for convenience we reproduce its three terms here
     \begin{align}
@@ -898,7 +968,9 @@
 
         Of course, it is important to stress that for a uniaxial \EE\ these are equal and completely equivalent and one can find more such expressions (for example \cref{eq:piex1} but replacing all \EE\ by $\EE^*$ is another).
         However, this may not be so in the only nearly uniaxial case where both must be :as approximations of $\PP=\NN\NN$ only.
-        From now on we focus on \cref{eq:piex1} due to its convenience, however we briefly return to \cref{eq:piex2} when discussing our simulation results.
+        From now on we focus on \cref{eq:piex1} due to its convenience.
+        However retroactively checking using the results of our simulations we have found \cref{eq:piex2} to better approximate the real projection operator (as checked via numerical eigen decomposition of \EE) and so in the future it may be worth revisiting this choice.
+        % Specifically we have found that \cref{eq:piex2} generally has a twice as small deviation from the real  $|\du{\Chi}|$ $\du{\Chi} = \PP - \NN\NN$ with 
 
     \subsection{Functional derivatives of the projection operator free energy}
         Finally, we need to calculate the functional derivative $\fdv{F}{\sdu{E}^*}$ with $F=\int \FB + \FC + \FU \dd{V}$ in order to use our dynamics equation of \cref{eq:Edyn_LGM}.
@@ -969,7 +1041,7 @@
         Thus we can simply check whether at least one of the components of this quantity is sufficiently far from 0, if not we know that $\du{\Gamma} = \PP$ and if so then we simply change the sign of $\chi$ and recalculate accordingly.
         We use this somewhat convoluted procedure instead of simply comparing some of the components of $\du{\Gamma}$ to account for the fact that in our simulations \EE\ will not be uniaxial and so we wish to rely as little as possible on exact forms and components.
 
-\section{Numerical Simulator}
+\section{Numerical Simulator}\label{sec:ns}
     We have now covered all of \EE\ theory as it stands, including its foundations as laid out by Paget et al, all the necessary background and motivations and all new contributions from the work conducted as a part of this project.
     In this section we lay out a quick outline of the numerical simulator that has been developed for this work and which we use to obtain the numerical results in the following section.
 
@@ -982,75 +1054,406 @@
     except the first step.
     The code implements the full projection operator free energy using the functional derivatives \cref{eq:fdv_b,eq:fdv_c,eq:fdv_u} and \PP\ and its gradients evaluated using \EE\ through \cref{eq:piex1,eq:pig1,eq:pig2} via the procedure covered in \cref{sec:fepo_sqrt}.
 
-    The gradients of \EE\ are numerically estimated, for which the code has multiple different options implemented as they have proven to cause issues.
+    The gradients of \EE\ are numerically estimated, for this the code has multiple different options implemented as some methods have caused issues.
     The method that has been behaving best and is used in all the presented numerical results estimates all gradients via a first order central difference approximation, so that
-    \begin{equation}
+    \begin{equation}\label{eq:gradcentral}
         \pp_x \EE(x, y, z, t) = \frac{\EE(x+\delta x, y, z, t) - \EE(x-\delta x, y, z, t)}{2\delta x}
     \end{equation}
     and similarly for $y$ and $z$.
-    The higher order gradients are then recursively calculated using the same central difference method.
-    % However, this method naturally cannot work at boundaries, this will be discusse
+    The higher gradients (up to fourth order) are then calculated recursively using the same central difference method, each higher gradient using the results of the previous.
+    However, this method naturally cannot work at any real boundaries where one does not have neighboring points in some of the directions, this problem will be revisited shortly.
 
+    \subsection{System boundaries}\label{sec:ns_sb}
+        Given the Cartesian discretization we only attempt to simulate cuboid systems for which the simplest way to deal with system boundaries are Periodic Boundary Conditions (PBCs).
+        When using these we take any point laying beyond the numerical system size say in the $x$ direction will be wrapped back into the numerical system by subtracting the system size on the $x$ direction.
+        As such, when using PBCs for a cuboid system with dimensions $L_x, L_y, L_z$ we essentially substitute all $\EE(x, y, z)$ with $\EE(\bmod(x, L_x), \bmod(y, L_y), \bmod(z, L_z))$ with $\bmod$ denoting the modulo function.
+        This is in some ways equivalent to stacking copies of our cuboid system side by side and letting them interact.
 
-    \subsection{System boundaries \todo{mix of Dirichlet and von Neumann}}
+        Besides PBCs we implement fixed boundaries in our simulator.
+        These are intended to account for real physical systems which have boundaries where the smectic ends and interacts with the outside environment in some manner, though they are a very simplistic method of doing so.
+        Typically, in a system of rod-like particles there are two types of anchoring (the way the particles interact with other substances), either homeotropic where the rod-like particles like to align themselves perpendicularly to the surface of an outside substance.
+        Or homogenous where the particles like to align themselves to be parallel to such a surface\cite{oswaldNematicCholestericLiquid2005}.
+        These anchoring types translate themselves to smectics and we typically have that the smectic prefers to have layers parallel to an outside surface or perpendicular.
+
+        This corresponds to having \NN\ either in the plane of a boundary surface of perpendicular to it and generally having a large $|\psi|$ as the boundary supports layering.
+        Paget et al suggest multiple ways of incorporating these boundary effects into the theory via the surface free energy contributions mentioned in \cref{sec:intro_Q_F,sec:Ei_F} in \cite{pagetComplexTensorsSimple2023}.
+        These then add additional terms to the free energy functional derivatives at the boundary and implement a preferred \EE\ (or an \EE\ subspace) at the boundary while allowing it to change and undergo dynamics as well.
+        However, due to lack of time we did not manage to implement these into the simulator for this project and so instead we simply fix \EE\ at the boundaries and do not allow it to change.
+        In particular, we always set a uniaxial \EE\ along the boundaries with $|\psi|$ corresponding to a fully ordered smectic and an arbitrarily chosen constant for $\phi$.
+
+        This means that in our simulator of a cuboid system we have four options, full PBCs on all faces, one set of opposing faces with fixed boundaries but the others being periodic, two sets of opposing faces with fixed boundaries and the last being periodic, and finally fully fixed boundaries on all faces.
+        All the other options being related to some of the above by a rotation.
+        In addition, given the lacking nature of fixing \EE\ at the boundaries to a specific value we mainly consider the anchoring where \NN\ is perpendicular to the surface.
+        This is as in this case there is only one option for \NN\ as opposed to when it lies in plane and we would have to artificially choose one direction within the plane for it.
+
+        Finally, we need to address how we calculate the gradients of \EE\ at fixed boundaries.
+        At these it is no longer valid to remap any neighbouring points to the other side of the system like when using PBCs.
+        At first, we have attempted to replace the central difference gradients of \cref{eq:gradcentral} with forward/backward gradients which only need a neighbour on one side, which we will always have.
+        However, this has lead to unphysical raises to the free energy at and near the boundaries.
+        This is likely due to a combination of numerical problems and finite difference methods and the fact that fixing \EE\ without properly accounting for the surface free energy might invalidate neglecting surface contributions when calculating the free energy functional derivatives as in \cref{sec:Ei_fdv}.
+        It is also worth noting that we have seen extensive numerical problems when attempting to use only forward gradients throughout the entire system when using PBCs, as such we believe them to be a major part of the issue.
+
+        After extensive experimentation we have arrived at an alternative method for dealing with gradients at boundaries which behaves well.
+        We pad every boundary plane with a number of additional grid points beyond it that are all set to the same fixed \EE\ as that boundary and then continue using the central difference gradients of \cref{eq:gradcentral}.
+        This in effect corresponds to Dirichlet boundary conditions with artificially smoothened, soft gradients.
+        % This is certainly something that could be better formaluted or improved 
+
+    \subsection{Units and non-dimensionalization}
+        We also briefly discuss the units that our simulator used and the choices we make for the physical constants present in \EE\ theory.
+        There are three fundamental units in our theory: energy, length and time, we denote these by the arbitrary units $\si{E},\si{L}$ and $\si{T}$ respectively.
+        The quantities present in our theory then have units as given by \cref{tab:units}.
+        \begin{table}[H]
+            \begin{center}
+                \renewcommand{\arraystretch}{1.5}
+                \begin{tabular}{c | c | c | c | c | c }
+                    quantity & \EE & $A$, $C$ & $b_1^?$ & $b_2^?$ & $\mu$ \\
+                    \hline
+                    unit & 1 & $\frac{\si{E}}{\si{L}^3}$ & $\frac{\si{E}}{\si{L}}$ & $\si{E} \si{L}$ & $\frac{1}{\si{E} \si{T}}$ \\
+                \end{tabular}
+            \end{center} 
+            \caption{The units of all the physical quantities present in \EE\ theory as denoted by the artibtrary units of energy, length and time $\si{E}, \si{L}$ and $\si{T}$}\label{tab:units}
+        \end{table}
+
+        Further, Paget et al identify the characteristic lengths of the theory as the coherence length $\epsilon$, which is the approximate size of defects, and the penetration depth $\lambda$ given by
+        \begin{align}
+            \epsilon = \sqrt{\frac{b_1^\parallel}{|A|}} && \lambda = \sqrt{\frac{b_2^\perp}{b_1^\parallel}}
+        \end{align}
+        and so we choose to use $\epsilon$ as our unit of length so that $\epsilon = 1\si{L}$.
+        The penetration depth is then set as $\lambda = K \epsilon$ with $K$ being the Ginzburg parameter, a dimensionless quantity also identified by Paget et al.
+        The Ginzburg parameter is a well established quantity for smectics and typically very different behaviours are observed at $K$ above or below ${\sim}\frac{1}{\sqrt{2}}$.
+
+        Besides that, we have the preferred equilibrium bulk order parameter given by the minimization of \FB\ only, these are given by
+        \begin{align}
+            |\EE|_\text{eq} = \sqrt{\frac{-A}{C}} && |\psi|_\text{eq} = \sqrt{\frac{3}{2}\times\frac{-A}{C}}
+        \end{align}
+        in the smectic phase where $A<0$, and are both 0 in the isotropic phase where $A \geq 0$.
+        Recall that we always have $C>0$.
+        In our simulations we focus on the dynamics of the smectic phase and not on the isotropic to smectic transition itself.
+        As such, for simplicity we fix $C$ in terms of $A$ so that $\PE$ is always 1 for a smectic phase.
+        This is achieved by setting $C = \frac{3}{2}|A|$, which also sets the minimum of the bulk free energy density $\FB(|\EE|_\text{eq})=\frac{-|A|}{3}$.
+
+        Now we still have the free parameters $A$ and $\mu$, and we have two remaining undetermined units \si{E} and \si{T}.
+        Given the units of $A$ and $\mu$ we free to without loss of generality choose $|A|=1\si{\frac{E}{L^3}}$ and $\mu = 1\si{\frac{1}{E T}}$ which each set our units of energy and time respectively.
+        So overall we are left with the decision of whether we have $A$ positive or negative and so have a isotropic or smectic phase and the values of the elastic constants $b_1^\perp, b_2^\parallel$ and $b_2^{\parallel\perp}$.
+
+        In the simulations we present in this thesis we only use two different options for the elastic constants.
+        Despite us developing the full projection operator free energy form, we mainly use $b_1^\perp=b_1^\parallel$ and $b_2^\parallel=b_2^{\parallel\perp}=b_2^\perp$ which corresponds to the one constant approximation free energy.
+        The second setting we use is that of
+        \begin{equation}\label{eq:smF}
+            b_1^\perp=0 \qq{and} b_2^\parallel=b_2^{\parallel\perp}=0
+        \end{equation}
+        which we refer as the intuitive smectic free energy form.
+        This is chosen as compression energy costs by definition occur perpendicular to the layering, and so we want only $b_1^\parallel$ to contribute, whereas we expect the curvature deformation of the layers to be best captured by the gradients parallel to the layers.
+    
+    \subsection{Biaxial \EE\ in simulations}
+        Before we start discussing specific simulations, we just once more clarify some of the language that we use when it comes to the biaxial \EE.
+        The simulator itself has no knowledge of any potential biaxiality, it simply uses the equations we covered which allow for it.
+        We always initialize \EE\ at time 0 as being uniaxial, usually in some randomized way for which we use the relation
+        \begin{equation}
+            \du{E} = \psi \qty(\su{N}\su{N} - \frac{\du{\delta}}{d}) \tag{\ref{eq:Eua_def} revisited}
+        \end{equation}
+        However, when we interpret the calculated \EE\ fields we consider them as being potentially biaxial and so reconstruct the fields of the relation
+        \begin{equation}
+            \du{E} = \psi_1 \qty(\NN\NN - \frac{\dudelta}{3}) + \psi_2 \qty(\MM\MM - \frac{\dudelta}{3}) \tag{\ref{eq:Ebiax} revisited}
+        \end{equation}
+        using numerical eigendecomposition.
+        As such we use the language both equations somewhat interchangeably, where usage of $\psi$ without subscript usually implies uniaxiality.
 
 \section{Numerical Results}
-    \subsection{Uniaxial final state when quenching from isotropic}
-    \subsection{Imposed twist}
-    \subsubsection{Fitting $\frac{\theta}{\Delta\theta}$}
-    We now want to quantify the shapes of the azimuthal angle $\theta$ as a function of height.
-    To do that, we first of all non-dimensionalize these quantities and instead look at $\frac{\theta}{\Delta\theta}$ as a function of $\frac{h}{H}$.
-    That way all the plots will have the same end points and so can be compared, notably these endpoints will be at $(0, 0)$ and $(1, 1)$ and by symmetry they also ought to go through $(\frac{1}{2}, \frac{1}{2})$.
-    Further as the shape is clearly a sigmoidal one, we attempted a fit using both the $\arctan$ and the $\tanh$ functions, both of which only leave one parameter once the endpoints are fixed.
-    As the $\arctan$ method performed qualitatively better (see \todo{do cref} for an example comparison of the two), we only use that from now on.
-    Its exact form is
-    \begin{equation}
-        \frac{\theta}{\Delta\theta} = \frac{\arctan(a \qty(\frac{h}{H} - \frac{1}{2}))}{2\arctan(\frac{a}{2})} + \frac{1}{2}
-    \end{equation}
-    and we also quote that the slope of this function evaluated at $\frac{h}{H} = \frac{1}{2}$ is
-    \begin{equation}
-        \eval{\dv{\frac{\theta}{\Delta\theta}}{\frac{h}{H}}}_\text{middle} = \frac{a}{2\arctan(\frac{a}{2})}
-    \end{equation}
-    \subsection{Bridge state in large simulations}
+    In this section we present some of the numerical simulation results of our simulator described in \cref{sec:ns}.
+    For all these results we use a $\delta x = 0.1\si{L}$ (recall that \si{L} is the coherence length so we expect defects to have size ${\sim}1\si{L}$) which is sufficiently large to simulate large systems yet small enough that we capture all necessary detail.
+    In particular, in our tests we started observing numerical issues suggesting a too large grid spacing at $\delta x \sim 1.5\si{L}$.
+    We use a $\delta t$ ranging between $10^{-8}\si{T}$ and $10^{-3}\si{T}$ chosen as large as possible without the numerical gradients diverging.
 
-\section{Current Limitations of \EE}
-    \subsection{Dealing with the biaxiality}
-    \subsection{The smectic symmetries}
-    Earlier, in the motivational part of this thesis I have mentioned that one of the advantages of \EE\ is that it respects the symmetry of reversing the layering direction \NN\ both globally and locally.
-    While this is the true symmetry of a layered system, it is not a symmetry of the established relation between $|\psi|,\phi,\su{N}$ and the density modulation
-    \begin{equation}\label{eq:lim_den2}
-        \rho(\su{r}) = \rho_0 + \Re(|\psi| e^{i(q_0\ssu{N}\cdot\ssu{r} + \phi)}), \qq{$|\psi|,\su{N}$ and $\phi$ being fields}
-    \end{equation}
-    which we did not directly use in this work, but it heavily guided our interpretation of the field.
-    The only symmetry of \cref{eq:lim_den2} is under simultaneously exchanging $\su{N}, \phi \leftrightarrow -\su{N}, -\phi$ locally or globally.
-    There are naturally two ways to resolve this issue.
-    Either modify \EE, in particular its complex phase, such that it respects the symmetry of \cref{eq:lim_den2}.
-    Or find a different way to interpret the fields from \EE\ as it is, or perhaps a combination of both approaches.
+    \subsection{Quench-like periodic boundary system}\label{sec:nr_quench}
+        The simplest simulation run we have to present is that of an initially disordered state but a smectic like \FB\ (negative $A$) with periodic boundary conditions.
+        In this simulation we use the one constant approximation free energy and Ginzburg parameter $K=0$, though similar simulations have been conducted for non-zero  $K$ with the same qualitative results.
 
-    For modifying \EE, I suspect this would be very difficult to the point where any suitable form of \EE\ would likely be so different it should be called something else.
-    This is as one would need to somehow couple the complex phase $\phi$ and \NN, an eigenvector of \EE, which is only accessible numerically.
-    This is as the only symmetry of \cref{eq:lim_den2} is when the signs of both flip, not just one.
-    Regardless, if one was to find a form for \EE\ that satisfied both symmetries independently the interpretation of $\phi$ would not hold anymore.
-    Currently, using \cref{eq:lim_den2}, we interpret $\dv{\phi}{x}$ (with x being the direction along \NN\ at any point) as a contraction if it is positive and dilation if negative.
-    However, the change of $\phi \rightarrow -\phi$ will change the sign of these and so clearly this is not a physical symmetry of the system.
+        By initially disordered we mean that at every grid point we initialize \EE\ to be uniaxial through \cref{eq:Eua_def} with a randomly generated \NN, $|\psi|$ and $\phi$.
+        The random \NN\ are generated through first randomly generating its components independently and then normalizing it\footnote{This is an important detail as we have found the simulator to be very sensitive to any bias of the random vector generation. When we instead generated random spherical polar coordinates around the $z$ axis the system always converged to $\NN = \hat{\su{z}}$.}.
+        In this run we generated the initial $|\psi|$ by taking the absolute value of random numbers from a Gaussian distribution of mean 0.1 and standard deviation 0.01.
+        The $\phi$ were also taken from a Gaussian distribution with mean 0.6 and standard deviation of 1.
+        Here we have a relatively narrow distribution of $|\psi|$ and a very wide distribution of $\phi$, however we have also ran similar simulations with different distributions of the initial parameters and found them to have little effect.
+        The only difference we have observed is that larger variances on the Gaussians and smaller mean values for $|\psi|$ resulted in the simulation taking longer to reach alignment and equilibrium.
 
-    Thus, it seems the more natural way to move forward is to adapt \cref{eq:lim_den2} to respect the symmetry in \NN\ only.
-    Starting from a wave resembling $e^{i(\ssu{q_0}\cdot\ssu{r})}$ of which we want to adjust the wavelength locally.
-    Given the addition in \cref{eq:lim_den2} using $e^{i(\ssu{q_0}\cdot\ssu{r})(1+s(\ssu{r}))}$ might be a good starting point, where $s=0$ corresponds to equilibrium spacing, $s>1$ to a contraction and $s<1$ to a dilation.
-    This form has the required symmetry and can be expanded as
-    \begin{equation}
-        e^{i(\ssu{q_0}\cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\ssu{r} + s(\ssu{r})q_0\ssu{N}\cdot\ssu{r})} 
-    \end{equation}
-    which now has the same form as \cref{eq:lim_den2} with $\phi(\su{r}) = s(\su{r})q_0\su{N}\cdot\su{r}$, however it is very important to stress that that would no longer be the $\phi$ from \EE\ as that would not change anything.
-    However, $s$ and $\phi$ from \EE\ are both dimensionless quantities and perhaps we can find a way to map them onto each other.
-    The only reasonable values for $s$ are from $-1$, where the wavelength becomes infinite, to $+\inf$ where wavelength goes to 0.
-    Any values $<-1$ would just correspond to a different $s$ and a flipped $\su{N}$.
-    On the other hand $\phi$ from \EE\ belongs to any set interval of length $2\pi$.
-    So if we use $\phi \in (-\pi, \pi]$ and let $s = \frac{\phi}{\pi}$ then the model could account for any dilation and a contraction of up to half the natural wavelength.
-    However, this would fundamentally change what $\phi$ from \EE\ is and would require more work to investigate the free energy costs to contractions and dilations, among other considerations.
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/fiso_r7_energies.pdf}
+            \end{center}
+            \caption{
+                Dynamics of the free energy and order parameters in time of the large quench-like simulation described in \cref{sec:nr_quench}.
+                (a) shows the volume averaged free energy densities \FB, \FC\ and their sum. \FU\ is not present as we have $K=b_2=0$.
+                The values of the energy densities are cut off for the initial state which had $\FC\sim1\si{\frac{E}{L^3}}$.
+                We see how at first the dynamics are driven by the deformation energy before $f_\text{total}$ starts following \FB\ with a noticeable bump of \FC\ when the system starts getting ordered again and so gradients grow.
+                (b) shows the volume averaged order parameters of a biaxial \EE\ as given by \cref{eq:Ebiax}.
+            }\label{fig:fiso_r7e}
+        \end{figure}
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/fiso_r7_sample.pdf}
+            \end{center}
+            \caption{
+                Snapshots showing the reconstructed layer normal directors \NN\ and \MM\ of an approximately $2\si{L}\times2\si{L}\times1\si{L}$ region of the large quench-like simulation discussed in \cref{sec:nr_quench} at selected times.
+                The directors are shown as headless arrows to highlight their parity symmetry, which is present in our model.
+                \NN\ which is always associated with the dominant order at a particular point is shown in blue whereas \MM\ is shown in orange.
+                Here the director \NN\ is shown normalized with constant magnitude whereas \MM\ is scaled by the biaxial order parameter $|\psi_2|$ to highlight that (a) and (c) are uniaxial.
+                In contrast, (b) shows a high degree of biaxiality with at least two domains being clearly visible in the region.
+            }\label{fig:fiso_r7s}
+        \end{figure}
+
+        This simulation has been done on a cube box of 101 grid points for each dimension making for a total system size of $10.1\si{L}\times10.1\si{L}\times10.1\si{L}$, which is towards the upper end of what we can comfortably run, and was ran for a total time of $55\si{T}$.
+        We specifically wanted to run a large system for this setup as during a quench from a random isotropic state, as the system starts getting ordered it is possible for multiple independent domains to develop and grow.
+        Though this can of course only occur if the system is large enough for the initial domains to be sufficiently separated.
+        As they continue growing they at some point meet, defects form and they either annihilate or we get a final static state with defects.
+        Such an effect has been observed by Paget et al in 2D, however in 3D defect dynamics often radically change due to the additional degrees of freedom.
+        In our quench simulations we never saw any defects appear.
+    
+        Coming back to the simulation we present here, the first thing we see is that the randomly generated initial state has a very high deformation energy costs due to its sharp gradients, see \cref{fig:fiso_r7e}.
+        As such we first get a short period of further melting where $|\psi|$ reaches $10^{-3}$ and as that happens it presumably gets easier for the \NN\ and potentially also \MM\ to align.
+        Then by the time the order starts growing again all the nearby directors are aligned, and we get relatively strong biaxiality with order present in two orthogonal directions throughout the volume and some slight long range deformation (not visible in the data we show).
+        Importantly however, due to the biaxiality we see a smooth transition between what would otherwise look like two separate domains.
+        This is as the split between the two orders is not uniform in volume, there are regions where one of them is distinguishably larger than the other and vice versa.
+        This can be seen in \cref{fig:fiso_r7s}(b) where we show snapshots of the two directors \NN\ and \MM\ in different colors, however as we always associate \NN\ with the larger order (we have $|\psi_1| > |\psi_2|$ as discussed in \cref{sec:npE_wwbE}) we can clearly see two regions.
+
+        From this we conclude that the system size and initial configuration was suitable for the development of separate domains but either due to the nature of 3D defects and their dynamics, or due to the present biaxiality of \EE\ which makes it easier to smoothly transition between domains we always end up at a uniform final state.
+        Besides the simulation presented, we have also done multiple smaller scale simulations with $K=0$ and varying initializations, and one large scale simulation with $K=1$ all resulting in a uniform final state.
+        It is worth noting however, that in the smaller scale simulations we do not always get a uniaxial (or nearly) final state.
+        In fact for a series of smaller simulations of cube systems with side length of $3.1\si{L}$ and $K=0$ we consistently ended up with a final state of both $|\psi_2|$ and $|\psi_1|$ being approximately 0.5 and $|\psi_1|-|\psi_2|\sim0.1$.
+        This suggests that biaxiality in 3D is a larger and more present problem than we initially hoped as it can occur even in relatively simple systems and it does not go away at large times.
+
+    \subsection{Bridge-like states}\label{sec:nr_bs}
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/fbox_r12_cross.pdf}
+            \end{center}
+            \caption{
+                Escaping into the third dimension and the characteristic X shape of simulations with homeotropic boundaries along their sides only, as discussed in \cref{sec:nr_bs}.
+                (a) and (b) show the layer normal direction \NN\ and the order parameter $|\psi_1|$ respectively for the final state of a relatively small simulation of side length $3.2\si{L}$ and $K=0$.
+                (c) and (d) show only the smectic order parameter $|\psi_1|$ for a similar but larger simulation with them having the Ginzburg parameter $K$ be 0 and 0.8 respectively.
+            }\label{fig:fbox_cross}
+        \end{figure}
+        We now move to simulations of a more complex system partially inspired by the observed strong presence of biaxiality in \EE\ and recent results by Monderkamp et al\cite{a.monderkampTopologicalFineStructure2022,monderkampTopologyOrientationalDefects2021}.
+        Monderkamp et al have performed particle based simulations of confined rod-like molecules in 2D and 3D analysing their smectic structure.
+        They suggest the use of a tetratic order parameter due to the presence of long defect lines (planes in 3D) with ends resembling point defects of $\pm\frac{1}{4}$ topological charge.
+        These defect lines correspond to domain walls between two smectic structures with perpendicular direction of layering.
+        Given the biaxiality present in \EE\ and how that seems to encourage boundaries where \NN\ switches to be perpendicular we thought that perhaps a biaxial 3D \EE\ might be well compatible with the use of said tetratic order parameter.
+
+        Further, in the 3D simulations Monderkamp et al observe what they call bridge states\cite{a.monderkampTopologicalFineStructure2022}, these are composed of a couple of uninterrupted smectic layers span the system, which have the mentioned defect lines bordering a perpendicular layering on either side.
+        Now, they simulate cylindrically shaped systems which our simulator is not well suited for, and in addition in their final state they mainly observe homogenous anchoring where the layers form perpendicular to the surface, which is also something that we cannot do well with our current fixed boundaries.
+        So what we do is by no means a direct analogy, but regardless we attempted to find similar bridge-like final states using the fixed homeotropic boundaries described in \cref{sec:ns_sb}.
+
+        First, we attempted to find these bridge states using boundaries only on the sides of our cuboid system while keeping the top and bottom $xy$-plane faces periodic.
+        Such a setup always resulted with some order spreading from the boundaries, but what see mainly is \NN\ escaping into the third dimension and aligning with $\hat{\su{z}}$, see \cref{fig:fbox_cross}(a).
+        This happens mainly in the middle and in the corners where the system is most frustrated with the order becoming particularly strong in the middle far away from the boundaries.
+        The same behaviour has been observed for a large variety of systems ranging in system side length from 5 to $15\si{L}$ and with the Ginzburg parameter ranging from 0 to 1.2, the order parameter field for some of these is shown in \cref{fig:fbox_cross}(b-d), with a distinctive X pattern appearing.
+
+        Besides changing the system side, we have also tried changing the anchoring near the corners as they seemed to have an outsized influence on the system.
+        Without going into the details, we have smoothened the boundary \EE\ near the corners (${\sim}.3\si{L}$) by pointing \NN\ towards the centre of a sphere/cylinder placed in that corner.
+        However, this had very little effect with all the data shown in \cref{fig:fbox_cross} using this method and still showing the same signs.
+        We also use an adaptation of these rounded corners in the next system we discuss.
+
+        Seeing that we do not see any bridge states for homeotropic boundaries from the sides only, but certainly see plenty of perpendicular \NN\ boundaries, the natural next step is to add boundaries along the last two faces of the system too.
+        From a practical standpoint however, this means we have to simulate a full cube with large sizes in all three dimensions, whereas before we could only simulate a thin slab due to the system symmetry.
+        This comes with a limitation on the system size that we can reasonably simulate.
+        As such, we have done a systematic search of these bridge states with varying $K$ and with cube sided length ranging from 1.1 to $4.1\si{L}$, however these did not show anything interesting.
+        They form a 3D adaptation of the X shape of \cref{fig:fbox_cross} while maintaining symmetry and having a low $|\EE|$ in the middle, see \cref{fig:3dfbox_longside}(c,d) for an example.
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/3dfbox_r17_side.pdf}
+            \end{center}
+            \caption{
+                Cross-sections of final states of simulations with homeotropic boundaries on all sides, $K=0$, size in the $x$ and $y$ directions of $3.6\si{L}$ and different heights.
+                (a,c,e) show the layer normal direction \NN\ in blue, \MM\ is not shown as we have $|\psi_2| \ll |\psi_1|$.
+                (b,d,f) show the order parameter field $|\psi_1|$.
+                (a,b) are for a height of $1.6\si{L}$ where we clearly see a bridge-like state spanning the short dimension.
+                (c,d) are for a height of $3.6\si{L}$ making the system fully symmetric, and we get a melted phase in the middle.
+                (e,f) are for a height of $5.1\si{L}$ which contains another separated domain in the middle which escapes into the third dimension similarly to \cref{fig:fbox_cross}.
+            }\label{fig:3dfbox_longside}
+        \end{figure}
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/3dfbox_r17_sidephi.pdf}
+            \end{center}
+            \caption{
+                Cross sections of the phases $\phi_1, \phi_2$ of the complex order parameters $\psi_1, \psi_2$ in the final state of the simulation corresponding to \cref{fig:3dfbox_longside}(e,f).
+                We have very sharp boundaries as a result of the \EE\ eigenvalue selection process of \cref{sec:npE_wwbE} and the two phases are always shifted exactly by $\pi$.
+            }\label{fig:3dfbox_longsidephi}
+        \end{figure}
+
+        % Besides that we have done two more studies on these frustrated systems.
+        % Firstly, we artificially break the cubic symmetry by keeping the system size the same for $x$ and $y$ but changing its height.
+        Besides this, we have also performed simulations where we artificially break the cubic symmetry by keeping the system size the same for $x$ and $y$ but changing its height.
+        For this we have run one series of simulations with $K=0$, still the one constant approximation free energy, the $x$ and $y$ size of the system being $3.6\si{L}$ and varying the height from 1.6 to 5.1\si{L}.
+        These systems are very sensitive to whether the height is less than or greater than the system with of $3.6\si{L}$, cross-sections of final state \NN\ and $|\psi_1|$ for a selection of heights are shown in \cref{fig:3dfbox_longside}
+
+        At small heights we perhaps unsurprisingly get a bridge-like state crossing the shorter height and we get a correspondingly large degree of ordering.
+        As we cross the height of $3.6\si{L}$ where the system becomes symmetric we get a decrease in total ordering and finally as the height gets larger than the system width we get a completely different configuration.
+        In this regime we get short ranged order near each boundary and then another bubble-shaped domain of order in the middle.
+        This order has a layering normal direction \NN\ aligned to $\hat{\du{z}}$ just as the top and bottom phases, however despite this we get a clear boundary between the two where order decreases to $|\psi_1|\sim0.05$.
+        This is very surprising and suggests there is likely something wrong with the model, this very likely being the allowed biaxiality of \EE\ and how it interplays with the complex phases of $\psi_1$ and $\psi_2$.
+
+        We can see why the model shows a melting boundary between the two when we examine the phases $\phi_1$ and $\phi_2$ of $\psi_1$ and $\psi_2$, their cross-sections for the run with height $5.1\si{}$ are shown in \cref{fig:3dfbox_longsidephi}.
+        There we immediately see two things, we have very sharp boundaries in both phase fields and that the two form perfectly matching domains that have values shifted by $\pi$.
+        The sharp boundaries are not in themselves a major issue as they are an effect of the biaxial \EE\ deconstruction process detailed in \cref{sec:npE_wwbE} where we choose to always take $|\psi_1| > |\psi_2|$, it is thus really only a sign that the two orders have switched and \EE\ is still smooth.
+        We can also explain the difference in the two phases always being $\pi$ using the theory from \cref{sec:npE_wwbE} where we have shown that precisely this would be energetically favourable as decreases \FB\ while not needing to change $|\psi_1|$ or $|\psi_2|$.
+        It is also worth noting that we have observed this same behaviour for the complex phase fields in nearly all our simulations.
+        As such we conclude that the earlier discussed biaxiality-enabled transition between two domains of order with a perpendicular \NN\ can only take place if the dominant orders in these domains have their complex phases differ by $\pi$.
+
+        As such we suspect that the initial order in the bubble domain of \cref{fig:3dfbox_longside} was formed via an escape to the third dimension through biaxiality and as such has grown with a complex phase differing by $\pi$ to that of the boundaries (which we set to all have the same phase).
+        This then later prevents this domain and that growing from the top and bottom boundaries to merge, as while they have the same \NN\ they have strongly differing complex phases neither of which can change.
+        This means that while the biaxiality of \EE\ is still likely an issue and something that needs to be further studied, this particular problem could just as well be resolved by implementing more realistic boundary conditions which may allow the complex phase to change at the boundary and so for the domains to merge.
+
+    \subsection{Imposed twist}\label{sec:nr_it}
+        The main overarching theme of this thesis and in particular the simulation results is that biaxiality plays a much larger role than we initially expected and hoped.
+        In particular, it allows for a smooth \EE\ field to still translate to sharp boundaries between domains of perpendicular \NN.
+        As such, for our final set of simulations we focus on a simpler case that might allow us to better quantify how this transition comes to be.
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/twist_angleseg.pdf}
+            \end{center}
+            \caption{
+                An example initial and final (at time $16\si{T}$) state configurations for an imposed twist of $\Delta\theta=0.47\pi$ and system height of 4.1\si{L}.
+                All quantities are averaged over the $x$ and $y$ dimensions with standard deviations shown.
+                (a, c) show the polar angles as defined in \cref{sec:nr_it} of the eigenvectors of \EE\ \NN\ and \MM.
+                We only observe $\alpha$ angles of 0 or $\frac{\pi}{2}$ which correspond to the vector being aligned with $\hat{\su{z}}$ or laying in the $xy$ plane respectively.
+                (b, d) Show the order parameters.
+                In particular panels (c) and (d) are interesting where we can see a growing polar order which overtakes the $xy$ plane order in the middle section.
+            }\label{fig:twist_angleseg}
+        \end{figure}
+
+        In these simulations we use PBCs for the $x$ and $y$ dimensions but have a fixed boundary for top and bottom faces.
+        In these we as usual set $|\psi|=1$ and $\phi$ to an arbitrary constant and we set \NN\ to be aligned with $\hat{\su{x}}$ in the bottom face, but set it to a different direction within the $xy$ plane at the top face.
+        Furthermore, we initialize \EE\ throughout the bulk to be uniaxial with a gradually twisting \NN\ so that it meets both boundaries, and a partially randomized $|\psi|$ an $\phi$.
+        We denote the total angle by which the director rotates as $\Delta\theta$ and note that given the initialization this may be more than $\frac{\pi}{2}$.
+        We have also ran similar simulations with a randomized \NN\ in the bulk, however the results were indistinguishable so we focus on this initialization.
+        
+        With these simulations we want to determine under which conditions does the system prefer a smooth deformation between the two boundaries and when does it escape into the third dimension as we have been seeing, in particular we expect the total twist $\Delta\theta$ and the system height $H$ to play a role.
+        Given that we really study this as a one dimensional problem, we average all quantities over the $x$ an $y$ dimensions, in all our simulations the system quickly collapsed into being completely uniform along those.
+
+        We employ spherical coordinates to be able to quantify the direction of \NN\ as a function of $z$.
+        However, to avoid confusion with the complex phase $\phi$ we use the letter $\alpha$ to denote the spherical altitude angle and the letter $\theta$ for the azimuthal angle (this corresponds to our notation of $\Delta\theta$).
+        See \cref{fig:twist_angleseg} for an example of what these quantities look like as a function of $z$.
+
+        We ran multiple series of simulations varying $\Delta\theta$ from 0.06$\pi$ to 0.75$\pi$ and system height $H$ from 1.1 to 9.1\si{L}.
+        Throughout these simulations we have seen significant biaxiality, with the exception of simulations with a very low $\Delta\theta$.
+        We exclusively see two orderings, one we call inplane which is the one that we initialize the system with and has its layer normal direction in the $xy$ plane.
+        The other we call the polar order which always has its layer normal direction aligned with $\hat{\su{z}}$ and which we again attribute to a biaxial escape into the third dimension.
+        We also always see these two orders change continuously as a function of $z$ with perhaps the exception of $\Delta\theta = \frac{\pi}{2}$.
+        As such, so that we do not have to account for the discontinuously changing \NN\ and \MM\ (see \cref{fig:twist_angleseg}(d)) which always represent the highest order as opposed to a particular type, we define the order parameters \sL\ and \sL\ along with their associated layer normal directions \aL\ and \aP.
+        These correspond to the two observed types of orderings respectively.
+        From now on we will only use \sL, \sP\ and the azimuthal angle of the \aL\ which we call simply $\theta$ as all the other angles are (near) constant.
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/twist_fits.pdf}
+            \end{center}
+            \caption{
+                Comparison of the $\arctan$ and $\tanh$ fits to the non-dimensionalized function relation $\frac{\theta}{\Delta\theta}$ vs $\frac{z}{H}$ for the final state of the same simulation as is used for \cref{fig:twist_angleseg}.
+            }\label{fig:twist_fits}
+        \end{figure}
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/twist_K0_outline.pdf}
+            \end{center}
+            \caption{
+                Combined data from all our twist runs with $K=0$ usng the one constant approximation free energies, the $a$ parameter represents the sharpness of the rotation of the inplane order, larger $a$ means a very localized transition.
+                (b,c,d) show the order parameters which are related via \cref{eq:bEcontr}, overall we unsurprisingly see the inplane order dominates at low twist angles.
+                More interesting is that while the polar order is generally stronger at higher $\Delta\theta$, at low enough $H$ it also decreases suggesting the gradients can overpower it and a certain amount of space is needed for \EE\ to escape into the third dimension.
+            }\label{fig:twist_K0_outline}
+        \end{figure}
+
+        We now want to quantify the shape of how the azimuthal angle $\theta$ changes as a function of $z$.
+        To do that, we first of all non-dimensionalize these quantities and instead look at $\frac{\theta}{\Delta\theta}$ as a function of $\frac{z}{H}$.
+        This way the shapes can be compared irrespective of these quantities.
+        The form shown in \cref{fig:twist_angleseg} clearly looks sigmoidal (as do others) and so we attempted to fit the data using both $\arctan$ and $\tanh$ functions, which once suitably adjusted so that they pass through the points $(0, 0), (\frac{1}{2}, \frac{1}{2})$ and $(1, 1)$ in the $\frac{\theta}{\Delta\theta}$ vs $\frac{z}{H}$ plane each have one remaining free parameter.
+        Both fits performed well for the smoother more linear transitions, however the $\arctan$ matched the shape of the $\frac{\theta}{\Delta\theta}$ vs $\frac{z}{H}$ relation much better, see \cref{fig:twist_fits} for a comparison, as such from now on we only use the $\arctan$ fits which are given by
+        \begin{equation}\label{eq:fit}
+            \frac{\theta}{\Delta\theta} = \frac{\arctan(a \qty(\frac{z}{H} - \frac{1}{2}))}{2\arctan(\frac{a}{2})} + \frac{1}{2}
+        \end{equation}
+        with $a$ being the remaining dimensionless parameter.
+        For an intuition, the resulting sigmoid is very line-like for $a < {\sim}0.5$ and becomes very sharp at $a\sim100$, we also have the slope of this function in the middle given by
+        \begin{equation}
+            \eval{\dv{\frac{\theta}{\Delta\theta}}{\frac{z}{H}}}_\text{middle} = \frac{a}{2\arctan(\frac{a}{2})}
+        \end{equation}
+        which directly corresponds to how sharp the transition is.
+
+        We then summarize all our simulations results for $K=0$ in \cref{fig:twist_K0_outline}.
+        There we see the mentioned parameter $a$ along with the three order parameters $\sqrt{\frac{3}{2}}|\EE|$, $|\psi_1|$ and $|\psi_2|$, which all have values in the range 0 to 1, as measured at the centre of the sample at height $\frac{H}{2}$ with the $x$ and $y$ dimensions again being averaged over.
+        Interestingly, while we have originally expected the simulation results to collapse and be only a function of the parameter $\frac{\Delta\theta}{H}$ we were unable to find such a relation.
+        The only clear information we are able to extract from $a$ is that the transition remains smooth and continuous at all angles except at $\Delta\theta =\frac{\pi}{2}$.
+        We have repeated these simulations for $K$ of 0.4 and 1 as well but they are qualitatively very similar, the only difference being that with higher $K$ results behave as if their system height was smaller in comparison.
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/twist_K0_coll.pdf}
+            \end{center}
+            \caption{
+                The data from \cref{fig:twist_K0_outline} collapses onto a single curve (nearly) irrespective of sample height $H$ when we only look at which of the two orders dominates in the middle region.
+            }\label{fig:twist_K0_coll}
+        \end{figure}
+
+        However, we did find that when only comparing whether the inplane or the polar order dominates in the centre via middle of the system quantities from \cref{fig:twist_K0_outline} as we do in \cref{fig:twist_K0_coll}, the data shows nearly no dependence on system height.
+        This once again suggests that the biaxiality we have present in \EE\ acts like a superposition of two nearly independent layering orders, unless they are forced to interact like in the last part of \cref{sec:nr_bs}
+        It is also worth pointing out how for $\Delta\theta > \frac{\pi}{2}$, where we initialize the director \NN\ as overtwisted, we see the same final states as for those related by $\Delta\theta \rightarrow \pi - \Delta\theta$.
+        In these systems we first see a raise of polar order as the inplane order diminishes and then regrows with the direction of \NN\ now twisting in the other direction where the total twist is smaller.
+        Thus, the overtwisted systems in effect melt and then reorder as systems of total twist $\pi - \Delta\theta$ but in the other direction, this agrees with the data in \cref{fig:twist_K0_coll}.
+        This suggests these final states are very stable and further shows how easily the biaxial \EE\ overcomes any energy barriers.
+
+        \begin{figure}[t!]
+            \begin{center}
+                \includegraphics{figures/data_plots/twist_outline_POs.pdf}
+            \end{center}
+            \caption{
+                An equivalent plot to \cref{fig:twist_K0_outline} but for simuations using the intuitive smectic free energy form and $K=0$.
+                Here we see that $a$ is much less likely to become very high even at $\Delta\theta = \frac{\pi}{2}$ and $|\psi_\text{polar}|$ is very low and decreases with $H$.
+            }\label{fig:twist_outline_POs}
+        \end{figure}
+
+        Finally, we have also run a smaller selection of these simulations with the intuitive smectic free energy form where we have $b_1^\perp=b_2^\parallel=b_2^{\parallel\perp}=0$.
+        For these we currently only have data for $\Delta\theta \leq \frac{\pi}{2}$ and $K=0$.
+        The final states were found to have the same functional forms with respect to height $z$ as those of \cref{fig:twist_angleseg} and so we still fit the shape of the twist angle to height relation using \cref{eq:fit} as before and show the data in \cref{fig:twist_outline_POs}.
+        This looks markedly different, we no longer always have a near step function transition in the twist angle for the inplane order when $\Delta\theta = \frac{\pi}{2}$.
+        This sharp transition now only develops at the smallest system heights and beyond it we start getting a very smooth, linear transition of $a\sim1$ even at $\Delta\theta=\frac{\pi}{2}$.
+        This means that unlike the in one constant approximation free energy version, the initial conitions matter, as if initialized with a melted middle the system would be symmetric and not be able to choose in which directon to develop the twist.
+
+        In addition, we get a much smaller $|\sP|$ compared to the one constant approximation free energy and it has the opposite behaviour when it comes to system height $H$ changing.
+        While before the polar order grew at larger heights somewhat suggesting that with the one constant approximation free energy the system preferred to escape into the third dimension under a twist but could only do so well if it had sufficient space for it.
+        We now only ever get the polar order at the most perpendicular $\Delta\theta$ and the smallest system heights, suggesting it only forms as a last resort due to extreme frustration of the system.
+        This shows that choosing the right form of the free energy (including our projection operator free energy) can also help mitigate the observed biaxiality in our systems.
+        And perhaps that the intuitive smectic free energy we use here does show configurations more similar to real smectic systems than the one constant approximation.
+
+
+\section{Conclusion}
+    \EE\ theory is one of multiple theoretical frameworks currently being developed for a better understanding of smectic liquid crystals.
+    It continues in the spirit of the de Gennes complex order parameter and brings new inspirations from the nematic \QQ\ tensor to better incorporate the fundamental symmetry of smectics.
+    It is one of few mesoscopic order parameters being actively developed to solve the symmetry problem highlighted by Pevnyi et al.
+    As such, while it is still early in its development, due to its mesoscopic nature and numerical convenience \EE\ theory might be a very good candidate for large scale numerical simulations including defects.
+
+    In this thesis we provide a comprehensive overview of the de Gennes inspired order parameters, the issues they face and how \EE\ attempts to solve it.
+    In \cref{sec:Ei} we provide a fully comprehensive introduction to \EE\ theory including how it relates to the physical density wave and explain all details of its dynamics.
+    We then tackle the first goal of this project, extending \EE\ theory to 3D.
+    This was more complex than initially expected and lead to a full review of what exactly \EE\ should be in \cref{sec:npE}.
+    There we have proven that constraining the complex tensor \EE\ to be symmetric, traceless and normal fully implies it will take the biaxial form of \EE\ in 3D and the uniaxial form in 2D.
+    We have concluded that constraining \EE\ to be uniaxial in 3D would require constraining its eigenvalues and concluded that to be analytically impossible and numerically too expensive, and as such we have for the time being accepted a biaxial \EE.
+    Finalizing the extension to 3D, we review how we can use Lagrange multipliers to enforce the constraints on \EE.
+    We then present a clear and concise way to express our constraints as real-valued holonomic constraints and show how we can use soft constraints for our Lagrange multipliers.
+
+    We then move to what was the second major goal of this project, to finalize the projection operator free energy form suggested by Paget et al and to compute the corresponding functional derivatives.
+    We then also address the previously overlooked problem of taking the complex square root when approximating \PP\ and we managed to find a procedure to fully correct any branch cut problems.
+    Finally, we implement a numerical solver which iteratively solves the \EE\ dynamics partial differential equation in 3D including all the new theoretical additions.
+
+    Finally, we run three sets of simulations, starting with a simple quench-like system where we do not observe any defect formation and always arrive at a uniform final state.
+    We attempt to simulate more complex frustrated systems where we impose different \EE\ from different boundaries and we observe a strong effect of the layer normal \NN\ escaping into the third dimension.
+    Finally, we try to find at what angle dod we have to impose nearby layer normal directors \NN\ for the system become too biaxial and escape into the third dimension.
+    There we find that an anlge of ${\sim}\frac{3\pi}{8}$ is sufficient for the perpendicular order to become dominant.
 
 \newpage
-\printbibliography
+\printbibliography[heading=bibintoc]
 
 \newpage
 \begin{appendices}
@@ -1099,6 +1502,43 @@
             \det([\EE,\EE^*]) &= 2 (ab^* - a^*b)
         \end{align}
         So clearly requiring either of the two is equivalent to requiring $ab^*-a^*b = 0$ and so they are equivalent to each other.
+    \section{The smectic symmetries}
+        This section was originally intended for a dedicated discussion section of the report which was later removed as it was clear there was not enough space or time to write it in.
+        Nevertheless we include it here as it may of interest to anyone further thinking about \EE.
+
+        Earlier, in the motivational part of this thesis we have mentioned that one of the advantages of \EE\ is that it respects the symmetry of reversing the layering direction \NN\ both globally and locally.
+        While this is the true symmetry of a layered system, it is not a symmetry of the established relation between $|\psi|,\phi,\su{N}$ and the density modulation
+        \begin{equation}\label{eq:lim_den2}
+            \rho(\su{r}) = \rho_0 + \Re(|\psi| e^{i(q_0\ssu{N}\cdot\ssu{r} + \phi)}), \qq{$|\psi|,\su{N}$ and $\phi$ being fields}
+        \end{equation}
+        which we did not directly use in this work, but it heavily guided our interpretation of the field.
+        The only symmetry of \cref{eq:lim_den2} is under simultaneously exchanging $\su{N}, \phi \leftrightarrow -\su{N}, -\phi$ locally or globally.
+        There are naturally two ways to resolve this issue.
+        Either modify \EE, in particular its complex phase, such that it respects the symmetry of \cref{eq:lim_den2}.
+        Or find a different way to interpret the fields from \EE\ as it is, or perhaps a combination of both approaches.
+
+        For modifying \EE, we suspect this would be very difficult to the point where any suitable form of \EE\ would likely be so different it should be called something else.
+        This is as one would need to somehow couple the complex phase $\phi$ and \NN, an eigenvector of \EE, which is only accessible numerically.
+        This is as the only symmetry of \cref{eq:lim_den2} is when the signs of both flip, not just one.
+        Regardless, if one was to find a form for \EE\ that satisfied both symmetries independently the interpretation of $\phi$ would not hold anymore.
+        Currently, using \cref{eq:lim_den2}, we interpret $\dv{\phi}{x}$ (with $x$ being the direction along \NN\ at any point) as a contraction if it is positive and dilation if negative.
+        However, the change of $\phi \rightarrow -\phi$ will change the sign of these and so clearly this is not a physical symmetry of the system.
+
+        Thus, it seems the more natural way to move forward is to adapt \cref{eq:lim_den2} to respect the symmetry in \NN\ only.
+        Starting from a wave resembling $e^{i(\ssu{q_0}\cdot\ssu{r})}$ of which we want to adjust the wavelength locally.
+        Given the addition in \cref{eq:lim_den2} using $e^{i(\ssu{q_0}\cdot\ssu{r})(1+s(\ssu{r}))}$ might be a good starting point, where $s=0$ corresponds to equilibrium spacing, $s>1$ to a contraction and $s<1$ to a dilation.
+        This form has the required symmetry and can be expanded as
+        \begin{equation}
+            e^{i(\ssu{q_0}\cdot\ssu{r})(1+s(\ssu{r}))} = e^{i(q_0\ssu{N}\cdot\ssu{r} + s(\ssu{r})q_0\ssu{N}\cdot\ssu{r})} 
+        \end{equation}
+        which now has the same form as \cref{eq:lim_den2} with $\phi(\su{r}) = s(\su{r})q_0\su{N}\cdot\su{r}$, however it is very important to stress that that would no longer be the $\phi$ from \EE\ as that would not change anything.
+        However, $s$ and $\phi$ from \EE\ are both dimensionless quantities and perhaps we can find a way to map them onto each other.
+        The only reasonable values for $s$ are from $-1$, where the wavelength becomes infinite, to $+\inf$ where wavelength goes to 0.
+        Any values $<-1$ would just correspond to a different $s$ and a flipped $\su{N}$.
+        On the other hand $\phi$ from \EE\ belongs to any set interval of length $2\pi$.
+        So if we use $\phi \in (-\pi, \pi]$ and let $s = \frac{\phi}{\pi}$ then the model could account for any dilation and a contraction of up to half the natural wavelength.
+        However, this would fundamentally change what $\phi$ from \EE\ is and would require more work to investigate the free energy costs to contractions and dilations, among other considerations.
+
 \end{appendices}
 
 

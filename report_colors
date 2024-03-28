@@ -1,2 +1,14 @@
 cmaps:
-    Grays -- density
+    Grays               -- density
+    virid??             -- order params
+    twilight_shifter    -- phi
+
+1d stuff:
+    |psi1|
+    |psi2|
+    ??|E|
+
+    bulk energy
+    comp energy
+    curv energy
+    total energy
