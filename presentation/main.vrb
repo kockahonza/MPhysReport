@@ -1,0 +1,13 @@
+\frametitle{Physical quantities}
+\newrefsection
+    \begin{itemize}
+        \item Taking $b_1$ to be the order of magnitude of $b_1^\parallel$ and $b_1^\perp$
+        \item Similarly for $b_2$
+    \end{itemize}
+    \small
+    \begin{align*}
+        |\psi|_{eq} &= \sqrt{\frac{3}{2} * \frac{-A}{C}} \qq{The ideal smectic phase value, dimensionless}\\
+        \varepsilon &= \sqrt{\frac{b_1}{|A|}} \qq{Lamellar in-plane coherence length, $L$} \\
+        \lambda &= \sqrt{\frac{b_2}{b_1}} \qq{Penetration depth, $L$} \\
+        \kappa &= \frac{\lambda}{\varepsilon} = \sqrt{\frac{b_2|A|}{b_1^2}} \qq{Ginzburg parameter, dimensionless}
+    \end{align*}
