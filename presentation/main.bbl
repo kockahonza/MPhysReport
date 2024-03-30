@@ -98,6 +98,193 @@
       \verb https://www.sciencedirect.com/science/article/pii/003810987290186X
       \endverb
     \endentry
+    \entry{lagerwallNewEraLiquid2012}{article}{}
+      \name{author}{2}{}{%
+        {{hash=a1f3f1e1a09107a18779ecc36ee0cb59}{%
+           family={Lagerwall},
+           familyi={L\bibinitperiod},
+           given={Jan\bibnamedelimb P.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=486118524c7aaab0f838a1ac1010475e}{%
+           family={Scalia},
+           familyi={S\bibinitperiod},
+           given={Giusy},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{850e97fbf3292c4a18a9e99ab3981692}
+      \strng{fullhash}{850e97fbf3292c4a18a9e99ab3981692}
+      \strng{bibnamehash}{850e97fbf3292c4a18a9e99ab3981692}
+      \strng{authorbibnamehash}{850e97fbf3292c4a18a9e99ab3981692}
+      \strng{authornamehash}{850e97fbf3292c4a18a9e99ab3981692}
+      \strng{authorfullhash}{850e97fbf3292c4a18a9e99ab3981692}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Liquid crystals constitute a fascinating class of soft condensed matter characterized by the counterintuitive combination of fluidity and long-range order. Today they are best known for their exceptionally successful application in flat panel displays, but they actually exhibit a plethora of unique and attractive properties that offer tremendous potential for fundamental science as well as innovative applications well beyond the realm of displays. Today this full breadth of the liquid crystalline state of matter is becoming increasingly recognized and numerous new and exciting lines of research are being opened up. We review this exciting development, focusing primarily on the physics aspects of the new research thrusts, in which liquid crystals – thermotropic as well as lyotropic – often meet other types of soft matter, such as polymers and colloidal nano- or microparticle dispersions. Because the field is of large interest also for researchers without a liquid crystal background we begin with a concise introduction to the liquid crystalline state of matter and the key concepts of the research field. We then discuss a selection of promising new directions, starting with liquid crystals for organic electronics, followed by nanotemplating and nanoparticle organization using liquid crystals, liquid crystal colloids (where the liquid crystal can constitute either the continuous phase or the disperse phase, as droplets or shells) and their potential in e.g. photonics and metamaterials, liquid crystal-functionalized polymer fibers, liquid crystal elastomer actuators, ending with a brief overview of activities focusing on liquid crystals in biology, food science and pharmacology.}
+      \field{day}{1}
+      \field{issn}{1567-1739}
+      \field{journaltitle}{Current Applied Physics}
+      \field{month}{11}
+      \field{number}{6}
+      \field{shortjournal}{Current Applied Physics}
+      \field{shorttitle}{A New Era for Liquid Crystal Research}
+      \field{title}{A New Era for Liquid Crystal Research: {{Applications}} of Liquid Crystals in Soft Matter Nano-, Bio- and Microtechnology}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{12}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1387\bibrangedash 1412}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1016/j.cap.2012.03.019
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/8VA3YGCK/S1567173912001113.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1567173912001113
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1567173912001113
+      \endverb
+      \keyw{Biomembranes,Colloids,Composites,Liquid crystal,Lyotropic,Nanotechnology,Soft matter,Thermotropic}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{25}
+  \datalist[entry]{none/global//global/global}
+    \entry{pevnyiModelingSmecticLayers2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bcd02958ee0e5db8eb1248b54fe86bc6}{%
+           family={Pevnyi},
+           familyi={P\bibinitperiod},
+           given={Mykhailo\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=5b53b93fb9490d06a983b47945ce3741}{%
+           family={Selinger},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9d9a742c5e7c873c2907922f1704cc50}{%
+           family={Sluckin},
+           familyi={S\bibinitperiod},
+           given={Timothy\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bc4bfde6d19fe65ba516b749442d1a12}
+      \strng{fullhash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{bibnamehash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{authorbibnamehash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{authornamehash}{bc4bfde6d19fe65ba516b749442d1a12}
+      \strng{authorfullhash}{ff0cbc940d9336957537fa04522416ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We identify problems with the standard complex order parameter formalism for smectic-A (SmA) liquid crystals and discuss possible alternative descriptions of smectic order. In particular, we suggest an approach based on the real smectic density variation rather than a complex order parameter. This approach gives reasonable numerical results for the smectic layer configuration and director field in sample geometries and can be used to model smectic liquid crystals under nanoscale confinement for technological applications.}
+      \field{day}{29}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{shorttitle}{Modeling Smectic Layers in Confined Geometries}
+      \field{title}{Modeling Smectic Layers in Confined Geometries: {{Order}} Parameter and Defects}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{032507}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.90.032507
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/5DX6ESDR/Pevnyi et al. - 2014 - Modeling smectic layers in confined geometries Or.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.90.032507
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.90.032507
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{6}
+  \datalist[entry]{none/global//global/global}
+    \entry{pevnyiModelingSmecticLayers2014}{article}{}
+      \name{author}{3}{}{%
+        {{hash=bcd02958ee0e5db8eb1248b54fe86bc6}{%
+           family={Pevnyi},
+           familyi={P\bibinitperiod},
+           given={Mykhailo\bibnamedelima Y.},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=5b53b93fb9490d06a983b47945ce3741}{%
+           family={Selinger},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelima V.},
+           giveni={J\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=9d9a742c5e7c873c2907922f1704cc50}{%
+           family={Sluckin},
+           familyi={S\bibinitperiod},
+           given={Timothy\bibnamedelima J.},
+           giveni={T\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{bc4bfde6d19fe65ba516b749442d1a12}
+      \strng{fullhash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{bibnamehash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{authorbibnamehash}{ff0cbc940d9336957537fa04522416ee}
+      \strng{authornamehash}{bc4bfde6d19fe65ba516b749442d1a12}
+      \strng{authorfullhash}{ff0cbc940d9336957537fa04522416ee}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We identify problems with the standard complex order parameter formalism for smectic-A (SmA) liquid crystals and discuss possible alternative descriptions of smectic order. In particular, we suggest an approach based on the real smectic density variation rather than a complex order parameter. This approach gives reasonable numerical results for the smectic layer configuration and director field in sample geometries and can be used to model smectic liquid crystals under nanoscale confinement for technological applications.}
+      \field{day}{29}
+      \field{journaltitle}{Physical Review E}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Phys. Rev. E}
+      \field{shorttitle}{Modeling Smectic Layers in Confined Geometries}
+      \field{title}{Modeling Smectic Layers in Confined Geometries: {{Order}} Parameter and Defects}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2024}
+      \field{volume}{90}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{032507}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1103/PhysRevE.90.032507
+      \endverb
+      \verb{file}
+      \verb /home/honza/Zotero/storage/5DX6ESDR/Pevnyi et al. - 2014 - Modeling smectic layers in confined geometries Or.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.90.032507
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevE.90.032507
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -1,8 +1,8 @@
-\documentclass[10pt,notes]{beamer}
-\setbeameroption{show notes on second screen}
-\setbeamertemplate{note page}{\insertnote}
+% \documentclass[10pt,notes,mathserif]{beamer}
+% \setbeameroption{show notes on second screen}
+% \setbeamertemplate{note page}{\insertnote}
 
-% \documentclass[10pt,mathserif]{beamer}
+\documentclass[10pt,mathserif]{beamer}
 \usepackage[utf8]{inputenc}
 
 % Presentation specific stuff
@@ -72,7 +72,7 @@
     \vcenter{\baselineskip1ex \vspace{-0.1ex}\hbox{\onedot}\hbox{\onedot}}
 }}
 
-\newcommand{\extra}[1]{\color{gray}#1\normalcolor}
+\newcommand{\extra}[1]{\color{gray} #1 \normalcolor}
 \newcommand{\subheading}[1]{\large\textbf{#1}\normalsize}
 
 
@@ -81,8 +81,7 @@
 \setlength{\abovedisplayskip}{1em}
 \setlength{\belowdisplayskip}{0ex}
 
-% \usefonttheme[onlymath]{serif}
-
+% Motivation
 \begin{frame}
     % \frametitle{E theory}
     \centering
@@ -144,10 +143,11 @@
         \item Topological matter, various symmetries at play etc.
         \item Analogy between smectics and superconductivity\cite{degennesAnalogySuperconductorsSmectics1972}
     \end{itemize}
-    \subheading{Technological applications}
+    \subheading{Real-world applications}
     \begin{itemize}
         \item Liquid crystal displays
-        \item Bacterial colonies
+        \item Organic electronics\cite{lagerwallNewEraLiquid2012}
+        \item Biological and living matter\cite{lagerwallNewEraLiquid2012}
     \end{itemize}
     \vfill
     \printbibliography[heading=none]
@@ -170,180 +170,237 @@
     \vspace{-\fill}
 \end{frame}
 
-\begin{frame}[fragile]{Smectic liquid crystals}
+\begin{frame}[fragile]{Layering is determined by three quantities}
     \newrefsection
-    \begin{columns}
-        \begin{column}{0.49\textwidth}
-            \begin{itemize}
-                \setlength\itemsep{1ex}
-                \item Layering of rod-like molecules \color{gray} (simplest case) \normalcolor
-                \item Smectic-A is the simplest
-            \end{itemize}
-            \vspace{2em}
-            \begin{center}
-                \large \bf 3 quantities \color{gray} (fields) \normalcolor
-            \end{center}
-            \vspace{1ex}
-            \begin{itemize}
-                \setlength\itemsep{1ex}
-                \item How \underline{ordered} the phase is
-                \item \underline{Direction} of layering -- director $\su{N}$
-                \item \underline{Spacing} of layers
-            \end{itemize}
-        \end{column}
-        \begin{column}{0.49\textwidth}
-            \begin{figure}
-                \centering
-                \includegraphics[width=\textwidth]{figures/phases.pdf}
-                \caption{Isotropic, nematic, Smectic-A, Smectic-C and crystalline phases}
-            \end{figure}
-        \end{column}
-    \end{columns}
-\end{frame}
-
-\begin{frame}[fragile]{Describing smectics}
-    \newrefsection
-    \begin{itemize}
-        \item The layering is a density fluctuation
-    \end{itemize}
-    \begin{align*}
-        \rho(\su{r}, t) = \sum_{m=-\inf}^{+\inf} \psi_m e^{im\su{q}\cdot\su{r}} \simeq \rho_0 + 2\Re(\psi e^{i\su{q_0}\cdot\su{r}})
-    \end{align*}
-    \begin{itemize}
-        \item Having $\psi = |\psi|e^{i\phi}$ gives
-            \begin{itemize}
-                \item $|\psi|$ as the order parameter
-                \item Changes in $\phi$ lead to spacing differences
-            \end{itemize}
-        \item $\su{N} \propto \su{q_0}$ \color{gray}, can be an additional parameter or taken as $\su{\nabla} \phi$ \normalcolor
-    \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{E theory -- Motivations}
-    \newrefsection
-    \large
-    Problems
-    \normalsize
-    \begin{itemize}
-        \item $\su{N} \leftrightarrow -\su{N}$ symmetry -- $\su{N}$ is not a vector
-        \item Defects lead to undefined $\su{N}$ \color{gray} and related problems \normalcolor
-    \end{itemize}
-
+    \vspace{-\fill}
     \vspace{3em}
+    \begin{center}
+        \subheading{Smectic $\sim$ layered}
+        \vspace{3em}
 
-    \large
-    Requirements
-    \normalsize
+        \subheading{3 quantities \extra{(fields)}}
+    \end{center}
     \begin{itemize}
-        \item Incorporate the symmetry
-        \item Combine parameters to allow "numerical melting"
-        \item Enough degrees of freedom for $|\psi|, \phi$ and $\su{N}$
+        \item Degree of ordering
+        \item Direction of layering \extra{-- this has an additional symmetry}
+        \item Spacing of layers
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{E theory}
+\begin{frame}[fragile]{Layering as a density wave}
     \newrefsection
     \begin{itemize}
-        \item Inspiration from Q-tensor and complex $\psi$
-        \item Replace the real order parameter $S$ with complex $\psi$
+        \item Layering is a wave-like density fluctuation
     \end{itemize}
+    \vspace{-1em}
     \begin{align*}
-        \du{Q} &= S_1(\su{N}\su{N} - \frac{\du{\delta}}{d}) \qq{\color{gray} uniaxial case \normalcolor} \\
-        \du{E} &\sim \psi_1(\su{N}\su{N} - \frac{\du{\delta}}{d})
+        \rho(\su{r}) &= \rho_0 + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi) \\
+        &\simeq \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
     \end{align*}
-
-    \vspace{1ex}
-    \color{gray} $d$ is the number of dimensions, 2 or 3 \normalcolor
-\end{frame}
-
-\begin{frame}[fragile]{E theory numerics}
-    \newrefsection
-    \begin{align*}
-        \du{E} &\sim \psi_1(\su{N}\su{N} - \frac{\du{\delta}}{d})
-    \end{align*}
+    where
     \begin{itemize}
-        \item Want to evolve \EE\ directly as a $d\text{x}d$ complex tensor
-        \item Enforce the form above?
-        \item Inspiration from $\du{Q}$ -- symmetric and traceless 
+        \item $|\psi|$ is the wave amplitude -- degree of layering
+        \item $\su{q_0}$ determines layering direction and spacing
         \begin{itemize}
-            \item real so can be diagonalized
+            \item Layer normal direction $\NN=\frac{\ssu{q_0}}{q_0}$
+            \item Layer spacing is $\frac{2\pi}{q_0}$
         \end{itemize}
+        \item Here $\phi$ is an arbitrary phase
+        \extra{\item $\rho_0$ is the average density and $\rho_1=\rho_0|\psi| \leq \rho_0$}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Traditionally we have fixed $\su{q_0}$ and varying $\psi$}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \rho(\su{r}) = \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
+    \end{equation*}
+    \vspace{\fill}
+    \begin{itemize}
+        \item Non-uniform systems -- need to promote parameters to fields
+        \item Promoting $|\psi|(\su{r})$ is simple
+        \item $\phi(\su{r})$ also taken to be a field
+        \item $\psi(\su{r}) = |\psi|(\su{r})e^{i\phi(\ssu{r})}$ is the de Gennes complex order parameter
+    \end{itemize}
+    \vspace{\fill}
+    \subheadding{Two options, both limited}
+    \vspace{-0.5em}
+    \begin{itemize}
+        \item Keep a constant $\su{q_0}$ -- only suitable for near equilibrium systems
+        \item Remove $\su{q_0}$ -- does not capture the smectic $\NN\leftrightarrow-\NN$ symmetry\cite{pevnyiModelingSmecticLayers2014}
+    \end{itemize}
+    \vspace{\fill}
+    \printbibliography[heading=none]
+    \vspace{-\fill}
+\end{frame}
+
+% Intro to E
+\begin{frame}[fragile]{E theory -- have varying \NN\ as well}
+    \newrefsection
+    Still use
+    \begin{equation*}
+        \rho(\su{r}) = \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
+    \end{equation*}
+    \vspace{-1.5em}
+    \begin{itemize}
+        \item Keep the $\psi(\su{r})$ field, and make $\NN(\su{r}) = \frac{\ssu{q_0}(\ssu{r})}{q_0}$ a field.
+        \item Leave $\rho_0$, $q_0$ as microscopic constants
+    \end{itemize}
+    \vfill
+    Package these as
+    \begin{equation*}
+        \du{E} = \psi(\su{N}\su{N} - \frac{\du{\delta}}{d})
+    \end{equation*}
+    \extra{where $d$ is the number of dimensions, 2 or 3}
+\end{frame}
+
+\begin{frame}[fragile]{E theory -- Mesoscopic theory respecting the layering symmetry}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \du{E} = \psi(\su{N}\su{N} - \frac{\du{\delta}}{d})
+    \end{equation*}
+    \vfill
+
+    \subheading{Benefits/motivation for \EE}
+    \begin{itemize}
+        \item Incorporates $\NN\leftrightarrow-\NN$ symmetry
+        \item Mesoscopic theory -- does not directly resolve density
+        \item Numerically convenient -- one object, it can numerically melt
+        \item Captures all three quantities -- degree of order, layer direction and spacing through $|\psi|$, \NN\ and $\phi$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Treating \EE\ as our parameter requires constraints on it}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \du{E} = \psi(\su{N}\su{N} - \frac{\du{\delta}}{d})
+    \end{equation*}
+    \vfill
+
+    \begin{itemize}
+        \item Treat \EE\ as general complex tensor
+        \item Need to somehow enforce the form above
+        % \item Real symmetric tensors adopt similar forms due to being diagonalizable
+        \item Inspiration from real symmetric tensors leads us to diagonalization
+        % \item Inspiration from $\du{Q}$ -- symmetric and traceless 
+        % \begin{itemize}
+        %     \item real so can be diagonalized
+        % \end{itemize}
         \item Require $\du{E}$ be unitarily diagonalizable (\underline{normal}), \underline{symmetric} and \underline{traceless}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Constraints on E}
+\begin{frame}[fragile]{Our constraints lead to biaxial \EE\ in 3D}
     \newrefsection
-    Leads to the following form in 3D \color{gray} (equivalent in 2D, but only 1 term) \normalcolor
-    \begin{align*}
-        \du{E} &= \du{U}^\dagger \begin{pmatrix}
+    Normality and tracelessness give \extra{in 3D}
+    \begin{equation*}
+        \du{E} = \du{U} \cdot \begin{pmatrix}
             \lambda_1 & 0 & 0 \\
             0 & \lambda_2 & 0 \\
-            0 & 0 & - \lambda_1 - \lambda_2
-        \end{pmatrix} \underset{\text{also using symmetry}}{\du{U} = \cdots = \psi_1(\su{N}}\su{N} - \frac{\du{\delta}}{3}) + \psi_2(\su{M}\su{M} - \frac{\du{\delta}}{3})
-    \end{align*}
-    \begin{itemize}
-        \item With $\su{N}$, $\su{M}$ being real, orthogonal, unit vectors, and
-    \end{itemize}
+            0 & 0 & \lambda_3 = - \lambda_1 - \lambda_2
+        \end{pmatrix} \cdot \du{U}^\dagger
+    \end{equation*}
+
+    where the $\lambda_i$ are eigenvalues of \EE\ and $\du{U}$ a unitary matrix
+\end{frame}
+
+\begin{frame}[fragile]{Our constraints lead to biaxial \EE\ in 3D}
+    \newrefsection
+    Further using symmetry this fully implies
+    \begin{equation*}
+        \du{E} = \cdots = \psi_1(\su{N}}\su{N} - \frac{\du{\delta}}{3}) + \psi_2(\su{M}\su{M} - \frac{\du{\delta}}{3})
+    \end{equation*}
+
+    where
     \begin{align*}
-        \begin{pmatrix} \psi_1 \\ \psi_2 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 2 \end{pmatrix} \begin{pmatrix} \lambda_1 \\ \lambda_2 \end{pmatrix}
+        \psi_1 = \lambda_1 - \lambda_3 && \psi_2 = \lambda_2 - \lambda_3
     \end{align*}
+
+    and \NN\ and \MM\ are real, mutually orthogonal unit eigenvectors of \EE\ associated to $\lambda_1$ and $\lambda_2$
+\end{frame}
+
+\begin{frame}[fragile]{Biaxial \EE\ could mean two density waves}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \du{E} = \cdots = \psi_1(\su{N}}\su{N} - \frac{\du{\delta}}{3}) + \psi_2(\su{M}\su{M} - \frac{\du{\delta}}{3})
+    \end{equation*}
+    \vfill
     \begin{itemize}
-        \item A biaxial form of the E we want!
-        \item \color{gray} $\du{Q}$ also has a biaxial form that is well studied \normalcolor
+        \item Symmetry, tracelessness, normality lead to biaxial \EE
+        \item No simple way to force uniaxiality
+        \item We interpret each term as a density wave
+        \extra{\item This may allow \EE\ to model more ordered, columnar phases}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Ginzburg-Landau theory}
+\begin{frame}[fragile]{Ginzburg-Landau theory -- dynamics by minimizing free energy}
     \newrefsection
     \begin{itemize}
         \item Dynamics using Ginzburg-Landau theory
         \item Need a free energy in terms of \EE
-        \item Then evolve \EE\ to minimize $F$
     \end{itemize}
     \begin{equation*}
         F = \int f(\du{E}, \mgrad\du{E}, \ldots) \dd{V}
     \end{equation*}
+    \begin{itemize}
+        \item $F$ must be real!
+        \item Then evolve \EE\ to minimize $F$ using the functional derivative
+    \end{itemize}
+    \begin{equation*}
+        \pdv{\du{E}}{t} = -\mu \fdv{F}{\EE^*}
+    \end{equation*}
+    \begin{itemize}
+        \extra{\item Plus additional terms from Lagrange multipliers to enforce constraints}
+    \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{The free energy}
-    \newrefsection
-    \begin{itemize}
-        \item $F$ must be real -- need to match $\du{E}$ and $\du{E}^*^$, simplest is
-    \end{itemize}
-    \begin{align*}
-        f_\text{bulk}(E_{ij}E_{ij}^* = \Tr(\du{E}\du{E}^*)) = A E_{ij}E_{ij}^* + \frac{C}{2} (E_{ij}E_{ij}^*)^2
-    \end{align*}
-    \begin{itemize}
-        \item \color{gray} In the uniaxial case $E_{ij}E_{ij}^* \propto |\psi|^2$, and $f_\text{bulk}$ corresponds to work of de Gennes \normalcolor
-    \end{itemize}
-    \begin{itemize}
-        \item Take the simplest gradients terms in one \EE
-    \end{itemize}
-    \begin{align*}
-        &|\su{\nabla}\du{E}|^2 = E_{ij,k}E_{ij,k}^* \\
-        &|\nabla^2\du{E}|^2 = E_{ij,kk}E_{ij,ll}^*
-    \end{align*}
-\end{frame}
+% \begin{frame}[fragile]{The free energy}
+%     \newrefsection
+%     \begin{itemize}
+%         \item $F$ must be real -- need to match $\du{E}$ and $\du{E}^*^$, simplest is
+%     \end{itemize}
+%     \begin{align*}
+%         f_\text{bulk}(E_{ij}E_{ij}^* = \Tr(\du{E}\du{E}^*)) = A E_{ij}E_{ij}^* + \frac{C}{2} (E_{ij}E_{ij}^*)^2
+%     \end{align*}
+%     \begin{itemize}
+%         \item \color{gray} In the uniaxial case $E_{ij}E_{ij}^* \propto |\psi|^2$, and $f_\text{bulk}$ corresponds to work of de Gennes \normalcolor
+%     \end{itemize}
+%     \begin{itemize}
+%         \item Take the simplest gradients terms in one \EE
+%     \end{itemize}
+%     \begin{align*}
+%         &|\su{\nabla}\du{E}|^2 = E_{ij,k}E_{ij,k}^* \\
+%         &|\nabla^2\du{E}|^2 = E_{ij,kk}E_{ij,ll}^*
+%     \end{align*}
+% \end{frame}
 
-\begin{frame}[fragile]{The free energy -- simplest form}
+\begin{frame}[fragile]{The one constant approximation free energy}
     \newrefsection
     \begin{align*}
         F &= \int f_\text{bulk} + f_\text{comp} + f_\text{curv} \dd{V} \\
-        f_\text{bulk} &= A E_{ij}E_{ij}^* + \frac{C}{2} (E_{ij}E_{ij}^*)^2 \\
-        f_\text{comp} &= b_1 E_{ij,k}E_{ij,k}^* \\
-        f_\text{curv} &= b_2 E_{ij,kk}E_{ij,ll}^*
+        f_\text{bulk} &= A |\EE|^2 + \frac{C}{2} |\EE|^4 \\
+        f_\text{comp} &= b_1 |\mgrad \EE|^2 \\
+        f_\text{curv} &= b_2 |\nabla^2 \EE|^2
     \end{align*}
-
+    \begin{itemize}
+        \item \FB\ is the core free energy, determining the phase
+        \item \FC\ corresponds to layer compression energy costs
+        \item \FU\ corresponds to layer curvature/bending energy costs
+        \extra{\item With $|?_{ij\ldots k}|^2=?_{ij\ldots k}?_{ij\ldots k}^*$ being the Frobenius norm}
+    \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Projection operators for $F$, more complex}
+\begin{frame}[fragile]{More complex $F$ using projection operators}
     \newrefsection
     \begin{itemize}
         \item Gradients in different directions have different energy costs
-        \item For \textbf{uniaxial} \EE, special direction is $\su{N}$
+        \item For uniaxial \EE, special direction is $\su{N}$
         \item Projection operator $\du{\Pi}=\su{N}\su{N}$, rest is $\du{T} = \du{\delta} - \du{\Pi}$
-        \item Consider $\su{\nabla} \rightarrow a \du{\Pi}\cdot\su{\nabla} + b \du{T}\cdot\su{\nabla}$ \color{gray} $a, b$ being some constants \normalcolor
+        \extra{\item Consider $\su{\nabla} \rightarrow a \du{\Pi}\cdot\su{\nabla} + b \du{T}\cdot\su{\nabla}$ with $a, b$ being some constants}
     \end{itemize}
 
     \begin{align*}
@@ -351,6 +408,113 @@
         &f_\text{curv} \rightarrow b_2^\parallel \Pi_{kl}E_{ij,lk}\Pi_{mn}E_{ij,nm}^* + b_2^\perp T_{kl}E_{ij,lk}T_{mn}E_{ij,nm}^* \\
         &\phantom{f_\text{curv} \rightarrow}+ b_2^{\parallel\perp}(\Pi_{kl}E_{ij,lk}T_{mn}E_{ij,nm}^* + T_{kl}E_{ij,lk}\Pi_{mn}E_{ij,nm}^*)
     \end{align*}
+
+    % \begin{equation*}
+    %     \du{\Pi} =& \sqrt{\frac{d-1}{d \du{E} \cddot \du{E}}} \du{E} + \frac{\du{\delta}}{d} \\
+    % \end{equation*}
+\end{frame}
+
+\begin{frame}[fragile]{The one constant approximation free energy}
+    \newrefsection
+    \begin{align*}
+        F &= \int f_\text{bulk} + f_\text{comp} + f_\text{curv} \dd{V} \\
+        f_\text{bulk} &= A |\EE|^2 + \frac{C}{2} |\EE|^4 \\
+        f_\text{comp} &= b_1 |\mgrad \EE|^2 \\
+        f_\text{curv} &= b_2 |\nabla^2 \EE|^2
+    \end{align*}
+    \begin{itemize}
+        \item \FB\ is the core free energy, determining the phase
+        \item \FC\ corresponds to layer compression energy costs
+        \item \FU\ corresponds to layer curvature/bending energy costs
+        \extra{\item With $|?_{ij\ldots k}|^2=?_{ij\ldots k}?_{ij\ldots k}^*$ being the Frobenius norm}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{itemize}
+        \item Fixed boundaries force \NN\ perpendicular to walls from sides
+        \item Periodic boundaries in the third direction
+        % \item I show a single slice
+        \item Systems starts isotropic except a single streak
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics[width=\textwidth]{figures/prelim0.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics[width=\textwidth]{figures/prelim1.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics[width=\textwidth]{figures/prelim2.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics[width=\textwidth]{figures/prelim3.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics[width=\textwidth]{figures/prelim4.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]
+    \newrefsection
+    \vspace{4em}
+    \begin{center}
+        \LARGE
+        \textbf{Thank you for your attention}
+    \end{center}
+    \vspace{2em}
+    \footnotesize
+    \color{gray}
+    \begin{align*}
+        \fdv{F_\text{bulk}}{E_{ij}^*} =&\enspace \frac{1}{2}\qty(A + C E_{ab}E_{ab}^*)E_{ij} \\
+        \fdv{F_\text{comp}}{E_{ij}^*} =&\enspace -(b_1^\parallel - b_1^\perp) (\Pi_{kl,l} E_{ij,k} + \Pi_{kl} E_{ij,kl}) - b_1^\perp E_{ij,kk} \\
+        \fdv{F_\text{curv}}{E_{ij}^*} =&\enspace (b_2^\parallel + b_2^\perp - 2b_2^{\parallel\perp}) \Bigl( (\Pi_{kl}\Pi_{po,po} + 2\Pi_{kl,o}\Pi_{po,p} + \Pi_{kl,po}\Pi_{po})E_{ij,lk} \\
+        &\phantom{\enspace (b_2^\parallel + b_2^\perp - 2b_2^{\parallel\perp}) \Bigl(}+ 2(\Pi_{kl,o}\Pi_{po} + \Pi_{kl}\Pi_{po,o})E_{ij,lkp} + \Pi_{kl}\Pi_{po}E_{ij,lkpo} \Bigr) \nonumber \\
+        &+ (b_2^{\parallel\perp} - b_2^\perp)\Bigl( \Pi_{po,po}E_{ij,kk} + 2\Pi_{po,o}E_{ij,kkp} + \Pi_{po}E_{ij,kkpo} \nonumber \\ 
+        &\phantom{\enspace+ (b_2^{\parallel\perp} - b_2^\perp)\Bigl(}+ \Pi_{kl,oo}E_{ij,lk} + 2\Pi_{kl,o}E_{ij,lko} + \Pi_{kl}E_{ij,lkoo} \Bigr) \nonumber \\ 
+        &+ b_2^\perp E_{ij,kkoo} \nonumber
+    \end{align*}
+    \normalcolor\normalsize
+\end{frame}
+
+% Extras
+\begin{frame}[fragile]{$\psi(\su{r})$ alone does not respect smectic symmetry}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \qq{here use} \rho(\su{r}) = \rho_0 (1 + \Re(|\psi| e^{i\phi})
+    \end{equation*}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.6\textwidth]{figures/pevnyi.pdf}
+        \caption{
+            Example density wave where the red arrows show directions of increasing $\phi$.
+            Black corresponds to layers of increased density.
+            Figure from \cite{pevnyiModelingSmecticLayers2014}.
+        }
+    \end{figure}
+    \printbibliography[heading=none]
+    \vspace{-\fill}
 \end{frame}
 
 \begin{frame}[fragile]{Projection operators -- back to \EE}
@@ -402,72 +566,6 @@
         \item Two options for $\lambda$s -- soft constraints or approximate analytic form
         \item \color{gray} \EE\ is normal iff $[\du{E}, \du{E}^*] = 0$ \normalcolor
     \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{itemize}
-        \item Fixed boundaries along the sides
-        \item I show a single slice
-        \item Systems starts isotropic with an ordered streak
-    \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim0.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim1.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim2.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim3.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Some preliminary results}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim4.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]
-    \newrefsection
-    \vspace{4em}
-    \begin{center}
-        \LARGE
-        \underline{Thank you for your attention}
-    \end{center}
-    \vspace{2em}
-    \footnotesize
-    \color{gray}
-    \begin{align*}
-        \fdv{F_\text{bulk}}{E_{ij}^*} =&\enspace \frac{1}{2}\qty(A + C E_{ab}E_{ab}^*)E_{ij} \\
-        \fdv{F_\text{comp}}{E_{ij}^*} =&\enspace -(b_1^\parallel - b_1^\perp) (\Pi_{kl,l} E_{ij,k} + \Pi_{kl} E_{ij,kl}) - b_1^\perp E_{ij,kk} \\
-        \fdv{F_\text{curv}}{E_{ij}^*} =&\enspace (b_2^\parallel + b_2^\perp - 2b_2^{\parallel\perp}) \Bigl( (\Pi_{kl}\Pi_{po,po} + 2\Pi_{kl,o}\Pi_{po,p} + \Pi_{kl,po}\Pi_{po})E_{ij,lk} \\
-        &\phantom{\enspace (b_2^\parallel + b_2^\perp - 2b_2^{\parallel\perp}) \Bigl(}+ 2(\Pi_{kl,o}\Pi_{po} + \Pi_{kl}\Pi_{po,o})E_{ij,lkp} + \Pi_{kl}\Pi_{po}E_{ij,lkpo} \Bigr) \nonumber \\
-        &+ (b_2^{\parallel\perp} - b_2^\perp)\Bigl( \Pi_{po,po}E_{ij,kk} + 2\Pi_{po,o}E_{ij,kkp} + \Pi_{po}E_{ij,kkpo} \nonumber \\ 
-        &\phantom{\enspace+ (b_2^{\parallel\perp} - b_2^\perp)\Bigl(}+ \Pi_{kl,oo}E_{ij,lk} + 2\Pi_{kl,o}E_{ij,lko} + \Pi_{kl}E_{ij,lkoo} \Bigr) \nonumber \\ 
-        &+ b_2^\perp E_{ij,kkoo} \nonumber
-    \end{align*}
-    \normalcolor\normalsize
 \end{frame}
 
 \begin{frame}[fragile]{Gradients of \PP}

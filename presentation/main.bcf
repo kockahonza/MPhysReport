@@ -2387,6 +2387,8 @@
   </bcf:bibdata>
   <bcf:section number="2">
     <bcf:citekey order="1" intorder="1">degennesAnalogySuperconductorsSmectics1972</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">lagerwallNewEraLiquid2012</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">lagerwallNewEraLiquid2012</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2423,6 +2425,7 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="6">
+    <bcf:citekey order="1" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2585,6 +2588,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="24">
+    <bcf:citekey order="1" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2594,6 +2599,42 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="25">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 26 -->
+  <bcf:bibdata section="26">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="26">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 27 -->
+  <bcf:bibdata section="27">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="27">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 28 -->
+  <bcf:bibdata section="28">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="28">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 29 -->
+  <bcf:bibdata section="29">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="29">
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2627,6 +2668,24 @@
                 labelalphanametemplatename="global">
   </bcf:datalist>
   <bcf:datalist section="3"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="6"
+                name="none/global//global/global"
+                type="entry"
+                sortingtemplatename="none"
+                sortingnamekeytemplatename="global"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="24"
                 name="none/global//global/global"
                 type="entry"
                 sortingtemplatename="none"
