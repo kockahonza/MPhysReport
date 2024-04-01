@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber main"] 1711721061.42937 "main.bcf" "main.bbl" "main" 1711725951.41073 0
-  "MPhys.bib" 1711714419.63899 73276 610badd31fe51acb9e4ca19e95e71c04 ""
-  "main.bcf" 1711725951.11897 117477 8d116484d35ed5e733a93401f5554f0f "pdflatex"
+["biber main"] 1711721061.42937 "main.bcf" "main.bbl" "main" 1712007112.46045 0
+  "MPhys.bib" 1711956183.00899 73276 610badd31fe51acb9e4ca19e95e71c04 ""
+  "main.bcf" 1712007112.18437 119350 68264ad09a73a31e4d85846520b7e585 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1711725947.10943 "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/presentation/main.tex" "main.pdf" "main" 1711725951.41116 2
-  "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/presentation/main.tex" 1711725946.84218 22901 f77ed7b2c9f0aedea2ee9a9a9d22ced6 ""
+["pdflatex"] 1712007107.83123 "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/presentation/main.tex" "main.pdf" "main" 1712007112.46079 2
+  "/home/honza/Sync/University/CurrentCourses/MPhys Project/report/presentation/main.tex" 1712007107.66899 25234 21da4f2833b45437f76da2bb0f880e73 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1711186958 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1711186958 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcss0900.tfm" 1711186958 1536 ba0169ee8bc017972775b933313cbbb0 ""
@@ -297,6 +297,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1711396262 7112993 7069b0141f5b28f7311186d325058fd5 ""
   "figures/PandA_black.pdf" 1532183727 94097 9e47adc33becd646b925fd49d80c50d4 ""
   "figures/bio_laila1.png" 1711655094.71403 495699 fb588751cccc59200bdcb96c3acce6dd ""
+  "figures/layers_example.pdf" 1711986196.17389 186985 e91a348e3112f944e353dddd12bbb760 ""
   "figures/pevnyi.pdf" 1710354353.20011 132723 eac6664097bb1f8c643008725a24ee79 ""
   "figures/phases.pdf" 1711626966.46269 313642 a82666347a5161b7bd7ed167f3d12cdf ""
   "figures/prelim0.pdf" 1708601097.86588 109979 db0562c3d7c3ef026f923dd35404afaa ""
@@ -304,13 +305,13 @@
   "figures/prelim2.pdf" 1708601099.78923 153828 994535d9ae43c8a2a1b356f12cc69ab1 ""
   "figures/prelim3.pdf" 1708601100.7259 149913 bfbe4bde5270a25f94041210fb8c2348 ""
   "figures/prelim4.pdf" 1708601101.75591 143584 c16f7af2d687e10cde3291bf7ebaea77 ""
-  "main.aux" 1711725951.1123 10669 2b3d69fc4c1c82cd3548974611f62be9 "pdflatex"
-  "main.bbl" 1711721453.41131 14784 c57f80aa9a8bdc1a2363c4d047e1ac2c "biber main"
-  "main.nav" 1711725951.11897 2969 5734b160ef74b140b37e35c19980d54f "pdflatex"
-  "main.out" 1711725948.64223 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.run.xml" 1711725951.11897 2425 2e3df41aa2cc1b45bdb928475ce72a97 "pdflatex"
-  "main.tex" 1711725946.84218 22901 f77ed7b2c9f0aedea2ee9a9a9d22ced6 ""
-  "main.vrb" 1711725951.06896 649 fc0cca6a6892165a411daef27eed5855 "pdflatex"
+  "main.aux" 1712007112.1777 12154 0649087eac6f0e8981676cdbb7b9084a "pdflatex"
+  "main.bbl" 1711988627.45434 15957 0158b16a98e908de0431df88e53040c3 "biber main"
+  "main.nav" 1712007112.18771 3248 04f88683e470406fc21eb9e1acb56761 "pdflatex"
+  "main.out" 1712007109.37977 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.run.xml" 1712007112.18771 2425 3b3efe61823aa796f08310ad12ccf6f5 "pdflatex"
+  "main.tex" 1712007107.66899 25234 21da4f2833b45437f76da2bb0f880e73 ""
+  "main.vrb" 1712007112.13102 649 fc0cca6a6892165a411daef27eed5855 "pdflatex"
   (generated)
   "main.aux"
   "main.bcf"

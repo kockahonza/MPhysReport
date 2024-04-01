@@ -1,16 +1,15 @@
 from analysisScripts.base import *
 
-figure_out_dir = '../latex/figures/misc'
+# figure_out_dir = '../latex/figures/misc'
 
 if __name__ == "__main__":
-    save_fig = False
+    save_fig = None
     if len(sys.argv) >= 2:
-        if eval(sys.argv[1]):
-            save_fig = True
-    if save_fig:
+        figure_out_dir = sys.argv[1]
+    if save_fig is not None:
         print(f'saving to {figure_out_dir}')
 
-    colors = use_report_sh_style(6, figheight=2.9, interactive=not save_fig, advanced_latex=True)
+    colors = use_report_sh_style(6, figheight=2.9, interactive=save_fig is None, advanced_latex=True)
 
     # Params
     wavelength = 2

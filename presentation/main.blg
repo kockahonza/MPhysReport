@@ -1,87 +1,103 @@
 [0] Config.pm:307> INFO - This is Biber 2.19
 [0] Config.pm:310> INFO - Logfile is 'main.blg'
-[89] biber:340> INFO - === Fri Mar 29, 2024, 15:10:53
-[106] Biber.pm:419> INFO - Reading 'main.bcf'
-[168] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[168] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
-[168] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 2 citekeys in bib section 2
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 3
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 4
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 5
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 1 citekeys in bib section 6
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 7
-[169] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 8
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 9
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 10
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 11
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 12
-[170] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 13
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 14
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 15
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 16
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 17
-[171] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 18
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 19
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 20
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 21
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 22
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[172] Biber.pm:979> INFO - Found 0 citekeys in bib section 23
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 24
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[173] Biber.pm:979> INFO - Found 1 citekeys in bib section 25
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 26
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 27
-[173] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[315] Biber.pm:4419> INFO - Processing section 1
-[324] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 1
-[331] bibtex.pm:1713> INFO - LaTeX decoding ...
-[408] bibtex.pm:1519> INFO - Found BibTeX data source 'MPhys.bib'
-[442] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[442] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[442] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[443] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[443] Biber.pm:4419> INFO - Processing section 2
-[444] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 2
-[461] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[461] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[461] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[461] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[466] Biber.pm:4419> INFO - Processing section 6
-[466] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 6
-[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[480] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[480] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[78] biber:340> INFO - === Mon Apr  1, 2024, 18:23:46
+[93] Biber.pm:419> INFO - Reading 'main.bcf'
+[157] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[157] Biber.pm:979> INFO - Found 1 citekeys in bib section 1
+[157] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[158] Biber.pm:979> INFO - Found 2 citekeys in bib section 2
+[158] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[158] Biber.pm:979> INFO - Found 0 citekeys in bib section 3
+[158] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[158] Biber.pm:979> INFO - Found 0 citekeys in bib section 4
+[158] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 5
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 6
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 7
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 1 citekeys in bib section 8
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 9
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[159] Biber.pm:979> INFO - Found 0 citekeys in bib section 10
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 11
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 12
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 13
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 14
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[160] Biber.pm:979> INFO - Found 0 citekeys in bib section 15
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 16
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 17
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 18
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 19
+[161] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 20
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 21
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 22
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 23
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 24
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[162] Biber.pm:979> INFO - Found 0 citekeys in bib section 25
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[163] Biber.pm:979> INFO - Found 1 citekeys in bib section 26
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[163] Biber.pm:979> INFO - Found 1 citekeys in bib section 27
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 28
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 29
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[163] Biber.pm:979> INFO - Found 0 citekeys in bib section 30
+[164] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[164] Biber.pm:979> INFO - Found 0 citekeys in bib section 31
+[164] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[164] Biber.pm:979> INFO - Found 0 citekeys in bib section 32
+[164] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
+[334] Biber.pm:4419> INFO - Processing section 1
+[344] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 1
+[351] bibtex.pm:1713> INFO - LaTeX decoding ...
+[431] bibtex.pm:1519> INFO - Found BibTeX data source 'MPhys.bib'
+[462] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[463] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[463] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[463] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[464] Biber.pm:4419> INFO - Processing section 2
+[464] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 2
+[481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[481] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[481] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
 [481] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[482] Biber.pm:4419> INFO - Processing section 25
-[482] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 25
-[495] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[495] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[495] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[496] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
-[497] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[499] bbl.pm:763> INFO - Output to main.bbl
+[486] Biber.pm:4419> INFO - Processing section 8
+[486] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 8
+[508] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[508] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[508] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[508] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[510] Biber.pm:4419> INFO - Processing section 26
+[511] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 26
+[520] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[521] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[521] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[522] Biber.pm:4419> INFO - Processing section 27
+[522] Biber.pm:4610> INFO - Looking for bibtex file 'MPhys.bib' for section 27
+[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[535] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[535] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[535] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[537] bbl.pm:660> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[540] bbl.pm:763> INFO - Output to main.bbl

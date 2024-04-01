@@ -100,39 +100,27 @@
 
     \vspace{3em}
 
-    \small
-    Main goals: adapt it for 3D \hspace{1ex}\&\hspace{1ex} introduce a more complex free energy form
+    \normalsize
+    Main goals: adapt it for 3D \hspace{1ex}\&\hspace{1ex} new free energy form
 \end{frame}
 
 \begin{frame}[fragile]{Liquid crystals -- partial order in rod-like molecules}
     \newrefsection
     \begin{figure}
         \centering
-        \includegraphics{figures/phases.pdf}
+        \includegraphics[width=0.9\textwidth]{figures/phases.pdf}
         \caption{
             Phases of a substance of rod-like molecules, in order of decreasing phase order\cite{pagetComplexTensorsSimple2023}.
         }
     \end{figure}
-    \vspace{-0.5em}
-    \normalsize\textbf{Different LC phases determined by their order/symmetries}\normalsize
-    \vspace{-1.5em}
-    \small
-    \begin{table}
-        \begin{tabular}{llll}
-        Phase            & Order & Broken symmetry &  \\
-        \hline
-        Isotropic liquid & No order  & None &  \\
-        Nematic          & Orientational & Rotational &  \\
-        Smectic          & Positional & Translational in one direction & \\
-        Full crystal     & Both & Rotational and translational in all directions &
-        \end{tabular}
-    \end{table}
+    \vspace{-1em}
+    \bf
+    Nematic $\sim$ alignment, broken rotational symmetry
+
+    Smectic $\sim$ layering, broken translational symmetry in 1 direction
     \vfill
     \printbibliography[heading=none]
     \vspace{-\fill}
-    \note[itemize]{
-        \item jaja
-    }
 \end{frame}
 
 \begin{frame}[fragile]{Liquid crystals -- why do we care?}
@@ -170,32 +158,52 @@
     \vspace{-\fill}
 \end{frame}
 
+\begin{frame}[fragile]{Outline}
+    \newrefsection
+    \begin{itemize}
+        \item Smectics as a density wave
+        \item What \EE\ theory does better and how
+        \item Constraints on \EE\ in 3D -- biaxiality
+        \item Ginzburg-Landau dynamics
+        \item New free energy
+        \item Simulation results
+    \end{itemize}
+\end{frame}
+
 \begin{frame}[fragile]{Layering is determined by three quantities}
     \newrefsection
-    \vspace{-\fill}
-    \vspace{3em}
-    \begin{center}
-        \subheading{Smectic $\sim$ layered}
-        \vspace{3em}
+    \begin{columns}
+        \begin{column}{0.49\textwidth}
+            \vspace{-\fill}
+            \begin{center}
+                \subheading{Smectic $\sim$ layered}
+                \vspace{3em}
 
-        \subheading{3 quantities \extra{(fields)}}
-    \end{center}
-    \begin{itemize}
-        \item Degree of ordering
-        \item Direction of layering \extra{-- this has an additional symmetry}
-        \item Spacing of layers
-    \end{itemize}
+                \subheading{3 quantities \extra{(fields)}}
+            \end{center}
+            \begin{itemize}
+                \item Degree of ordering
+                \item Direction of layering % \extra{-- this has an additional symmetry}
+                \item Spacing of layers
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.60\textwidth}
+            \begin{figure}
+                \includegraphics[width=\textwidth]{figures/layers_example.pdf}
+                \caption{
+                    Example of a layering structure
+                }
+            \end{figure}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}[fragile]{Layering as a density wave}
     \newrefsection
-    \begin{itemize}
-        \item Layering is a wave-like density fluctuation
-    \end{itemize}
     \vspace{-1em}
     \begin{align*}
         \rho(\su{r}) &= \rho_0 + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi) \\
-        &\simeq \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
+        &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
     \end{align*}
     where
     \begin{itemize}
@@ -206,30 +214,57 @@
             \item Layer spacing is $\frac{2\pi}{q_0}$
         \end{itemize}
         \item Here $\phi$ is an arbitrary phase
+        % \item \textbf{Use complex order parameter $\psi = |\psi|e^{i\phi}$}
         \extra{\item $\rho_0$ is the average density and $\rho_1=\rho_0|\psi| \leq \rho_0$}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Traditionally we have fixed $\su{q_0}$ and varying $\psi$}
+\begin{frame}[fragile]{Complex number order parameter $\psi(\su{r})$}
     \newrefsection
     \vspace{-\fill}
-    \begin{equation*}
-        \rho(\su{r}) = \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
-    \end{equation*}
+    \begin{align*}
+        \rho(\su{r}) &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)}) \\
+        &= \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
+    \end{align*}
     \vspace{\fill}
     \begin{itemize}
-        \item Non-uniform systems -- need to promote parameters to fields
+        \item More interesting systems -- need to promote parameters to fields
         \item Promoting $|\psi|(\su{r})$ is simple
         \item $\phi(\su{r})$ also taken to be a field
         \item $\psi(\su{r}) = |\psi|(\su{r})e^{i\phi(\ssu{r})}$ is the de Gennes complex order parameter
     \end{itemize}
     \vspace{\fill}
-    \subheadding{Two options, both limited}
-    \vspace{-0.5em}
-    \begin{itemize}
-        \item Keep a constant $\su{q_0}$ -- only suitable for near equilibrium systems
-        \item Remove $\su{q_0}$ -- does not capture the smectic $\NN\leftrightarrow-\NN$ symmetry\cite{pevnyiModelingSmecticLayers2014}
-    \end{itemize}
+    \printbibliography[heading=none]
+    \vspace{-\fill}
+\end{frame}
+
+\begin{frame}[fragile]{Established approaches have problems}
+    \newrefsection
+    \vspace{-\fill}
+    \begin{equation*}
+        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
+    \end{equation*}
+    \vspace{\fill}
+
+    \begin{columns}
+        \begin{column}{0.49\textwidth}
+            \subheadding{Two options, both limited}
+            \begin{itemize}
+                \item Fixed $\su{q_0}$, solve for $\psi(\su{r})$ -- near equilibrium systems only
+                \item Remove $\su{q_0}$ -- does not capture the smectic $\NN\leftrightarrow-\NN$ symmetry\cite{pevnyiModelingSmecticLayers2014}
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.60\textwidth}
+            \begin{figure}
+                \includegraphics[width=0.8\textwidth]{figures/pevnyi.pdf}
+                \caption{
+                    Example density wave where the red arrows show directions of increasing $\phi$.
+                    Black corresponds to layers of increased density.
+                    Figure from \cite{pevnyiModelingSmecticLayers2014}.
+                }
+            \end{figure}
+        \end{column}
+    \end{columns}
     \vspace{\fill}
     \printbibliography[heading=none]
     \vspace{-\fill}
@@ -240,7 +275,7 @@
     \newrefsection
     Still use
     \begin{equation*}
-        \rho(\su{r}) = \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
+        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
     \end{equation*}
     \vspace{-1.5em}
     \begin{itemize}
@@ -266,9 +301,9 @@
     \subheading{Benefits/motivation for \EE}
     \begin{itemize}
         \item Incorporates $\NN\leftrightarrow-\NN$ symmetry
-        \item Mesoscopic theory -- does not directly resolve density
-        \item Numerically convenient -- one object, it can numerically melt
         \item Captures all three quantities -- degree of order, layer direction and spacing through $|\psi|$, \NN\ and $\phi$
+        \item Numerically convenient -- one object, it can numerically melt
+        \extra{\item Mesoscopic theory -- does not directly resolve density}
     \end{itemize}
 \end{frame}
 
@@ -498,6 +533,37 @@
 \end{frame}
 
 % Extras
+\begin{frame}[fragile]{Liquid crystals -- partial order in rod-like molecules}
+    \newrefsection
+    \begin{figure}
+        \centering
+        \includegraphics{figures/phases.pdf}
+        \caption{
+            Phases of a substance of rod-like molecules, in order of decreasing phase order\cite{pagetComplexTensorsSimple2023}.
+        }
+    \end{figure}
+    \vspace{-0.5em}
+    \normalsize\textbf{Different LC phases determined by their order/symmetries}\normalsize
+    \vspace{-1.5em}
+    \small
+    \begin{table}
+        \begin{tabular}{llll}
+        Phase            & Order & Broken symmetry &  \\
+        \hline
+        Isotropic liquid & No order  & None &  \\
+        Nematic          & Orientational & Rotational &  \\
+        Smectic          & Positional & Translational in one direction & \\
+        Full crystal     & Both & Rotational and translational in all directions &
+        \end{tabular}
+    \end{table}
+    \vfill
+    \printbibliography[heading=none]
+    \vspace{-\fill}
+    \note[itemize]{
+        \item jaja
+    }
+\end{frame}
+
 \begin{frame}[fragile]{$\psi(\su{r})$ alone does not respect smectic symmetry}
     \newrefsection
     \vspace{-\fill}

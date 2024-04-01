@@ -156,7 +156,39 @@
   \enddatalist
 \endrefsection
 
-\refsection{25}
+\refsection{26}
+  \datalist[entry]{none/global//global/global}
+    \entry{pagetComplexTensorsSimple2023}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=81b687339980986cd3adc0b5e94a85b3}{%
+           family={Paget},
+           familyi={P\bibinitperiod},
+           given={Jack},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {The University of Edinburgh}%
+      }
+      \strng{namehash}{81b687339980986cd3adc0b5e94a85b3}
+      \strng{fullhash}{81b687339980986cd3adc0b5e94a85b3}
+      \strng{bibnamehash}{81b687339980986cd3adc0b5e94a85b3}
+      \strng{authorbibnamehash}{81b687339980986cd3adc0b5e94a85b3}
+      \strng{authornamehash}{81b687339980986cd3adc0b5e94a85b3}
+      \strng{authorfullhash}{81b687339980986cd3adc0b5e94a85b3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Complex Tensors and Simple Layers: {{A}} Theory for Smectic Fluids}
+      \field{type}{phdthesis}
+      \field{year}{2023}
+      \field{dateera}{ce}
+    \endentry
+  \enddatalist
+\endrefsection
+
+\refsection{27}
   \datalist[entry]{none/global//global/global}
     \entry{pevnyiModelingSmecticLayers2014}{article}{}
       \name{author}{3}{}{%
@@ -222,7 +254,7 @@
   \enddatalist
 \endrefsection
 
-\refsection{6}
+\refsection{8}
   \datalist[entry]{none/global//global/global}
     \entry{pevnyiModelingSmecticLayers2014}{article}{}
       \name{author}{3}{}{%
