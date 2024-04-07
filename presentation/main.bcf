@@ -2608,8 +2608,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="26">
-    <bcf:citekey order="1" intorder="1">pagetComplexTensorsSimple2023</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">pagetComplexTensorsSimple2023</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2619,8 +2617,6 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="27">
-    <bcf:citekey order="1" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2648,6 +2644,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="30">
+    <bcf:citekey order="1" intorder="1">pagetComplexTensorsSimple2023</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">pagetComplexTensorsSimple2023</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2657,6 +2655,8 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="31">
+    <bcf:citekey order="1" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">pevnyiModelingSmecticLayers2014</bcf:citekey>
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2666,6 +2666,42 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="32">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 33 -->
+  <bcf:bibdata section="33">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="33">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 34 -->
+  <bcf:bibdata section="34">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="34">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 35 -->
+  <bcf:bibdata section="35">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="35">
+  </bcf:section>
+  <!-- SECTION 0 (cont.) -->
+  <bcf:section number="0">
+  </bcf:section>
+  <!-- SECTION 36 -->
+  <bcf:bibdata section="36">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">MPhys.bib</bcf:datasource>
+  </bcf:bibdata>
+  <bcf:section number="36">
   </bcf:section>
   <!-- SECTION 0 (cont.) -->
   <bcf:section number="0">
@@ -2725,7 +2761,7 @@
                 uniquenametemplatename="global"
                 labelalphanametemplatename="global">
   </bcf:datalist>
-  <bcf:datalist section="26"
+  <bcf:datalist section="30"
                 name="none/global//global/global"
                 type="entry"
                 sortingtemplatename="none"
@@ -2734,7 +2770,7 @@
                 uniquenametemplatename="global"
                 labelalphanametemplatename="global">
   </bcf:datalist>
-  <bcf:datalist section="27"
+  <bcf:datalist section="31"
                 name="none/global//global/global"
                 type="entry"
                 sortingtemplatename="none"

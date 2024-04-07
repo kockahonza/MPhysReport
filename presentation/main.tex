@@ -73,6 +73,7 @@
 }}
 
 \newcommand{\extra}[1]{\color{gray} #1 \normalcolor}
+\newcommand{\mul}[1]{\underline{\smash{#1}}}
 \newcommand{\subheading}[1]{\large\textbf{#1}\normalsize}
 
 
@@ -81,7 +82,7 @@
 \setlength{\abovedisplayskip}{1em}
 \setlength{\belowdisplayskip}{0ex}
 
-% Motivation
+% LCs, motivation, outline
 \begin{frame}
     % \frametitle{E theory}
     \centering
@@ -162,14 +163,20 @@
     \newrefsection
     \begin{itemize}
         \item Smectics as a density wave
-        \item What \EE\ theory does better and how
-        \item Constraints on \EE\ in 3D -- biaxiality
+        \item Problems of current approaches
+        \item Our complex tensor \EE\ and why it solves the issue
+    \end{itemize}
+    \begin{itemize}
+        \item Redefining \EE\ in 3D -- biaxiality
         \item Ginzburg-Landau dynamics
         \item New free energy
+    \end{itemize}
+    \begin{itemize}
         \item Simulation results
     \end{itemize}
 \end{frame}
 
+% de Gennes style theories and their problems
 \begin{frame}[fragile]{Layering is determined by three quantities}
     \newrefsection
     \begin{columns}
@@ -182,7 +189,7 @@
                 \subheading{3 quantities \extra{(fields)}}
             \end{center}
             \begin{itemize}
-                \item Degree of ordering
+                \item Degree of layering
                 \item Direction of layering % \extra{-- this has an additional symmetry}
                 \item Spacing of layers
             \end{itemize}
@@ -203,7 +210,7 @@
     \vspace{-1em}
     \begin{align*}
         \rho(\su{r}) &= \rho_0 + \rho_1\cos(\su{q_0}\cdot\su{r} + \phi) \\
-        &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})
+        &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)}))
     \end{align*}
     where
     \begin{itemize}
@@ -219,12 +226,12 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Complex number order parameter $\psi(\su{r})$}
+\begin{frame}[fragile]{Complex number field order parameter $\psi(\su{r})$}
     \newrefsection
     \vspace{-\fill}
     \begin{align*}
-        \rho(\su{r}) &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)}) \\
-        &= \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
+        \rho(\su{r}) &= \rho_0 (1 + \Re(|\psi| e^{i(\ssu{q_0} \cdot \ssu{r} + \phi)})) \\
+        &= \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}}))
     \end{align*}
     \vspace{\fill}
     \begin{itemize}
@@ -238,11 +245,11 @@
     \vspace{-\fill}
 \end{frame}
 
-\begin{frame}[fragile]{Established approaches have problems}
+\begin{frame}[fragile]{Established approaches have limitations}
     \newrefsection
     \vspace{-\fill}
     \begin{equation*}
-        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
+        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}}))
     \end{equation*}
     \vspace{\fill}
 
@@ -275,7 +282,7 @@
     \newrefsection
     Still use
     \begin{equation*}
-        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}})
+        \rho(\su{r}) = \rho_0 (1 + \Re(\psi e^{i\ssu{q_0} \cdot \ssu{r}}))
     \end{equation*}
     \vspace{-1.5em}
     \begin{itemize}
@@ -307,30 +314,26 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Treating \EE\ as our parameter requires constraints on it}
+% My work 3D
+\begin{frame}[fragile]{What is \EE\ in 3D}
     \newrefsection
     \vspace{-\fill}
     \begin{equation*}
-        \du{E} = \psi(\su{N}\su{N} - \frac{\du{\delta}}{d})
+        \du{E} \overset{\text{how?}}{\sim} \psi(\su{N}\su{N} - \frac{\du{\delta}}{d})
     \end{equation*}
     \vfill
 
     \begin{itemize}
         \item Treat \EE\ as general complex tensor
-        \item Need to somehow enforce the form above
-        % \item Real symmetric tensors adopt similar forms due to being diagonalizable
+        \item Need arrive at the form above
         \item Inspiration from real symmetric tensors leads us to diagonalization
-        % \item Inspiration from $\du{Q}$ -- symmetric and traceless 
-        % \begin{itemize}
-        %     \item real so can be diagonalized
-        % \end{itemize}
-        \item Require $\du{E}$ be unitarily diagonalizable (\underline{normal}), \underline{symmetric} and \underline{traceless}
+        \item Require $\du{E}$ be unitarily diagonalizable (\mul{normal}), \mul{\smash{symmetric}} and \mul{traceless}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Our constraints lead to biaxial \EE\ in 3D}
+\begin{frame}[fragile]{What is \EE\ in 3D}
     \newrefsection
-    Normality and tracelessness give \extra{in 3D}
+    Normality and tracelessness give
     \begin{equation*}
         \du{E} = \du{U} \cdot \begin{pmatrix}
             \lambda_1 & 0 & 0 \\
@@ -339,12 +342,12 @@
         \end{pmatrix} \cdot \du{U}^\dagger
     \end{equation*}
 
-    where the $\lambda_i$ are eigenvalues of \EE\ and $\du{U}$ a unitary matrix
+    where the $\lambda_i$ are eigenvalues of \EE\ and $\du{U}$ some unitary matrix
 \end{frame}
 
 \begin{frame}[fragile]{Our constraints lead to biaxial \EE\ in 3D}
     \newrefsection
-    Further using symmetry this fully implies
+    Also using symmetry this leads to
     \begin{equation*}
         \du{E} = \cdots = \psi_1(\su{N}}\su{N} - \frac{\du{\delta}}{3}) + \psi_2(\su{M}\su{M} - \frac{\du{\delta}}{3})
     \end{equation*}
@@ -359,11 +362,9 @@
 
 \begin{frame}[fragile]{Biaxial \EE\ could mean two density waves}
     \newrefsection
-    \vspace{-\fill}
     \begin{equation*}
         \du{E} = \cdots = \psi_1(\su{N}}\su{N} - \frac{\du{\delta}}{3}) + \psi_2(\su{M}\su{M} - \frac{\du{\delta}}{3})
     \end{equation*}
-    \vfill
     \begin{itemize}
         \item Symmetry, tracelessness, normality lead to biaxial \EE
         \item No simple way to force uniaxiality
@@ -372,68 +373,52 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{Ginzburg-Landau theory -- dynamics by minimizing free energy}
+% Dynamics and F
+\begin{frame}[fragile]{Evolve \EE\ in time via local free energy minimization}
     \newrefsection
     \begin{itemize}
-        \item Dynamics using Ginzburg-Landau theory
+        \item \EE\ is a Ginzburg-Landau theory
         \item Need a free energy in terms of \EE
     \end{itemize}
     \begin{equation*}
         F = \int f(\du{E}, \mgrad\du{E}, \ldots) \dd{V}
     \end{equation*}
+    \vspace{-2em}
     \begin{itemize}
-        \item $F$ must be real!
+        \item $F$ must be real
         \item Then evolve \EE\ to minimize $F$ using the functional derivative
     \end{itemize}
     \begin{equation*}
         \pdv{\du{E}}{t} = -\mu \fdv{F}{\EE^*}
     \end{equation*}
+    \vspace{-1.5em}
     \begin{itemize}
-        \extra{\item Plus additional terms from Lagrange multipliers to enforce constraints}
+        \extra{\item Model A like dynamics using Wirtinger derivatives}
+        \extra{\item Plus Lagrange multipliers to enforce constraints}
     \end{itemize}
 \end{frame}
-
-% \begin{frame}[fragile]{The free energy}
-%     \newrefsection
-%     \begin{itemize}
-%         \item $F$ must be real -- need to match $\du{E}$ and $\du{E}^*^$, simplest is
-%     \end{itemize}
-%     \begin{align*}
-%         f_\text{bulk}(E_{ij}E_{ij}^* = \Tr(\du{E}\du{E}^*)) = A E_{ij}E_{ij}^* + \frac{C}{2} (E_{ij}E_{ij}^*)^2
-%     \end{align*}
-%     \begin{itemize}
-%         \item \color{gray} In the uniaxial case $E_{ij}E_{ij}^* \propto |\psi|^2$, and $f_\text{bulk}$ corresponds to work of de Gennes \normalcolor
-%     \end{itemize}
-%     \begin{itemize}
-%         \item Take the simplest gradients terms in one \EE
-%     \end{itemize}
-%     \begin{align*}
-%         &|\su{\nabla}\du{E}|^2 = E_{ij,k}E_{ij,k}^* \\
-%         &|\nabla^2\du{E}|^2 = E_{ij,kk}E_{ij,ll}^*
-%     \end{align*}
-% \end{frame}
 
 \begin{frame}[fragile]{The one constant approximation free energy}
     \newrefsection
     \begin{align*}
         F &= \int f_\text{bulk} + f_\text{comp} + f_\text{curv} \dd{V} \\
         f_\text{bulk} &= A |\EE|^2 + \frac{C}{2} |\EE|^4 \\
-        f_\text{comp} &= b_1 |\mgrad \EE|^2 \\
-        f_\text{curv} &= b_2 |\nabla^2 \EE|^2
+        f_\text{comp} &= b_1 |\mgrad \EE|^2 \color{gray} = b_1 E_{ij,k}E_{ij,k}^* \\
+        f_\text{curv} &= b_2 |\nabla^2 \EE|^2 \color{gray} = b_2 E_{ij,kk}E_{ij,ll}^*
     \end{align*}
     \begin{itemize}
-        \item \FB\ is the core free energy, determining the phase
-        \item \FC\ corresponds to layer compression energy costs
-        \item \FU\ corresponds to layer curvature/bending energy costs
+        \item \FB\ -- base free energy, determines the phase
+        \item \FC\ -- layer compression/compression energy costs
+        \item \FU\ -- layer curvature/bending energy costs
         \extra{\item With $|?_{ij\ldots k}|^2=?_{ij\ldots k}?_{ij\ldots k}^*$ being the Frobenius norm}
     \end{itemize}
 \end{frame}
 
-\begin{frame}[fragile]{More complex $F$ using projection operators}
+\begin{frame}[fragile]{New $F$ using projection operators}
     \newrefsection
     \begin{itemize}
         \item Gradients in different directions have different energy costs
-        \item For uniaxial \EE, special direction is $\su{N}$
+        \item Uniaxial \EE\ -- special direction is $\su{N}$
         \item Projection operator $\du{\Pi}=\su{N}\su{N}$, rest is $\du{T} = \du{\delta} - \du{\Pi}$
         \extra{\item Consider $\su{\nabla} \rightarrow a \du{\Pi}\cdot\su{\nabla} + b \du{T}\cdot\su{\nabla}$ with $a, b$ being some constants}
     \end{itemize}
@@ -449,65 +434,78 @@
     % \end{equation*}
 \end{frame}
 
-\begin{frame}[fragile]{The one constant approximation free energy}
+% Simulation results
+\begin{frame}[fragile]{Quench-like system -- smectic forming from isotropic}
     \newrefsection
-    \begin{align*}
-        F &= \int f_\text{bulk} + f_\text{comp} + f_\text{curv} \dd{V} \\
-        f_\text{bulk} &= A |\EE|^2 + \frac{C}{2} |\EE|^4 \\
-        f_\text{comp} &= b_1 |\mgrad \EE|^2 \\
-        f_\text{curv} &= b_2 |\nabla^2 \EE|^2
-    \end{align*}
+    \begin{center}
+        \includegraphics{figures/data_plots/fiso_r7_sample_0.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Quench-like system -- smectic forming from isotropic}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/fiso_r7_sample_1.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Quench-like system -- smectic forming from isotropic}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/fiso_r7_sample_2.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Quench-like system -- smectic forming from isotropic}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/fiso_r7_sample_3.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/walls_seed_0.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/walls_seed_1.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/walls_seed_2.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/walls_seed_3.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{\EE\ escapes into the third dimension}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/walls_seed_4.pdf}
+    \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Main conclusions of the project}
+    \newrefsection
     \begin{itemize}
-        \item \FB\ is the core free energy, determining the phase
-        \item \FC\ corresponds to layer compression energy costs
-        \item \FU\ corresponds to layer curvature/bending energy costs
-        \extra{\item With $|?_{ij\ldots k}|^2=?_{ij\ldots k}?_{ij\ldots k}^*$ being the Frobenius norm}
+        \setlength\itemsep{2em}
+        \item In 3D a symmetric, traceless and normal \EE\ gains a biaxial term
+        \item We observe significant biaxiality in simulations
+        \item Escaping into the third dimension is a major effect in our simulations
     \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{itemize}
-        \item Fixed boundaries force \NN\ perpendicular to walls from sides
-        \item Periodic boundaries in the third direction
-        % \item I show a single slice
-        \item Systems starts isotropic except a single streak
-    \end{itemize}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim0.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim1.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim2.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim3.pdf}
-    \end{center}
-\end{frame}
-
-\begin{frame}[fragile]{Simple results -- \EE\ escapes into the third dimension}
-    \newrefsection
-    \begin{center}
-        \includegraphics[width=\textwidth]{figures/prelim4.pdf}
-    \end{center}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -533,6 +531,13 @@
 \end{frame}
 
 % Extras
+\begin{frame}[fragile]{More complex simulation}
+    \newrefsection
+    \begin{center}
+        \includegraphics{figures/data_plots/3dfbox_r17_side.pdf}
+    \end{center}
+\end{frame}
+
 \begin{frame}[fragile]{Liquid crystals -- partial order in rod-like molecules}
     \newrefsection
     \begin{figure}
